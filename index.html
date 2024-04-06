@@ -1,0 +1,1558 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radu Sergiu Gugles | Portfolio</title>
+    <link href="style.css" rel=" stylesheet" />
+    <link rel="icon" href="icon_tmp.png">
+    <style type="text/css">
+        :root,
+        :host {
+            --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";
+            --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Regular";
+            --fa-font-light: normal 300 1em/1 "Font Awesome 6 Light";
+            --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Thin";
+            --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+            --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+        }
+
+        svg:not(:root).svg-inline--fa,
+        svg:not(:host).svg-inline--fa {
+            overflow: visible;
+            box-sizing: content-box;
+        }
+
+        .svg-inline--fa {
+            display: var(--fa-display, inline-block);
+            height: 1em;
+            overflow: visible;
+            vertical-align: -0.125em;
+        }
+
+        .svg-inline--fa.fa-2xs {
+            vertical-align: 0.1em;
+        }
+
+        .svg-inline--fa.fa-xs {
+            vertical-align: 0em;
+        }
+
+        .svg-inline--fa.fa-sm {
+            vertical-align: -0.0714285705em;
+        }
+
+        .svg-inline--fa.fa-lg {
+            vertical-align: -0.2em;
+        }
+
+        .svg-inline--fa.fa-xl {
+            vertical-align: -0.25em;
+        }
+
+        .svg-inline--fa.fa-2xl {
+            vertical-align: -0.3125em;
+        }
+
+        .svg-inline--fa.fa-pull-left {
+            margin-right: var(--fa-pull-margin, 0.3em);
+            width: auto;
+        }
+
+        .svg-inline--fa.fa-pull-right {
+            margin-left: var(--fa-pull-margin, 0.3em);
+            width: auto;
+        }
+
+        .svg-inline--fa.fa-li {
+            width: var(--fa-li-width, 2em);
+            top: 0.25em;
+        }
+
+        .svg-inline--fa.fa-fw {
+            width: var(--fa-fw-width, 1.25em);
+        }
+
+        .fa-layers svg.svg-inline--fa {
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .fa-layers-counter,
+        .fa-layers-text {
+            display: inline-block;
+            position: absolute;
+            text-align: center;
+        }
+
+        .fa-layers {
+            display: inline-block;
+            height: 1em;
+            position: relative;
+            text-align: center;
+            vertical-align: -0.125em;
+            width: 1em;
+        }
+
+        .fa-layers svg.svg-inline--fa {
+            -webkit-transform-origin: center center;
+            transform-origin: center center;
+        }
+
+        .fa-layers-text {
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            -webkit-transform-origin: center center;
+            transform-origin: center center;
+        }
+
+        .fa-layers-counter {
+            background-color: var(--fa-counter-background-color, #ff253a);
+            border-radius: var(--fa-counter-border-radius, 1em);
+            box-sizing: border-box;
+            color: var(--fa-inverse, #fff);
+            line-height: var(--fa-counter-line-height, 1);
+            max-width: var(--fa-counter-max-width, 5em);
+            min-width: var(--fa-counter-min-width, 1.5em);
+            overflow: hidden;
+            padding: var(--fa-counter-padding, 0.25em 0.5em);
+            right: var(--fa-right, 0);
+            text-overflow: ellipsis;
+            top: var(--fa-top, 0);
+            -webkit-transform: scale(var(--fa-counter-scale, 0.25));
+            transform: scale(var(--fa-counter-scale, 0.25));
+            -webkit-transform-origin: top right;
+            transform-origin: top right;
+        }
+
+        .fa-layers-bottom-right {
+            bottom: var(--fa-bottom, 0);
+            right: var(--fa-right, 0);
+            top: auto;
+            -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+            transform: scale(var(--fa-layers-scale, 0.25));
+            -webkit-transform-origin: bottom right;
+            transform-origin: bottom right;
+        }
+
+        .fa-layers-bottom-left {
+            bottom: var(--fa-bottom, 0);
+            left: var(--fa-left, 0);
+            right: auto;
+            top: auto;
+            -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+            transform: scale(var(--fa-layers-scale, 0.25));
+            -webkit-transform-origin: bottom left;
+            transform-origin: bottom left;
+        }
+
+        .fa-layers-top-right {
+            top: var(--fa-top, 0);
+            right: var(--fa-right, 0);
+            -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+            transform: scale(var(--fa-layers-scale, 0.25));
+            -webkit-transform-origin: top right;
+            transform-origin: top right;
+        }
+
+        .fa-layers-top-left {
+            left: var(--fa-left, 0);
+            right: auto;
+            top: var(--fa-top, 0);
+            -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+            transform: scale(var(--fa-layers-scale, 0.25));
+            -webkit-transform-origin: top left;
+            transform-origin: top left;
+        }
+
+        .fa-1x {
+            font-size: 1em;
+        }
+
+        .fa-2x {
+            font-size: 2em;
+        }
+
+        .fa-3x {
+            font-size: 3em;
+        }
+
+        .fa-4x {
+            font-size: 4em;
+        }
+
+        .fa-5x {
+            font-size: 5em;
+        }
+
+        .fa-6x {
+            font-size: 6em;
+        }
+
+        .fa-7x {
+            font-size: 7em;
+        }
+
+        .fa-8x {
+            font-size: 8em;
+        }
+
+        .fa-9x {
+            font-size: 9em;
+        }
+
+        .fa-10x {
+            font-size: 10em;
+        }
+
+        .fa-2xs {
+            font-size: 0.625em;
+            line-height: 0.1em;
+            vertical-align: 0.225em;
+        }
+
+        .fa-xs {
+            font-size: 0.75em;
+            line-height: 0.0833333337em;
+            vertical-align: 0.125em;
+        }
+
+        .fa-sm {
+            font-size: 0.875em;
+            line-height: 0.0714285718em;
+            vertical-align: 0.0535714295em;
+        }
+
+        .fa-lg {
+            font-size: 1.25em;
+            line-height: 0.05em;
+            vertical-align: -0.075em;
+        }
+
+        .fa-xl {
+            font-size: 1.5em;
+            line-height: 0.0416666682em;
+            vertical-align: -0.125em;
+        }
+
+        .fa-2xl {
+            font-size: 2em;
+            line-height: 0.03125em;
+            vertical-align: -0.1875em;
+        }
+
+        .fa-fw {
+            text-align: center;
+            width: 1.25em;
+        }
+
+        .fa-ul {
+            list-style-type: none;
+            margin-left: var(--fa-li-margin, 2.5em);
+            padding-left: 0;
+        }
+
+        .fa-ul>li {
+            position: relative;
+        }
+
+        .fa-li {
+            left: calc(var(--fa-li-width, 2em) * -1);
+            position: absolute;
+            text-align: center;
+            width: var(--fa-li-width, 2em);
+            line-height: inherit;
+        }
+
+        .fa-border {
+            border-color: var(--fa-border-color, #eee);
+            border-radius: var(--fa-border-radius, 0.1em);
+            border-style: var(--fa-border-style, solid);
+            border-width: var(--fa-border-width, 0.08em);
+            padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);
+        }
+
+        .fa-pull-left {
+            float: left;
+            margin-right: var(--fa-pull-margin, 0.3em);
+        }
+
+        .fa-pull-right {
+            float: right;
+            margin-left: var(--fa-pull-margin, 0.3em);
+        }
+
+        .fa-beat {
+            -webkit-animation-name: fa-beat;
+            animation-name: fa-beat;
+            -webkit-animation-delay: var(--fa-animation-delay, 0);
+            animation-delay: var(--fa-animation-delay, 0);
+            -webkit-animation-direction: var(--fa-animation-direction, normal);
+            animation-direction: var(--fa-animation-direction, normal);
+            -webkit-animation-duration: var(--fa-animation-duration, 1s);
+            animation-duration: var(--fa-animation-duration, 1s);
+            -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+            animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+            -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+            animation-timing-function: var(--fa-animation-timing, ease-in-out);
+        }
+
+        .fa-bounce {
+            -webkit-animation-name: fa-bounce;
+            animation-name: fa-bounce;
+            -webkit-animation-delay: var(--fa-animation-delay, 0);
+            animation-delay: var(--fa-animation-delay, 0);
+            -webkit-animation-direction: var(--fa-animation-direction, normal);
+            animation-direction: var(--fa-animation-direction, normal);
+            -webkit-animation-duration: var(--fa-animation-duration, 1s);
+            animation-duration: var(--fa-animation-duration, 1s);
+            -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+            animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+            -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+            animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+        }
+
+        .fa-fade {
+            -webkit-animation-name: fa-fade;
+            animation-name: fa-fade;
+            -webkit-animation-delay: var(--fa-animation-delay, 0);
+            animation-delay: var(--fa-animation-delay, 0);
+            -webkit-animation-direction: var(--fa-animation-direction, normal);
+            animation-direction: var(--fa-animation-direction, normal);
+            -webkit-animation-duration: var(--fa-animation-duration, 1s);
+            animation-duration: var(--fa-animation-duration, 1s);
+            -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+            animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+            -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+            animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+        }
+
+        .fa-beat-fade {
+            -webkit-animation-name: fa-beat-fade;
+            animation-name: fa-beat-fade;
+            -webkit-animation-delay: var(--fa-animation-delay, 0);
+            animation-delay: var(--fa-animation-delay, 0);
+            -webkit-animation-direction: var(--fa-animation-direction, normal);
+            animation-direction: var(--fa-animation-direction, normal);
+            -webkit-animation-duration: var(--fa-animation-duration, 1s);
+            animation-duration: var(--fa-animation-duration, 1s);
+            -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+            animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+            -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+            animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+        }
+
+        .fa-flip {
+            -webkit-animation-name: fa-flip;
+            animation-name: fa-flip;
+            -webkit-animation-delay: var(--fa-animation-delay, 0);
+            animation-delay: var(--fa-animation-delay, 0);
+            -webkit-animation-direction: var(--fa-animation-direction, normal);
+            animation-direction: var(--fa-animation-direction, normal);
+            -webkit-animation-duration: var(--fa-animation-duration, 1s);
+            animation-duration: var(--fa-animation-duration, 1s);
+            -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+            animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+            -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+            animation-timing-function: var(--fa-animation-timing, ease-in-out);
+        }
+
+        .fa-shake {
+            -webkit-animation-name: fa-shake;
+            animation-name: fa-shake;
+            -webkit-animation-delay: var(--fa-animation-delay, 0);
+            animation-delay: var(--fa-animation-delay, 0);
+            -webkit-animation-direction: var(--fa-animation-direction, normal);
+            animation-direction: var(--fa-animation-direction, normal);
+            -webkit-animation-duration: var(--fa-animation-duration, 1s);
+            animation-duration: var(--fa-animation-duration, 1s);
+            -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+            animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+            -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+            animation-timing-function: var(--fa-animation-timing, linear);
+        }
+
+        .fa-spin {
+            -webkit-animation-name: fa-spin;
+            animation-name: fa-spin;
+            -webkit-animation-delay: var(--fa-animation-delay, 0);
+            animation-delay: var(--fa-animation-delay, 0);
+            -webkit-animation-direction: var(--fa-animation-direction, normal);
+            animation-direction: var(--fa-animation-direction, normal);
+            -webkit-animation-duration: var(--fa-animation-duration, 2s);
+            animation-duration: var(--fa-animation-duration, 2s);
+            -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+            animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+            -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+            animation-timing-function: var(--fa-animation-timing, linear);
+        }
+
+        .fa-spin-reverse {
+            --fa-animation-direction: reverse;
+        }
+
+        .fa-pulse,
+        .fa-spin-pulse {
+            -webkit-animation-name: fa-spin;
+            animation-name: fa-spin;
+            -webkit-animation-direction: var(--fa-animation-direction, normal);
+            animation-direction: var(--fa-animation-direction, normal);
+            -webkit-animation-duration: var(--fa-animation-duration, 1s);
+            animation-duration: var(--fa-animation-duration, 1s);
+            -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+            animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+            -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));
+            animation-timing-function: var(--fa-animation-timing, steps(8));
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            .fa-beat,
+            .fa-bounce,
+            .fa-fade,
+            .fa-beat-fade,
+            .fa-flip,
+            .fa-pulse,
+            .fa-shake,
+            .fa-spin,
+            .fa-spin-pulse {
+                -webkit-animation-delay: -1ms;
+                animation-delay: -1ms;
+                -webkit-animation-duration: 1ms;
+                animation-duration: 1ms;
+                -webkit-animation-iteration-count: 1;
+                animation-iteration-count: 1;
+                transition-delay: 0s;
+                transition-duration: 0s;
+            }
+        }
+
+        @-webkit-keyframes fa-beat {
+
+            0%,
+            90% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+
+            45% {
+                -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+                transform: scale(var(--fa-beat-scale, 1.25));
+            }
+        }
+
+        @keyframes fa-beat {
+
+            0%,
+            90% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+
+            45% {
+                -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+                transform: scale(var(--fa-beat-scale, 1.25));
+            }
+        }
+
+        @-webkit-keyframes fa-bounce {
+            0% {
+                -webkit-transform: scale(1, 1) translateY(0);
+                transform: scale(1, 1) translateY(0);
+            }
+
+            10% {
+                -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+                transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            }
+
+            30% {
+                -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+                transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            }
+
+            50% {
+                -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+                transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            }
+
+            57% {
+                -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+                transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            }
+
+            64% {
+                -webkit-transform: scale(1, 1) translateY(0);
+                transform: scale(1, 1) translateY(0);
+            }
+
+            100% {
+                -webkit-transform: scale(1, 1) translateY(0);
+                transform: scale(1, 1) translateY(0);
+            }
+        }
+
+        @keyframes fa-bounce {
+            0% {
+                -webkit-transform: scale(1, 1) translateY(0);
+                transform: scale(1, 1) translateY(0);
+            }
+
+            10% {
+                -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+                transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            }
+
+            30% {
+                -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+                transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            }
+
+            50% {
+                -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+                transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            }
+
+            57% {
+                -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+                transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            }
+
+            64% {
+                -webkit-transform: scale(1, 1) translateY(0);
+                transform: scale(1, 1) translateY(0);
+            }
+
+            100% {
+                -webkit-transform: scale(1, 1) translateY(0);
+                transform: scale(1, 1) translateY(0);
+            }
+        }
+
+        @-webkit-keyframes fa-fade {
+            50% {
+                opacity: var(--fa-fade-opacity, 0.4);
+            }
+        }
+
+        @keyframes fa-fade {
+            50% {
+                opacity: var(--fa-fade-opacity, 0.4);
+            }
+        }
+
+        @-webkit-keyframes fa-beat-fade {
+
+            0%,
+            100% {
+                opacity: var(--fa-beat-fade-opacity, 0.4);
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 1;
+                -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+                transform: scale(var(--fa-beat-fade-scale, 1.125));
+            }
+        }
+
+        @keyframes fa-beat-fade {
+
+            0%,
+            100% {
+                opacity: var(--fa-beat-fade-opacity, 0.4);
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 1;
+                -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+                transform: scale(var(--fa-beat-fade-scale, 1.125));
+            }
+        }
+
+        @-webkit-keyframes fa-flip {
+            50% {
+                -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+                transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            }
+        }
+
+        @keyframes fa-flip {
+            50% {
+                -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+                transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            }
+        }
+
+        @-webkit-keyframes fa-shake {
+            0% {
+                -webkit-transform: rotate(-15deg);
+                transform: rotate(-15deg);
+            }
+
+            4% {
+                -webkit-transform: rotate(15deg);
+                transform: rotate(15deg);
+            }
+
+            8%,
+            24% {
+                -webkit-transform: rotate(-18deg);
+                transform: rotate(-18deg);
+            }
+
+            12%,
+            28% {
+                -webkit-transform: rotate(18deg);
+                transform: rotate(18deg);
+            }
+
+            16% {
+                -webkit-transform: rotate(-22deg);
+                transform: rotate(-22deg);
+            }
+
+            20% {
+                -webkit-transform: rotate(22deg);
+                transform: rotate(22deg);
+            }
+
+            32% {
+                -webkit-transform: rotate(-12deg);
+                transform: rotate(-12deg);
+            }
+
+            36% {
+                -webkit-transform: rotate(12deg);
+                transform: rotate(12deg);
+            }
+
+            40%,
+            100% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+        }
+
+        @keyframes fa-shake {
+            0% {
+                -webkit-transform: rotate(-15deg);
+                transform: rotate(-15deg);
+            }
+
+            4% {
+                -webkit-transform: rotate(15deg);
+                transform: rotate(15deg);
+            }
+
+            8%,
+            24% {
+                -webkit-transform: rotate(-18deg);
+                transform: rotate(-18deg);
+            }
+
+            12%,
+            28% {
+                -webkit-transform: rotate(18deg);
+                transform: rotate(18deg);
+            }
+
+            16% {
+                -webkit-transform: rotate(-22deg);
+                transform: rotate(-22deg);
+            }
+
+            20% {
+                -webkit-transform: rotate(22deg);
+                transform: rotate(22deg);
+            }
+
+            32% {
+                -webkit-transform: rotate(-12deg);
+                transform: rotate(-12deg);
+            }
+
+            36% {
+                -webkit-transform: rotate(12deg);
+                transform: rotate(12deg);
+            }
+
+            40%,
+            100% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+        }
+
+        @-webkit-keyframes fa-spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes fa-spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        .fa-rotate-90 {
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+
+        .fa-rotate-180 {
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+
+        .fa-rotate-270 {
+            -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+        }
+
+        .fa-flip-horizontal {
+            -webkit-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+        }
+
+        .fa-flip-vertical {
+            -webkit-transform: scale(1, -1);
+            transform: scale(1, -1);
+        }
+
+        .fa-flip-both,
+        .fa-flip-horizontal.fa-flip-vertical {
+            -webkit-transform: scale(-1, -1);
+            transform: scale(-1, -1);
+        }
+
+        .fa-rotate-by {
+            -webkit-transform: rotate(var(--fa-rotate-angle, none));
+            transform: rotate(var(--fa-rotate-angle, none));
+        }
+
+        .fa-stack {
+            display: inline-block;
+            vertical-align: middle;
+            height: 2em;
+            position: relative;
+            width: 2.5em;
+        }
+
+        .fa-stack-1x,
+        .fa-stack-2x {
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: var(--fa-stack-z-index, auto);
+        }
+
+        .svg-inline--fa.fa-stack-1x {
+            height: 1em;
+            width: 1.25em;
+        }
+
+        .svg-inline--fa.fa-stack-2x {
+            height: 2em;
+            width: 2.5em;
+        }
+
+        .fa-inverse {
+            color: var(--fa-inverse, #fff);
+        }
+
+        .sr-only,
+        .fa-sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        .sr-only-focusable:not(:focus),
+        .fa-sr-only-focusable:not(:focus) {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        .svg-inline--fa .fa-primary {
+            fill: var(--fa-primary-color, currentColor);
+            opacity: var(--fa-primary-opacity, 1);
+        }
+
+        .svg-inline--fa .fa-secondary {
+            fill: var(--fa-secondary-color, currentColor);
+            opacity: var(--fa-secondary-opacity, 0.4);
+        }
+
+        .svg-inline--fa.fa-swap-opacity .fa-primary {
+            opacity: var(--fa-secondary-opacity, 0.4);
+        }
+
+        .svg-inline--fa.fa-swap-opacity .fa-secondary {
+            opacity: var(--fa-primary-opacity, 1);
+        }
+
+        .svg-inline--fa mask .fa-primary,
+        .svg-inline--fa mask .fa-secondary {
+            fill: black;
+        }
+
+        .fad.fa-inverse,
+        .fa-duotone.fa-inverse {
+            color: var(--fa-inverse, #fff);
+        }
+
+        .page-section:not(.section--active) {
+            visibility: none;
+            pointer-events: none;
+            opacity: 0;
+            display: none;
+        }
+
+        body.isHome .goHomeButton {
+            display: none;
+        }
+
+        .goHomeButton {
+            display: flex;
+            height: 80px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .goHomeButton button {
+            padding: 0px 30px;
+            height: 45px;
+            background-color: #f46049;
+            border: 0;
+            cursor: pointer;
+            color: #111111;
+            font-size: 16px;
+            font-weight: 800;
+            border-radius: 25px;
+        }
+
+        .goHomeButton button:hover{
+            background-color: #f6bbb2;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/4bbade72d1.js" crossorigin="anonymous"></script>
+    <script>
+        function openInNewTab(url) {
+            window.open(url, '_blank').focus();
+        }
+    </script>
+</head>
+
+<body>
+    <div id="app">
+        <div class="content-wrapper">
+            <div class="header">
+                <h1>
+                    <a href="javascript:void(0)"
+                        class="router-link-active router-link-exact-active header-link section-trigger"
+                        data-section="home">Radu Sergiu Gugles</a>
+                    <small id="main-subtitle">Game Programmer</small>
+                </h1>
+                <div class="links">
+                    <a class="link" href="https://www.linkedin.com/in/radu-sergiu-gugles-530534195/" target="_blank"
+                        title="LinkedIn"><span class="sr-only">Radu Sergiu Gugles LinkedIn account</span>
+                        <svg class="svg-inline--fa fa-linkedin link-icon" aria-hidden="true" focusable="false"
+                            data-prefix="fab" data-icon="linkedin" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <path class="" fill="currentColor"
+                                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="link" href="https://github.com/kuroussino" target="_blank" title="GitHub"><span
+                            class="sr-only">Radu Sergiu Gugles GitHub account</span>
+                        <svg class="svg-inline--fa fa-linkedin link-icon" aria-hidden="true" focusable="false"
+                            data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <path class="" fill="currentColor"
+                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="link" href="https://kurous.itch.io/" target="_blank" title="Itch.io"><span
+                            class="sr-only">Radu Sergiu Gugles Itch.io account</span>
+                        <svg class="svg-inline--fa fa-linkedin link-icon" aria-hidden="true" focusable="false"
+                            data-prefix="fab" data-icon="linkedin" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <path class="" fill="currentColor"
+                                d="M71.92 34.77C50.2 47.67 7.4 96.84 7 109.73v21.34c0 27.06 25.29 50.84 48.25 50.84 27.57 0 50.54-22.85 50.54-50 0 27.12 22.18 50 49.76 50s49-22.85 49-50c0 27.12 23.59 50 51.16 50h.5c27.57 0 51.16-22.85 51.16-50 0 27.12 21.47 50 49 50s49.76-22.85 49.76-50c0 27.12 23 50 50.54 50 23 0 48.25-23.78 48.25-50.84v-21.34c-.4-12.9-43.2-62.07-64.92-75C372.56 32.4 325.76 32 256 32S91.14 33.1 71.92 34.77zm132.32 134.39c-22 38.4-77.9 38.71-99.85.25-13.17 23.14-43.17 32.07-56 27.66-3.87 40.15-13.67 237.13 17.73 269.15 80 18.67 302.08 18.12 379.76 0 31.65-32.27 21.32-232 17.75-269.15-12.92 4.44-42.88-4.6-56-27.66-22 38.52-77.85 38.1-99.85-.24-7.1 12.49-23.05 28.94-51.76 28.94a57.54 57.54 0 0 1-51.75-28.94zm-41.58 53.77c16.47 0 31.09 0 49.22 19.78a436.91 436.91 0 0 1 88.18 0C318.22 223 332.85 223 349.31 223c52.33 0 65.22 77.53 83.87 144.45 17.26 62.15-5.52 63.67-33.95 63.73-42.15-1.57-65.49-32.18-65.49-62.79-39.25 6.43-101.93 8.79-155.55 0 0 30.61-23.34 61.22-65.49 62.79-28.42-.06-51.2-1.58-33.94-63.73 18.67-67 31.56-144.45 83.88-144.45zM256 270.79s-44.38 40.77-52.35 55.21l29-1.17v25.32c0 1.55 21.34.16 23.33.16 11.65.54 23.31 1 23.31-.16v-25.28l29 1.17c-8-14.48-52.35-55.24-52.35-55.24z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="link" href="https://www.instagram.com/_kurous/?hl=en" target="_blank"
+                        title="Instagram"><span class="sr-only">Radu Sergiu Gugles Instagram account</span>
+                        <svg class="svg-inline--fa fa-linkedin link-icon" aria-hidden="true" focusable="false"
+                            data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <path class="" fill="currentColor"
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                            </path>
+                        </svg>
+                    </a>
+                    <!-- <a class="link resume" href="Radu_Sergiu_Gugles_CV.pdf" target="_blank" title="Resume" data-v-7f29b621=""><span class="sr-only" data-v-7f29b621="">Radu Sergiu Gugles resume</span><span data-v-7f29b621="">Resume</span>
+                        <svg class="svg-inline--fa fa-arrow-down link-icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-v-7f29b621="">
+                            <path class="" fill="currentColor" d="M374.6 310.6l-160 160C208.4 476.9 200.2 480 192 480s-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 370.8V64c0-17.69 14.33-31.1 31.1-31.1S224 46.31 224 64v306.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0S387.1 298.1 374.6 310.6z"></path>
+                        </svg>
+                    </a> -->
+                </div>
+            </div>
+            <!-- RADU -->
+            <!-- EXAMPLE OF SECTION -->
+            <!-- ADD A SECTION WITH CLASS "page-section section--{pageName}"-->
+            <!-- THE ELEMENTS THAT CONNECT TO THIS SECTION MUST HAVE -->
+            <!-- THE CLASS section-trigger -->
+            <!-- AND THE ATTRIBUTE data-section="{pageName}" -->
+            <!-- <button type="button" class="project-card section-trigger" data-section="RMG"> -->
+            <div class="content">
+                <!-- START SECTION RMG-->
+                <section class="page-section section--RMG">
+                    <div class="portfolio-header">
+                        <h2 id="portfolio">
+                            RMG (2022)
+                        </h2>
+                    </div>
+                    <div class="portfolio-top">
+                        <div class="content-placeholder" :before>
+                            <video playsinline loop autoplay preload="metadata" muted>
+                                <source src="RMG_Trailer.mp4" type="video/mp4">
+                                Your browser does not support the video tag or the file format of this video.
+                            </video>
+                        </div>
+                        <h2>RMG</h2>
+                    </div>
+                    <div class="projects">
+                        <section class="project-card">
+                            <h3>Brief</h3>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, cupiditate! Iusto sit esse
+                            distinctio nam hic odit sequi, est nemo quam expedita officiis atque tempore provident
+                            blanditiis dolor iure assumenda.
+                            </br>
+                            </br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, cupiditate! Iusto sit esse
+                            distinctio nam hic odit sequi.
+                        </section>
+                        <section class="project-card">
+                            <h3>Project Info</h3>
+                            <ul>
+                                <li>
+                                    <svg class="svg-inline--fa fa-user list-icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                        <path class="" fill="currentColor" d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"></path>
+                                    </svg>
+                                    Role: Game Programmer
+                                </li>
+                                <li>
+                                    <svg class="svg-inline--fa fa-user list-icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                        <path class="" fill="currentColor" d="M319.9 320c57.41 0 103.1-46.56 103.1-104c0-57.44-46.54-104-103.1-104c-57.41 0-103.1 46.56-103.1 104C215.9 273.4 262.5 320 319.9 320zM369.9 352H270.1C191.6 352 128 411.7 128 485.3C128 500.1 140.7 512 156.4 512h327.2C499.3 512 512 500.1 512 485.3C512 411.7 448.4 352 369.9 352zM512 160c44.18 0 80-35.82 80-80S556.2 0 512 0c-44.18 0-80 35.82-80 80S467.8 160 512 160zM183.9 216c0-5.449 .9824-10.63 1.609-15.91C174.6 194.1 162.6 192 149.9 192H88.08C39.44 192 0 233.8 0 285.3C0 295.6 7.887 304 17.62 304h199.5C196.7 280.2 183.9 249.7 183.9 216zM128 160c44.18 0 80-35.82 80-80S172.2 0 128 0C83.82 0 48 35.82 48 80S83.82 160 128 160zM551.9 192h-61.84c-12.8 0-24.88 3.037-35.86 8.24C454.8 205.5 455.8 210.6 455.8 216c0 33.71-12.78 64.21-33.16 88h199.7C632.1 304 640 295.6 640 285.3C640 233.8 600.6 192 551.9 192z"></path>
+                                    </svg>
+                                    Team Size: 1
+                                </li>
+                                <li>
+                                    <svg class="svg-inline--fa fa-user list-icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                        <path class="" fill="currentColor" d="M256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512zM232 256C232 264 236 271.5 242.7 275.1L338.7 339.1C349.7 347.3 364.6 344.3 371.1 333.3C379.3 322.3 376.3 307.4 365.3 300L280 243.2V120C280 106.7 269.3 96 255.1 96C242.7 96 231.1 106.7 231.1 120L232 256z"></path>
+                                    </svg>
+                                    Time frame: 1 Week
+                                </li>
+                                <li>
+                                    <svg class="svg-inline--fa fa-user list-icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                        <path class="" fill="currentColor" d="M331.8 224.1c28.29 0 54.88 10.99 74.86 30.97l19.59 19.59c40.01-17.74 71.25-53.3 81.62-96.65c5.725-23.92 5.34-47.08 .2148-68.4c-2.613-10.88-16.43-14.51-24.34-6.604l-68.9 68.9h-75.6V97.2l68.9-68.9c7.912-7.912 4.275-21.73-6.604-24.34c-21.32-5.125-44.48-5.51-68.4 .2148c-55.3 13.23-98.39 60.22-107.2 116.4C224.5 128.9 224.2 137 224.3 145l82.78 82.86C315.2 225.1 323.5 224.1 331.8 224.1zM384 278.6c-23.16-23.16-57.57-27.57-85.39-13.9L191.1 158L191.1 95.99l-127.1-95.99L0 63.1l96 127.1l62.04 .0077l106.7 106.6c-13.67 27.82-9.251 62.23 13.91 85.39l117 117.1c14.62 14.5 38.21 14.5 52.71-.0016l52.75-52.75c14.5-14.5 14.5-38.08-.0016-52.71L384 278.6zM227.9 307L168.7 247.9l-148.9 148.9c-26.37 26.37-26.37 69.08 0 95.45C32.96 505.4 50.21 512 67.5 512s34.54-6.592 47.72-19.78l119.1-119.1C225.5 352.3 222.6 329.4 227.9 307zM64 472c-13.25 0-24-10.75-24-24c0-13.26 10.75-24 24-24S88 434.7 88 448C88 461.3 77.25 472 64 472z"></path>
+                                    </svg>
+                                    Engine: Unity
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, cupiditate! Iusto sit esse
+                        distinctio nam hic odit sequi, est nemo quam expedita officiis atque tempore provident
+                        blanditiis dolor iure assumenda.
+                    </p>
+                </section>
+                <!-- END SECTION RMG -->
+
+                <!-- START SECTION HOME-->
+                <section class="page-section section--home section--active">
+                    <div class="about-information">
+                        <img class="profile-image" src="propic_tmp.jpg">
+                        <p class="about-text">
+                            As a current student and game programmer, I enjoy writing effective,
+                            well-organized code and am always eager to embrace new challenges,
+                            blending theoretical knowledge from my ongoing studies with practical experience in game
+                            development.
+                        </p>
+                    </div>
+                    <h2 id="portfolio">
+                        My Projects
+                    </h2>
+                    <div class="projects">
+                        <button type="button" class="project-card"
+                            onclick="openInNewTab('https://eventhorizonschool.itch.io/carpe-noctem');">
+                            <section>
+                                <div class="project-video" :before>
+                                    <video playsinline loop autoplay preload="metadata" muted>
+                                        <source src="CarpeNoctemTrailer.mp4" type="video/mp4">
+                                        " Your browser does not support the video tag or the file format of this video.
+                                        "
+                                    </video>
+                                </div>
+                                <div class="video-additional-info">
+                                    <div class="team-size">
+                                        <svg class="svg-inline--fa fa-users icon" aria-hidden="true" focusable="false"
+                                            data-prefix="fas" data-icon="users" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                            <path class="" fill="currentColor"
+                                                d="M319.9 320c57.41 0 103.1-46.56 103.1-104c0-57.44-46.54-104-103.1-104c-57.41 0-103.1 46.56-103.1 104C215.9 273.4 262.5 320 319.9 320zM369.9 352H270.1C191.6 352 128 411.7 128 485.3C128 500.1 140.7 512 156.4 512h327.2C499.3 512 512 500.1 512 485.3C512 411.7 448.4 352 369.9 352zM512 160c44.18 0 80-35.82 80-80S556.2 0 512 0c-44.18 0-80 35.82-80 80S467.8 160 512 160zM183.9 216c0-5.449 .9824-10.63 1.609-15.91C174.6 194.1 162.6 192 149.9 192H88.08C39.44 192 0 233.8 0 285.3C0 295.6 7.887 304 17.62 304h199.5C196.7 280.2 183.9 249.7 183.9 216zM128 160c44.18 0 80-35.82 80-80S172.2 0 128 0C83.82 0 48 35.82 48 80S83.82 160 128 160zM551.9 192h-61.84c-12.8 0-24.88 3.037-35.86 8.24C454.8 205.5 455.8 210.6 455.8 216c0 33.71-12.78 64.21-33.16 88h199.7C632.1 304 640 295.6 640 285.3C640 233.8 600.6 192 551.9 192z">
+                                            </path>
+                                        </svg>
+                                        4
+                                    </div>
+                                    <div class="time">
+                                        <svg class="svg-inline--fa fa-clock icon" aria-hidden="true" focusable="false"
+                                            data-prefix="fas" data-icon="clock" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path class="" fill="currentColor"
+                                                d="M256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512zM232 256C232 264 236 271.5 242.7 275.1L338.7 339.1C349.7 347.3 364.6 344.3 371.1 333.3C379.3 322.3 376.3 307.4 365.3 300L280 243.2V120C280 106.7 269.3 96 255.1 96C242.7 96 231.1 106.7 231.1 120L232 256z">
+                                            </path>
+                                        </svg>
+                                        6 Weeks
+                                    </div>
+                                    <div class="water-mark">
+                                        <svg class="svg-inline--fa fa-screwdriver-wrench icon" aria-hidden="true"
+                                            focusable="false" data-prefix="fas" data-icon="screwdriver-wrench"
+                                            role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path class="" fill="currentColor"
+                                                d="M331.8 224.1c28.29 0 54.88 10.99 74.86 30.97l19.59 19.59c40.01-17.74 71.25-53.3 81.62-96.65c5.725-23.92 5.34-47.08 .2148-68.4c-2.613-10.88-16.43-14.51-24.34-6.604l-68.9 68.9h-75.6V97.2l68.9-68.9c7.912-7.912 4.275-21.73-6.604-24.34c-21.32-5.125-44.48-5.51-68.4 .2148c-55.3 13.23-98.39 60.22-107.2 116.4C224.5 128.9 224.2 137 224.3 145l82.78 82.86C315.2 225.1 323.5 224.1 331.8 224.1zM384 278.6c-23.16-23.16-57.57-27.57-85.39-13.9L191.1 158L191.1 95.99l-127.1-95.99L0 63.1l96 127.1l62.04 .0077l106.7 106.6c-13.67 27.82-9.251 62.23 13.91 85.39l117 117.1c14.62 14.5 38.21 14.5 52.71-.0016l52.75-52.75c14.5-14.5 14.5-38.08-.0016-52.71L384 278.6zM227.9 307L168.7 247.9l-148.9 148.9c-26.37 26.37-26.37 69.08 0 95.45C32.96 505.4 50.21 512 67.5 512s34.54-6.592 47.72-19.78l119.1-119.1C225.5 352.3 222.6 329.4 227.9 307zM64 472c-13.25 0-24-10.75-24-24c0-13.26 10.75-24 24-24S88 434.7 88 448C88 461.3 77.25 472 64 472z">
+                                            </path>
+                                        </svg>
+                                        Unity
+                                    </div>
+                                </div>
+                                <h3 class="clickable-card-header" :not>
+                                    Carpe Noctem (2023)
+                                    <svg class="svg-inline--fa fa-chevron-right clickable-header-icon"
+                                        aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                                        role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path class="" fill="currentColor"
+                                            d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z">
+                                        </path>
+                                    </svg>
+                                    <small>Gameplay / Shader Programmer</small>
+                                </h3>
+                                <p>
+                                    This is my first year project (and exam), made based on Vampire: The Masquerade's
+                                    IP. The blood shader implementation was one of the main challenges here.
+                                </p>
+                            </section>
+                        </button>
+                        <button type="button" class="project-card"
+                            onclick="openInNewTab('https://play.google.com/store/apps/details?id=com.TenseTeam.RhinoBlocks&pcampaignid=web_share');">
+                            <section>
+                                <div class="project-video" :before>
+                                    <video playsinline loop autoplay preload="metadata" muted>
+                                        <source src="RinoBlocksTrailer.mp4" type="video/mp4">
+                                        " Your browser does not support the video tag or the file format of this video.
+                                        "
+                                    </video>
+                                </div>
+                                <div class="video-additional-info">
+                                    <div class="team-size">
+                                        <svg class="svg-inline--fa fa-users icon" aria-hidden="true" focusable="false"
+                                            data-prefix="fas" data-icon="users" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                            <path class="" fill="currentColor"
+                                                d="M319.9 320c57.41 0 103.1-46.56 103.1-104c0-57.44-46.54-104-103.1-104c-57.41 0-103.1 46.56-103.1 104C215.9 273.4 262.5 320 319.9 320zM369.9 352H270.1C191.6 352 128 411.7 128 485.3C128 500.1 140.7 512 156.4 512h327.2C499.3 512 512 500.1 512 485.3C512 411.7 448.4 352 369.9 352zM512 160c44.18 0 80-35.82 80-80S556.2 0 512 0c-44.18 0-80 35.82-80 80S467.8 160 512 160zM183.9 216c0-5.449 .9824-10.63 1.609-15.91C174.6 194.1 162.6 192 149.9 192H88.08C39.44 192 0 233.8 0 285.3C0 295.6 7.887 304 17.62 304h199.5C196.7 280.2 183.9 249.7 183.9 216zM128 160c44.18 0 80-35.82 80-80S172.2 0 128 0C83.82 0 48 35.82 48 80S83.82 160 128 160zM551.9 192h-61.84c-12.8 0-24.88 3.037-35.86 8.24C454.8 205.5 455.8 210.6 455.8 216c0 33.71-12.78 64.21-33.16 88h199.7C632.1 304 640 295.6 640 285.3C640 233.8 600.6 192 551.9 192z">
+                                            </path>
+                                        </svg>
+                                        3
+                                    </div>
+                                    <div class="time">
+                                        <svg class="svg-inline--fa fa-clock icon" aria-hidden="true" focusable="false"
+                                            data-prefix="fas" data-icon="clock" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path class="" fill="currentColor"
+                                                d="M256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512zM232 256C232 264 236 271.5 242.7 275.1L338.7 339.1C349.7 347.3 364.6 344.3 371.1 333.3C379.3 322.3 376.3 307.4 365.3 300L280 243.2V120C280 106.7 269.3 96 255.1 96C242.7 96 231.1 106.7 231.1 120L232 256z">
+                                            </path>
+                                        </svg>
+                                        4 Weeks
+                                    </div>
+                                    <div class="water-mark">
+                                        <svg class="svg-inline--fa fa-screwdriver-wrench icon" aria-hidden="true"
+                                            focusable="false" data-prefix="fas" data-icon="screwdriver-wrench"
+                                            role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path class="" fill="currentColor"
+                                                d="M331.8 224.1c28.29 0 54.88 10.99 74.86 30.97l19.59 19.59c40.01-17.74 71.25-53.3 81.62-96.65c5.725-23.92 5.34-47.08 .2148-68.4c-2.613-10.88-16.43-14.51-24.34-6.604l-68.9 68.9h-75.6V97.2l68.9-68.9c7.912-7.912 4.275-21.73-6.604-24.34c-21.32-5.125-44.48-5.51-68.4 .2148c-55.3 13.23-98.39 60.22-107.2 116.4C224.5 128.9 224.2 137 224.3 145l82.78 82.86C315.2 225.1 323.5 224.1 331.8 224.1zM384 278.6c-23.16-23.16-57.57-27.57-85.39-13.9L191.1 158L191.1 95.99l-127.1-95.99L0 63.1l96 127.1l62.04 .0077l106.7 106.6c-13.67 27.82-9.251 62.23 13.91 85.39l117 117.1c14.62 14.5 38.21 14.5 52.71-.0016l52.75-52.75c14.5-14.5 14.5-38.08-.0016-52.71L384 278.6zM227.9 307L168.7 247.9l-148.9 148.9c-26.37 26.37-26.37 69.08 0 95.45C32.96 505.4 50.21 512 67.5 512s34.54-6.592 47.72-19.78l119.1-119.1C225.5 352.3 222.6 329.4 227.9 307zM64 472c-13.25 0-24-10.75-24-24c0-13.26 10.75-24 24-24S88 434.7 88 448C88 461.3 77.25 472 64 472z">
+                                            </path>
+                                        </svg>
+                                        Unity
+                                    </div>
+                                </div>
+                                <h3 class="clickable-card-header" :not>
+                                    Rhino Blocks (2023)
+                                    <svg class="svg-inline--fa fa-chevron-right clickable-header-icon"
+                                        aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                                        role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path class="" fill="currentColor"
+                                            d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z">
+                                        </path>
+                                    </svg>
+                                    <small>Gameplay / UI Programmer</small>
+                                </h3>
+                                <p>
+                                    My first mobile game, a remake of 'Pango Blocks'. I worked on the game's grid
+                                    system, the loop and i made the main menu's UI (graphics and code side).
+                                </p>
+                            </section>
+                        </button>
+                        <button type="button" class="project-card">
+                            <section>
+                                <div class="project-video" :before>
+                                    <video playsinline loop autoplay preload="metadata" muted>
+                                        <source src="ShipHappens_Trailer.mp4" type="video/mp4">
+                                        " Your browser does not support the video tag or the file format of this video.
+                                        "
+                                    </video>
+                                </div>
+                                <div class="video-additional-info">
+                                    <div class="team-size">
+                                        <svg class="svg-inline--fa fa-users icon" aria-hidden="true" focusable="false"
+                                            data-prefix="fas" data-icon="users" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                            <path class="" fill="currentColor"
+                                                d="M319.9 320c57.41 0 103.1-46.56 103.1-104c0-57.44-46.54-104-103.1-104c-57.41 0-103.1 46.56-103.1 104C215.9 273.4 262.5 320 319.9 320zM369.9 352H270.1C191.6 352 128 411.7 128 485.3C128 500.1 140.7 512 156.4 512h327.2C499.3 512 512 500.1 512 485.3C512 411.7 448.4 352 369.9 352zM512 160c44.18 0 80-35.82 80-80S556.2 0 512 0c-44.18 0-80 35.82-80 80S467.8 160 512 160zM183.9 216c0-5.449 .9824-10.63 1.609-15.91C174.6 194.1 162.6 192 149.9 192H88.08C39.44 192 0 233.8 0 285.3C0 295.6 7.887 304 17.62 304h199.5C196.7 280.2 183.9 249.7 183.9 216zM128 160c44.18 0 80-35.82 80-80S172.2 0 128 0C83.82 0 48 35.82 48 80S83.82 160 128 160zM551.9 192h-61.84c-12.8 0-24.88 3.037-35.86 8.24C454.8 205.5 455.8 210.6 455.8 216c0 33.71-12.78 64.21-33.16 88h199.7C632.1 304 640 295.6 640 285.3C640 233.8 600.6 192 551.9 192z">
+                                            </path>
+                                        </svg>
+                                        6
+                                    </div>
+                                    <div class="time">
+                                        <svg class="svg-inline--fa fa-clock icon" aria-hidden="true" focusable="false"
+                                            data-prefix="fas" data-icon="clock" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path class="" fill="currentColor"
+                                                d="M256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512zM232 256C232 264 236 271.5 242.7 275.1L338.7 339.1C349.7 347.3 364.6 344.3 371.1 333.3C379.3 322.3 376.3 307.4 365.3 300L280 243.2V120C280 106.7 269.3 96 255.1 96C242.7 96 231.1 106.7 231.1 120L232 256z">
+                                            </path>
+                                        </svg>
+                                        3 Days
+                                    </div>
+                                    <div class="water-mark">
+                                        <svg class="svg-inline--fa fa-screwdriver-wrench icon" aria-hidden="true"
+                                            focusable="false" data-prefix="fas" data-icon="screwdriver-wrench"
+                                            role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path class="" fill="currentColor"
+                                                d="M331.8 224.1c28.29 0 54.88 10.99 74.86 30.97l19.59 19.59c40.01-17.74 71.25-53.3 81.62-96.65c5.725-23.92 5.34-47.08 .2148-68.4c-2.613-10.88-16.43-14.51-24.34-6.604l-68.9 68.9h-75.6V97.2l68.9-68.9c7.912-7.912 4.275-21.73-6.604-24.34c-21.32-5.125-44.48-5.51-68.4 .2148c-55.3 13.23-98.39 60.22-107.2 116.4C224.5 128.9 224.2 137 224.3 145l82.78 82.86C315.2 225.1 323.5 224.1 331.8 224.1zM384 278.6c-23.16-23.16-57.57-27.57-85.39-13.9L191.1 158L191.1 95.99l-127.1-95.99L0 63.1l96 127.1l62.04 .0077l106.7 106.6c-13.67 27.82-9.251 62.23 13.91 85.39l117 117.1c14.62 14.5 38.21 14.5 52.71-.0016l52.75-52.75c14.5-14.5 14.5-38.08-.0016-52.71L384 278.6zM227.9 307L168.7 247.9l-148.9 148.9c-26.37 26.37-26.37 69.08 0 95.45C32.96 505.4 50.21 512 67.5 512s34.54-6.592 47.72-19.78l119.1-119.1C225.5 352.3 222.6 329.4 227.9 307zM64 472c-13.25 0-24-10.75-24-24c0-13.26 10.75-24 24-24S88 434.7 88 448C88 461.3 77.25 472 64 472z">
+                                            </path>
+                                        </svg>
+                                        Unreal
+                                    </div>
+                                </div>
+                                <h3 class="clickable-card-header" :not>
+                                    Ship Happens (2024)
+                                    <svg class="svg-inline--fa fa-chevron-right clickable-header-icon"
+                                        aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                                        role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path class="" fill="currentColor"
+                                            d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z">
+                                        </path>
+                                    </svg>
+                                    <small>Gameplay Programmer</small>
+                                </h3>
+                                <p>
+                                    Made for the GGJ 2024, with my classmates @ Event Horizon School. I worked on the
+                                    player's interactions, the in-engine animation manager and the inventory system.
+                                </p>
+                            </section>
+                        </button>
+                        <button type="button" class="project-card"
+                            onclick="openInNewTab('https://kurous.itch.io/dreamensional');">
+                            <section>
+                                <div class="project-video" :before>
+                                    <video playsinline loop autoplay preload="metadata" muted>
+                                        <source src="Dreamensional_Trailer.mp4" type="video/mp4">
+                                        " Your browser does not support the video tag or the file format of this video.
+                                        "
+                                    </video>
+                                </div>
+                                <div class="video-additional-info">
+                                    <div class="team-size">
+                                        <svg class="svg-inline--fa fa-users icon" aria-hidden="true" focusable="false"
+                                            data-prefix="fas" data-icon="users" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                            <path class="" fill="currentColor"
+                                                d="M319.9 320c57.41 0 103.1-46.56 103.1-104c0-57.44-46.54-104-103.1-104c-57.41 0-103.1 46.56-103.1 104C215.9 273.4 262.5 320 319.9 320zM369.9 352H270.1C191.6 352 128 411.7 128 485.3C128 500.1 140.7 512 156.4 512h327.2C499.3 512 512 500.1 512 485.3C512 411.7 448.4 352 369.9 352zM512 160c44.18 0 80-35.82 80-80S556.2 0 512 0c-44.18 0-80 35.82-80 80S467.8 160 512 160zM183.9 216c0-5.449 .9824-10.63 1.609-15.91C174.6 194.1 162.6 192 149.9 192H88.08C39.44 192 0 233.8 0 285.3C0 295.6 7.887 304 17.62 304h199.5C196.7 280.2 183.9 249.7 183.9 216zM128 160c44.18 0 80-35.82 80-80S172.2 0 128 0C83.82 0 48 35.82 48 80S83.82 160 128 160zM551.9 192h-61.84c-12.8 0-24.88 3.037-35.86 8.24C454.8 205.5 455.8 210.6 455.8 216c0 33.71-12.78 64.21-33.16 88h199.7C632.1 304 640 295.6 640 285.3C640 233.8 600.6 192 551.9 192z">
+                                            </path>
+                                        </svg>
+                                        3
+                                    </div>
+                                    <div class="time">
+                                        <svg class="svg-inline--fa fa-clock icon" aria-hidden="true" focusable="false"
+                                            data-prefix="fas" data-icon="clock" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path class="" fill="currentColor"
+                                                d="M256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512zM232 256C232 264 236 271.5 242.7 275.1L338.7 339.1C349.7 347.3 364.6 344.3 371.1 333.3C379.3 322.3 376.3 307.4 365.3 300L280 243.2V120C280 106.7 269.3 96 255.1 96C242.7 96 231.1 106.7 231.1 120L232 256z">
+                                            </path>
+                                        </svg>
+                                        3 Days
+                                    </div>
+                                    <div class="water-mark">
+                                        <svg class="svg-inline--fa fa-screwdriver-wrench icon" aria-hidden="true"
+                                            focusable="false" data-prefix="fas" data-icon="screwdriver-wrench"
+                                            role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path class="" fill="currentColor"
+                                                d="M331.8 224.1c28.29 0 54.88 10.99 74.86 30.97l19.59 19.59c40.01-17.74 71.25-53.3 81.62-96.65c5.725-23.92 5.34-47.08 .2148-68.4c-2.613-10.88-16.43-14.51-24.34-6.604l-68.9 68.9h-75.6V97.2l68.9-68.9c7.912-7.912 4.275-21.73-6.604-24.34c-21.32-5.125-44.48-5.51-68.4 .2148c-55.3 13.23-98.39 60.22-107.2 116.4C224.5 128.9 224.2 137 224.3 145l82.78 82.86C315.2 225.1 323.5 224.1 331.8 224.1zM384 278.6c-23.16-23.16-57.57-27.57-85.39-13.9L191.1 158L191.1 95.99l-127.1-95.99L0 63.1l96 127.1l62.04 .0077l106.7 106.6c-13.67 27.82-9.251 62.23 13.91 85.39l117 117.1c14.62 14.5 38.21 14.5 52.71-.0016l52.75-52.75c14.5-14.5 14.5-38.08-.0016-52.71L384 278.6zM227.9 307L168.7 247.9l-148.9 148.9c-26.37 26.37-26.37 69.08 0 95.45C32.96 505.4 50.21 512 67.5 512s34.54-6.592 47.72-19.78l119.1-119.1C225.5 352.3 222.6 329.4 227.9 307zM64 472c-13.25 0-24-10.75-24-24c0-13.26 10.75-24 24-24S88 434.7 88 448C88 461.3 77.25 472 64 472z">
+                                            </path>
+                                        </svg>
+                                        Unity
+                                    </div>
+                                </div>
+                                <h3 class="clickable-card-header" :not>
+                                    Dreamensional (2023)
+                                    <svg class="svg-inline--fa fa-chevron-right clickable-header-icon"
+                                        aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                                        role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path class="" fill="currentColor"
+                                            d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z">
+                                        </path>
+                                    </svg>
+                                    <small>Game Programmer</small>
+                                </h3>
+                                <p>
+                                    That was also part of a game jam, half of this short platform prototype was made in
+                                    a sort of hand-drawn style. Here, io worked on the character controller and some of
+                                    the puzzles.
+                                </p>
+                            </section>
+                        </button>
+                        <button type="button" class="project-card">
+                            <section>
+                                <div class="project-video" :before>
+                                    <video playsinline loop autoplay preload="metadata" muted>
+                                        <source src="TimeCrisis_Trailer.mp4" type="video/mp4">
+                                        " Your browser does not support the video tag or the file format of this video.
+                                        "
+                                    </video>
+                                </div>
+                                <div class="video-additional-info">
+                                    <div class="team-size">
+                                        <svg class="svg-inline--fa fa-users icon" aria-hidden="true" focusable="false"
+                                            data-prefix="fas" data-icon="users" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                            <path class="" fill="currentColor"
+                                                d="M319.9 320c57.41 0 103.1-46.56 103.1-104c0-57.44-46.54-104-103.1-104c-57.41 0-103.1 46.56-103.1 104C215.9 273.4 262.5 320 319.9 320zM369.9 352H270.1C191.6 352 128 411.7 128 485.3C128 500.1 140.7 512 156.4 512h327.2C499.3 512 512 500.1 512 485.3C512 411.7 448.4 352 369.9 352zM512 160c44.18 0 80-35.82 80-80S556.2 0 512 0c-44.18 0-80 35.82-80 80S467.8 160 512 160zM183.9 216c0-5.449 .9824-10.63 1.609-15.91C174.6 194.1 162.6 192 149.9 192H88.08C39.44 192 0 233.8 0 285.3C0 295.6 7.887 304 17.62 304h199.5C196.7 280.2 183.9 249.7 183.9 216zM128 160c44.18 0 80-35.82 80-80S172.2 0 128 0C83.82 0 48 35.82 48 80S83.82 160 128 160zM551.9 192h-61.84c-12.8 0-24.88 3.037-35.86 8.24C454.8 205.5 455.8 210.6 455.8 216c0 33.71-12.78 64.21-33.16 88h199.7C632.1 304 640 295.6 640 285.3C640 233.8 600.6 192 551.9 192z">
+                                            </path>
+                                        </svg>
+                                        1
+                                    </div>
+                                    <div class="time">
+                                        <svg class="svg-inline--fa fa-clock icon" aria-hidden="true" focusable="false"
+                                            data-prefix="fas" data-icon="clock" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path class="" fill="currentColor"
+                                                d="M256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512zM232 256C232 264 236 271.5 242.7 275.1L338.7 339.1C349.7 347.3 364.6 344.3 371.1 333.3C379.3 322.3 376.3 307.4 365.3 300L280 243.2V120C280 106.7 269.3 96 255.1 96C242.7 96 231.1 106.7 231.1 120L232 256z">
+                                            </path>
+                                        </svg>
+                                        2 Weeks
+                                    </div>
+                                    <div class="water-mark">
+                                        <svg class="svg-inline--fa fa-screwdriver-wrench icon" aria-hidden="true"
+                                            focusable="false" data-prefix="fas" data-icon="screwdriver-wrench"
+                                            role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path class="" fill="currentColor"
+                                                d="M331.8 224.1c28.29 0 54.88 10.99 74.86 30.97l19.59 19.59c40.01-17.74 71.25-53.3 81.62-96.65c5.725-23.92 5.34-47.08 .2148-68.4c-2.613-10.88-16.43-14.51-24.34-6.604l-68.9 68.9h-75.6V97.2l68.9-68.9c7.912-7.912 4.275-21.73-6.604-24.34c-21.32-5.125-44.48-5.51-68.4 .2148c-55.3 13.23-98.39 60.22-107.2 116.4C224.5 128.9 224.2 137 224.3 145l82.78 82.86C315.2 225.1 323.5 224.1 331.8 224.1zM384 278.6c-23.16-23.16-57.57-27.57-85.39-13.9L191.1 158L191.1 95.99l-127.1-95.99L0 63.1l96 127.1l62.04 .0077l106.7 106.6c-13.67 27.82-9.251 62.23 13.91 85.39l117 117.1c14.62 14.5 38.21 14.5 52.71-.0016l52.75-52.75c14.5-14.5 14.5-38.08-.0016-52.71L384 278.6zM227.9 307L168.7 247.9l-148.9 148.9c-26.37 26.37-26.37 69.08 0 95.45C32.96 505.4 50.21 512 67.5 512s34.54-6.592 47.72-19.78l119.1-119.1C225.5 352.3 222.6 329.4 227.9 307zM64 472c-13.25 0-24-10.75-24-24c0-13.26 10.75-24 24-24S88 434.7 88 448C88 461.3 77.25 472 64 472z">
+                                            </path>
+                                        </svg>
+                                        Unity
+                                    </div>
+                                </div>
+                                <h3 class="clickable-card-header" :not>
+                                    Time Crisis (2023)
+                                    <svg class="svg-inline--fa fa-chevron-right clickable-header-icon"
+                                        aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                                        role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path class="" fill="currentColor"
+                                            d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z">
+                                        </path>
+                                    </svg>
+                                    <small>Game Programmer / 3D Artist</small>
+                                </h3>
+                                <p>
+                                    An assignment i used to improved my skills as a 3d artist by learning how to manage
+                                    UVs and making some textures on Aseprite. Code-side, i recreated the gameplay of
+                                    Time Crisis and wrote a simple custom tool for using splines in Unity.
+                                </p>
+                            </section>
+                        </button>
+                        <button type="button" class="project-card section-trigger" data-section="RMG">
+                            <section>
+                                <div class="project-video" :before>
+                                    <video playsinline loop autoplay preload="metadata" muted>
+                                        <source src="RMG_Trailer.mp4" type="video/mp4">
+                                        " Your browser does not support the video tag or the file format of this video.
+                                        "
+                                    </video>
+                                </div>
+                                <div class="video-additional-info">
+                                    <div class="team-size">
+                                        <svg class="svg-inline--fa fa-users icon" aria-hidden="true" focusable="false"
+                                            data-prefix="fas" data-icon="users" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                            <path class="" fill="currentColor"
+                                                d="M319.9 320c57.41 0 103.1-46.56 103.1-104c0-57.44-46.54-104-103.1-104c-57.41 0-103.1 46.56-103.1 104C215.9 273.4 262.5 320 319.9 320zM369.9 352H270.1C191.6 352 128 411.7 128 485.3C128 500.1 140.7 512 156.4 512h327.2C499.3 512 512 500.1 512 485.3C512 411.7 448.4 352 369.9 352zM512 160c44.18 0 80-35.82 80-80S556.2 0 512 0c-44.18 0-80 35.82-80 80S467.8 160 512 160zM183.9 216c0-5.449 .9824-10.63 1.609-15.91C174.6 194.1 162.6 192 149.9 192H88.08C39.44 192 0 233.8 0 285.3C0 295.6 7.887 304 17.62 304h199.5C196.7 280.2 183.9 249.7 183.9 216zM128 160c44.18 0 80-35.82 80-80S172.2 0 128 0C83.82 0 48 35.82 48 80S83.82 160 128 160zM551.9 192h-61.84c-12.8 0-24.88 3.037-35.86 8.24C454.8 205.5 455.8 210.6 455.8 216c0 33.71-12.78 64.21-33.16 88h199.7C632.1 304 640 295.6 640 285.3C640 233.8 600.6 192 551.9 192z">
+                                            </path>
+                                        </svg>
+                                        2
+                                    </div>
+                                    <div class="time">
+                                        <svg class="svg-inline--fa fa-clock icon" aria-hidden="true" focusable="false"
+                                            data-prefix="fas" data-icon="clock" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path class="" fill="currentColor"
+                                                d="M256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512zM232 256C232 264 236 271.5 242.7 275.1L338.7 339.1C349.7 347.3 364.6 344.3 371.1 333.3C379.3 322.3 376.3 307.4 365.3 300L280 243.2V120C280 106.7 269.3 96 255.1 96C242.7 96 231.1 106.7 231.1 120L232 256z">
+                                            </path>
+                                        </svg>
+                                        1 Weeks
+                                    </div>
+                                    <div class="water-mark">
+                                        <svg class="svg-inline--fa fa-screwdriver-wrench icon" aria-hidden="true"
+                                            focusable="false" data-prefix="fas" data-icon="screwdriver-wrench"
+                                            role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path class="" fill="currentColor"
+                                                d="M331.8 224.1c28.29 0 54.88 10.99 74.86 30.97l19.59 19.59c40.01-17.74 71.25-53.3 81.62-96.65c5.725-23.92 5.34-47.08 .2148-68.4c-2.613-10.88-16.43-14.51-24.34-6.604l-68.9 68.9h-75.6V97.2l68.9-68.9c7.912-7.912 4.275-21.73-6.604-24.34c-21.32-5.125-44.48-5.51-68.4 .2148c-55.3 13.23-98.39 60.22-107.2 116.4C224.5 128.9 224.2 137 224.3 145l82.78 82.86C315.2 225.1 323.5 224.1 331.8 224.1zM384 278.6c-23.16-23.16-57.57-27.57-85.39-13.9L191.1 158L191.1 95.99l-127.1-95.99L0 63.1l96 127.1l62.04 .0077l106.7 106.6c-13.67 27.82-9.251 62.23 13.91 85.39l117 117.1c14.62 14.5 38.21 14.5 52.71-.0016l52.75-52.75c14.5-14.5 14.5-38.08-.0016-52.71L384 278.6zM227.9 307L168.7 247.9l-148.9 148.9c-26.37 26.37-26.37 69.08 0 95.45C32.96 505.4 50.21 512 67.5 512s34.54-6.592 47.72-19.78l119.1-119.1C225.5 352.3 222.6 329.4 227.9 307zM64 472c-13.25 0-24-10.75-24-24c0-13.26 10.75-24 24-24S88 434.7 88 448C88 461.3 77.25 472 64 472z">
+                                            </path>
+                                        </svg>
+                                        Unity
+                                    </div>
+                                </div>
+                                <h3 class="clickable-card-header" :not>
+                                    RMG (2022)
+                                    <svg class="svg-inline--fa fa-chevron-right clickable-header-icon"
+                                        aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                                        role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path class="" fill="currentColor"
+                                            d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z">
+                                        </path>
+                                    </svg>
+                                    <small>Game Programmer</small>
+                                </h3>
+                                <p>
+                                    That too was an assignment, one of my first ever finished games. I began learning
+                                    how to use coroutines and made a simple dialogue manager.
+                                </p>
+                            </section>
+                        </button>
+                        <button type="button" class="project-card">
+                            <section>
+                                <div class="project-video" :before>
+                                    <video playsinline loop autoplay preload="metadata" muted>
+                                        <source src="STS_Trailer.mp4" type="video/mp4">
+                                        " Your browser does not support the video tag or the file format of this video.
+                                        "
+                                    </video>
+                                </div>
+                                <div class="video-additional-info">
+                                    <div class="team-size">
+                                        <svg class="svg-inline--fa fa-users icon" aria-hidden="true" focusable="false"
+                                            data-prefix="fas" data-icon="users" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                            <path class="" fill="currentColor"
+                                                d="M319.9 320c57.41 0 103.1-46.56 103.1-104c0-57.44-46.54-104-103.1-104c-57.41 0-103.1 46.56-103.1 104C215.9 273.4 262.5 320 319.9 320zM369.9 352H270.1C191.6 352 128 411.7 128 485.3C128 500.1 140.7 512 156.4 512h327.2C499.3 512 512 500.1 512 485.3C512 411.7 448.4 352 369.9 352zM512 160c44.18 0 80-35.82 80-80S556.2 0 512 0c-44.18 0-80 35.82-80 80S467.8 160 512 160zM183.9 216c0-5.449 .9824-10.63 1.609-15.91C174.6 194.1 162.6 192 149.9 192H88.08C39.44 192 0 233.8 0 285.3C0 295.6 7.887 304 17.62 304h199.5C196.7 280.2 183.9 249.7 183.9 216zM128 160c44.18 0 80-35.82 80-80S172.2 0 128 0C83.82 0 48 35.82 48 80S83.82 160 128 160zM551.9 192h-61.84c-12.8 0-24.88 3.037-35.86 8.24C454.8 205.5 455.8 210.6 455.8 216c0 33.71-12.78 64.21-33.16 88h199.7C632.1 304 640 295.6 640 285.3C640 233.8 600.6 192 551.9 192z">
+                                            </path>
+                                        </svg>
+                                        1
+                                    </div>
+                                    <div class="time">
+                                        <svg class="svg-inline--fa fa-clock icon" aria-hidden="true" focusable="false"
+                                            data-prefix="fas" data-icon="clock" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path class="" fill="currentColor"
+                                                d="M256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512zM232 256C232 264 236 271.5 242.7 275.1L338.7 339.1C349.7 347.3 364.6 344.3 371.1 333.3C379.3 322.3 376.3 307.4 365.3 300L280 243.2V120C280 106.7 269.3 96 255.1 96C242.7 96 231.1 106.7 231.1 120L232 256z">
+                                            </path>
+                                        </svg>
+                                        2 Weeks
+                                    </div>
+                                    <div class="water-mark">
+                                        <svg class="svg-inline--fa fa-screwdriver-wrench icon" aria-hidden="true"
+                                            focusable="false" data-prefix="fas" data-icon="screwdriver-wrench"
+                                            role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path class="" fill="currentColor"
+                                                d="M331.8 224.1c28.29 0 54.88 10.99 74.86 30.97l19.59 19.59c40.01-17.74 71.25-53.3 81.62-96.65c5.725-23.92 5.34-47.08 .2148-68.4c-2.613-10.88-16.43-14.51-24.34-6.604l-68.9 68.9h-75.6V97.2l68.9-68.9c7.912-7.912 4.275-21.73-6.604-24.34c-21.32-5.125-44.48-5.51-68.4 .2148c-55.3 13.23-98.39 60.22-107.2 116.4C224.5 128.9 224.2 137 224.3 145l82.78 82.86C315.2 225.1 323.5 224.1 331.8 224.1zM384 278.6c-23.16-23.16-57.57-27.57-85.39-13.9L191.1 158L191.1 95.99l-127.1-95.99L0 63.1l96 127.1l62.04 .0077l106.7 106.6c-13.67 27.82-9.251 62.23 13.91 85.39l117 117.1c14.62 14.5 38.21 14.5 52.71-.0016l52.75-52.75c14.5-14.5 14.5-38.08-.0016-52.71L384 278.6zM227.9 307L168.7 247.9l-148.9 148.9c-26.37 26.37-26.37 69.08 0 95.45C32.96 505.4 50.21 512 67.5 512s34.54-6.592 47.72-19.78l119.1-119.1C225.5 352.3 222.6 329.4 227.9 307zM64 472c-13.25 0-24-10.75-24-24c0-13.26 10.75-24 24-24S88 434.7 88 448C88 461.3 77.25 472 64 472z">
+                                            </path>
+                                        </svg>
+                                        Unity
+                                    </div>
+                                </div>
+                                <h3 class="clickable-card-header" :not>
+                                    Slay The Spire (2023)
+                                    <svg class="svg-inline--fa fa-chevron-right clickable-header-icon"
+                                        aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                                        role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path class="" fill="currentColor"
+                                            d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z">
+                                        </path>
+                                    </svg>
+                                    <small>Game Programmer / 2D Artist</small>
+                                </h3>
+                                <p>
+                                    Made the cards system and the combat with varius effects and types. This was an
+                                    assignment i made after learning how to use queues.
+                                </p>
+                            </section>
+                        </button>
+                    </div>
+                    <h2 id="portfolio">
+                        Educations
+                    </h2>
+                    <div class="projects">
+                        <section class="project-card">
+                            <h3 class="clickable-card-header" :not>
+                                Event Horizon School (2022 - current)
+                                <small>Game Programming, Unity & Unreal Engine 5</small>
+                            </h3>
+                        </section>
+                        <section class="project-card">
+                            <h3 class="clickable-card-header" :not>
+                                MEG Italy (2019)
+                                <small>C# .NET Framework (Forms)</small>
+                            </h3>
+                        </section>
+                        <section class="project-card">
+                            <h3 class="clickable-card-header" :not>
+                                Curie-Vittorini High School (2014 - 2019)
+                                <small>High School Diploma with specialization in IT (HTML / CSS, C++)</small>
+                            </h3>
+                        </section>
+                    </div>
+                    <h2 id="portfolio">
+                        Skills
+                    </h2>
+                    <ul class="badge-list">
+                        <li class="badge">C#</li>
+                        <li class="badge">C++</li>
+                        <li class="badge">Unity</li>
+                        <li class="badge">Unreal Engine</li>
+                        <li class="badge">Git</li>
+                        <li class="badge">Photoshop</li>
+                        <li class="badge">Premiere</li>
+                        <li class="badge">Illustrator</li>
+                        <li class="badge">Figma</li>
+                        <li class="badge">Spline</li>
+                    </ul>
+                    <section class="information-section" :after>
+                        <h2 id="about" class="information-header">About Me</h2>
+                        <div class="information-section-background">
+                            <p class="information-text">
+                                I am a 23 years old
+                                <strong>game programmer</strong> that's currently studying Game Dev @ Event Horizon
+                                School in Italy.
+                            </p>
+                            <p class="information-text">
+                                Actively seeking opportunities to expand my skills, i'm working both in team and alone
+                                on anything that i find interesting (pretty much everything).
+                                If there's one thing I love, it's turning ideas into reality!
+                            </p>
+                            <p class="information-text">
+                                If you want to know more, you can contact me on my socials or at <a id="mail-link"
+                                    href="mailto:gugles.radu@gmail.com"><strong>gugles.radu@gmail.com</strong></a>
+                            </p>
+                        </div>
+                    </section>
+                    <!-- <section class="footer">
+                    <div class="footer-info">
+                        <p class="footer-text">
+                            
+                        </p>
+                    </div>
+                </section> -->
+                </section>
+                <!-- END SECTION HOME-->
+            </div>
+        </div>
+    </div>
+    <div class="goHomeButton"><button data-section="home">Home</button></div>
+    <script>
+        document.querySelectorAll('.section-trigger, .goHomeButton button').forEach(el => {
+            el.addEventListener('click', (e) => {
+                e.preventDefault()
+                e.stopPropagation()
+                const name = el.getAttribute('data-section')
+                const target = document.querySelector('.section--' + name)
+
+                document.querySelectorAll('.page-section').forEach(section => section.classList.remove('section--active'))
+                target.classList.add('section--active')
+                window.scrollTo({
+                    top: 0,
+                });
+                history.pushState({ page: name }, name, "?page=" + name);
+                if (name !== 'home') document.body.classList.remove('isHome')
+                else document.body.classList.add('isHome')
+            })
+        })
+
+        const popState = ({ state }) => {
+            const name = state?.page || 'home'
+            const target = document.querySelector('.section--' + name)
+            document.querySelectorAll('.page-section').forEach(section => section.classList.remove('section--active'))
+            target.classList.add('section--active')
+            window.scrollTo({
+                top: 0,
+            });
+            if (name !== 'home') document.body.classList.remove('isHome')
+            else document.body.classList.add('isHome')
+        }
+
+        window.addEventListener('popstate', popState);
+
+        var currentUrl = window.location.href;
+        var url = new URL(currentUrl);
+        var searchParams = url.searchParams;
+        var page = searchParams.get("page");
+        if (page) popState({ state: { page } })
+        else document.body.classList.add('isHome')
+    </script>
+</body>
+
+</html>
