@@ -411,7 +411,7 @@ button,input,outgroup,select,textarea {
     /* background: #c1f9f9; */
     background: #5C5C5C;
     margin-bottom: 8px;
-    color: #121212;
+    color: #ffffff;
     padding: 0 32px;
     margin-left: -40px;
     margin-right: -24px;
@@ -443,7 +443,8 @@ button,input,outgroup,select,textarea {
     padding-right: 16px;
     padding-bottom: 32px;
     width: 90vw;
-    background: #c1f9f9;
+    /* background: #c1f9f9; */
+    background: #5C5C5C;
     height: inherit
 }
 
@@ -472,7 +473,7 @@ button,input,outgroup,select,textarea {
 }
 
 .information-section .information-header {
-    color: #000000;
+    color: #ffffff;
 }
 
 .information-section .information-text {
