@@ -249,19 +249,6 @@ game-information {
     }
 }
 
-.game-information .game-text {
-    color: #ffffff;
-    margin: 0;
-    font-size: 1.5rem;
-}
-
-@media(min-width: 768px) {
-    .game-information .game-text {
-        font-weight:300;
-        font-size: 1.5rem;
-    }
-}
-
 .projects {
     align-items: flex-start;
 }
@@ -1518,4 +1505,84 @@ body.isHome .goHomeButton {
 
 .goHomeButton button:hover{
     background-color: #f6bbb2;
+}
+
+/* codice mio */
+.button {
+    background-color: transparent;
+    border-radius: 16px;
+    border: 0;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+    color: white !important;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 1.5em;
+    padding: 1em 2.25em;
+    padding-bottom: 1.1em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: 1s;
+}
+
+.button:hover {
+    background-color: white;
+    border-radius: 32px;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+    color: rgb(255, 64, 50) !important;
+    transition: 0.5s;
+}
+
+
+
+.gamedesc {
+    align-items: flex-start;
+}
+
+.gamedesc {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 32px 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 24px;
+}
+
+.gamedesc button.gamedesc-card {
+    justify-content: stretch;
+}
+
+.gamedesc{
+    background-color: #232323;
+}
+
+@media(min-width: 768px) {
+    .gamedesc .gamedesc-p {
+        margin:8px;
+        font-size: 1.125rem;
+        width: 100%
+    }
+}
+
+@media(min-width: 768px) {
+    .gamedesc section.gamedesc-p {
+        margin:8px;
+        font-size: 1.125rem;
+        width: calc(50% - 16px)
+    }
+}
+
+.game-information .game-text {
+    color: #ffffff;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+@media(min-width: 768px) {
+    .game-information .game-text {
+        font-weight:300;
+        font-size: 1.5rem;
+    }
 }
