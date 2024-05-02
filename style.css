@@ -13,6 +13,13 @@ html {
     height: -webkit-fill-available;
 }
 
+/* elminare or? */
+p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
 body.modal-active {
     overflow: hidden
 }
@@ -214,12 +221,13 @@ game-information {
     margin-bottom: 48px
 }
 
+/* prima era 5vh  */
 @media(min-width: 768px) {
     .game-information {
         display:flex;
         flex-direction: row;
         align-items: center;
-        margin-bottom: 5vh;
+        margin-bottom: 1vh;
         padding-top: 32px
     }
 }
@@ -1521,7 +1529,7 @@ body.isHome .goHomeButton {
     transition: 0.5s;
 }
 
-
+/* fatte da ME */
 
 .gamedesc {
     align-items: flex-start;
@@ -1549,7 +1557,7 @@ body.isHome .goHomeButton {
     .gamedesc .gamedesc-p {
         margin:8px;
         font-size: 1.125rem;
-        width: 100%
+        width: 100%       
     }
 }
 
@@ -1576,4 +1584,35 @@ body.isHome .goHomeButton {
 
 .highlight{
     font-weight: bold;
+    color: #fbbe5b;
+}
+
+game-info{
+
+    flex-direction: column;
+    margin-bottom: 48px
+}
+
+@media(min-width: 768px) {
+    .game-info{
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 5vh;
+        padding-top: 32px
+    }
+}   
+
+@media(min-width: 768px) {
+    .game-info .game-text {
+        font-weight:300;
+        font-size: 1.2rem;
+    }
+}
+
+/* fare responsive l immagine */
+.gameimg{
+    max-width: 768px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
 }
