@@ -597,40 +597,66 @@
                     <div class="game-info">
                        
                         <p class="game-text">                
-                        Ground Stationary: A ground unit that does not move, in our case, it was the Bigtopus, our game's boss, that spawns after all the enemies are defeated.
+                        <b>Ground Stationary:</b> A ground unit that does not move, in our case, it was the Bigtopus, our game's boss, that spawns after all the enemies are defeated.
                          Being stationary makes it an easy target, but its health points and powerful melee and ranged attacks, make up for that weakness.
                         </p>                       
                         <br>
-
                       
-                        <p class="game-text">
-                            The meteor fall is a short-range ability that deals massive damage, burns enemies in a large
-                            area, and destroys the obstacles hit.
-                            This skill was inspired by Ishtar the ancient Mesopotamian goddess of love, war, and fertility.
-                            This skill is meant to be used against a
-                            group of enemies or to open paths that would be inaccessible otherwise. The design for this
-                            ability was quite simple, the game required some
-                            kind of powerful attack to kill multiple enemies, so I created a short-range explosive spell,
-                            that would also modify the environment, as a meteor
-                            falling to the ground would definitely have a big effect in the area around it.
-                        </p>
+                        <p class="game-text">                
+                            <b>Ground Mobile:</b> The most frequent enemies, the unicorns are ground units that patrol in a set path. When the player enters their range, they start following them 
+                            and shooting sparkly projectiles.The unicorn patrols vary in size, having both small unicorns with low health points, and bigger mama unicorns that are more resistant
+                             to the player's magic. In addition, the unicorns deal low damage with their attacks but they have a unique rate of fire, almost like a laser, making them a threatening unit if not left alone.
+                        </p>                       
                         <br>
-                </div>    
+
+                        <p class="game-text">                
+                            <b>Elevated Stationary: </b> The sharkmeids are non-moving units placed in elevated positions such as desks or tables. When the player enters their range, 
+                            they shoot a high-speed beam of light from their trident. They have a slow rate of fire but they compensate thanks to their projectile speed and damage.
+                        </p>                       
+                        <br>
+
+                        <p class="game-text">                
+                            <b>Flying Stationary:</b> The teru teru bozu are a flying unit attached to the roof thanks to a rope sustaining them. They also shoot the player as soon as they enter their range, 
+                            but their attack is different from the rest. The teru teru bozu shoots a projectile that expands after a few seconds, forming a massive bubble that damages everything inside it. 
+                            In exchange, they have a short range and even though they are flying, they do not move around, as their rope locks them in place.
+                        </p>                       
+                </div> 
+                
+                <h3 class="highlight">Feedback</h4>
+                <div class="game-information">
+                    <p class="game-text">
+                        After the core mechanics were ready, it was time to design how to communicate all those actions to the player. I started with a Health bar for both the player and the enemies, 
+                        showing their current health. After that, I added visual cues for player damage such as a red outline on the screen, and successively an animation, to communicate it as clearly as possible.
+                        Following that, I also wanted to prevent spam shooting in our game, so I designed an overheat system that disabled the player´s shooting if they fired too many bullets in a short amount of time.
+                         To convey that without adding an ammo counter, I added a red bar, inside the crosshair to be specific, that was slightly filled every time the player shot a bullet, and emptied if they did not shoot for a few seconds.
+                    </p>   
+                    <img style="margin-bottom: 0; margin-left: 48px;max-width: 350px;" class="gameimage" src="images/wonderCross.gif">
                 </div>
 
+                <div class="game-info">
+                    <h3 class="highlight">Replayability</h4>
+                    <p class="game-text">
+                        The game was supposed to have 5 different rooms for our players to explore, but our vertical slice only had 1 room to show our gameplay. Even so, during playtest we observed how some of our players
+                         wanted to compete with each other, trying to complete the level in the fastest way possible. Analyzing that, I decided to add a score system, that gives points to the player on each enemy defeated 
+                         depending on a multiplier based on playtime. This mechanic, gave a visual way for our players to discover who would have the highest score, moreover, it created retention, improving our replay value,
+                          as players would try to improve their score.
+                    </p>   
+                </div>
+                </div>
+            </div>
+
+                <div class=gamedesc>
+                    <h2>Level Design</h2>
                     <div class="game-information">
                         <p class="game-text">
-                            Sycle is a turn-based roguelite with a Mesoamerican-like aesthetic and a unique twist, a
-                            reverse progression system.
-                            In Sycle, the player's journey is marked by growing weaker as they advance. The crux of
-                            success lies in Strategic decision-making and resource management.
-                            The player assumes the role of Itzel, the Goddess of Change.
-                            Her role is to perpetually sacrifice a portion of herself within each cycle to breathe life
-                            back into a desolate world.
+                            For this project I worked closely with the art department to create our game level. We wanted to have a believable space, so, before creating mockups or blockouts,
+                             each member of the team sent photos of their room as references. I started analyzing them to see where the furnishings were placed, which were the recurrent items,
+                              and how large our environment should be. After having a rough idea, I created the level blockout in engine. As soon as we started playtesting our movement in the scene,
+                               we noticed that if the player moved in a straight direction, they would traverse the entirety of the room in less than 10 seconds, and that was an issue.
                         </p>
-                        <img class="game-image" src="images/wonderwingsNarrow.jpg">
                     </div>
                 </div>
+
         </section>
         <!-- END SECTION WonderWings -->
 
