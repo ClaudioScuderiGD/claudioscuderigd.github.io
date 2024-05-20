@@ -13,10 +13,10 @@ html {
     height: -webkit-fill-available;
 }
 
-/* elminare or? */
 p{
     text-align: justify;
     text-justify: inter-word;
+    letter-spacing: 0.1em;
 }
 
 
@@ -1529,28 +1529,38 @@ body.isHome .goHomeButton {
     transition: 0.5s;
 }
 
-/* fatte da ME */
-
-.gamedesc {
-    align-items: flex-start;
+@media (max-width: 600px) {
+    .button {
+        font-size: 1.2em;
+        padding: 0.75em 1.5em;
+        padding-bottom: 0.85em;
+    }
 }
 
+@media (min-width: 601px) and (max-width: 1024px) {
+    .button {
+        font-size: 1.4em;
+        padding: 0.9em 2em;
+        padding-bottom: 1em;
+    }
+}
+/* fatte da ME */
+
+
 .gamedesc {
-    position: relative;
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
+    position: relative;
     margin: 0 0 32px 0;
+    padding: 24px;
     border-radius: 4px;
     box-sizing: border-box;
-    padding: 24px;
+    background-color: #232323;
 }
 
 .gamedesc button.gamedesc-card {
     justify-content: stretch;
-}
-
-.gamedesc{
-    background-color: #232323;
 }
 
 @media(min-width: 768px) {
@@ -1575,9 +1585,24 @@ body.isHome .goHomeButton {
     font-size: 1.5rem;
 }
 
-@media(min-width: 768px) {
+/* Styles for smaller screens */
+@media(max-width: 600px) {
     .game-information .game-text {
-        font-weight:300;
+        font-size: 1rem;
+    }
+}
+
+/* Styles for medium screens */
+@media(min-width: 601px) and (max-width: 1024px) {
+    .game-information .game-text {
+        font-size: 1.25rem;
+    }
+}
+
+/* Styles for larger screens */
+@media(min-width: 1025px) {
+    .game-information .game-text {
+        font-weight: 300;
         font-size: 1.5rem;
     }
 }
@@ -1609,10 +1634,48 @@ game-info{
     }
 }
 
-/* fare responsive l immagine */
-.gameimg{
-    max-width: 768px;
+.gameimg {
+    max-width: 100%;  /* Allow the image to scale down with the screen size */
+    width: 100%;      /* Ensure the image takes up 100% of the container width */
+    height: auto;     /* Maintain the aspect ratio of the image */
     margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
+    display: block;   /* Center the image horizontally */
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text horizontally */
+    padding: 20px; /* Optional: Add some padding */
+    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+}
+
+/* H3 styles */
+.text-container h3 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5rem; /* Base font size */
+    color: #ffffff; /* Text color */
+    letter-spacing: 0.05em; /* Increase letter spacing */
+}
+
+/* Responsive text sizes */
+@media (max-width: 600px) {
+    .text-container h3 {
+        font-size: 1.25rem; /* Smaller font size for mobile devices */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .text-container h3 {
+        font-size: 1.5rem; /* Medium font size for tablets */
+    }
+}
+
+@media (min-width: 1025px) {
+    .text-container h3 {
+        font-size: 1.75rem; /* Larger font size for desktops */
+    }
 }
