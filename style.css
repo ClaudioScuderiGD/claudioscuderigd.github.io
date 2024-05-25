@@ -13,10 +13,37 @@ html {
     height: -webkit-fill-available;
 }
 
-p{
+p {
     text-align: justify;
     text-justify: inter-word;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em; /* Default letter spacing */
+    margin: 0; /* Remove default margin */
+    font-size: 1rem; /* Base font size */
+   
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 600px) {
+    p {
+        font-size: 0.875rem; /* Smaller font size for mobile devices */
+        letter-spacing: 0.03em; /* Adjust letter spacing for smaller screens */
+    }
+}
+
+/* Responsive styles for medium screens */
+@media (min-width: 601px) and (max-width: 1024px) {
+    p {
+        font-size: 1rem; /* Medium font size for tablets */
+        letter-spacing: 0.05em; /* Adjust letter spacing for medium screens */
+    }
+}
+
+/* Responsive styles for large screens */
+@media (min-width: 1025px) {
+    p {
+        font-size: 1.125rem; /* Larger font size for desktops */
+        letter-spacing: 0.07em; /* Adjust letter spacing for larger screens */
+    }
 }
 
 
@@ -212,35 +239,6 @@ h2 {
     h2 {
         font-size:2rem;
         margin: 16px 0;
-    }
-}
-
-game-information {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 48px
-}
-
-/* prima era 5vh  */
-@media(min-width: 768px) {
-    .game-information {
-        display:flex;
-        flex-direction: row;
-        align-items: center;
-        margin-bottom: 1vh;
-        padding-top: 32px
-    }
-}
-
-.game-information .game-image { 
-    max-width: 300px;
-    margin: 0 auto 48px auto
-}
-
-@media(min-width: 768px) {
-    .game-information .game-image {
-        margin-bottom:0;
-        margin-left: 48px;
     }
 }
 
@@ -1612,8 +1610,37 @@ body.isHome .goHomeButton {
     color: #fbbe5b;
 }
 
-game-info{
+game-information {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 48px
+}
 
+/* prima era 5vh  */
+@media(min-width: 768px) {
+    .game-information {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 1vh;
+        padding-top: 32px
+    }
+}
+
+.game-information .game-image { 
+    max-width: 300px;
+    margin: 0 auto 48px auto
+}
+
+@media(min-width: 768px) {
+    .game-information .game-image {
+        margin-bottom:0;
+        margin-left: 48px;
+    }
+}
+
+game-info{
+    font-size: 1.5rem;
     flex-direction: column;
     margin-bottom: 48px
 }

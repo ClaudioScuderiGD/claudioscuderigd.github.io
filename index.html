@@ -88,16 +88,16 @@
                     <div class="portfolio-top">
                         <div class="content-placeholder" :before>
                             <video playsinline loop autoplay preload="metadata" muted>
-                                <source src="RMG_Trailer.mp4" type="video/mp4">
+                                <source src="images/RocketRiderTrailer.mp4" type="video/mp4">
                                 Your browser does not support the video tag or the file format of this video.
                             </video>
                         </div>
-                        <h2>Rocket Rider</h2>
+                        <h2>Rocket Rider Game Trailer</h2>
                     </div>
                     <div class="projects">
                         <section class="project-card">
-                            <h3>Brief</h3>
-                            Rocket Riding is a fast-paced beat-em-up, where the player character rides a rocket as a
+                            <h3>Project Summary</h3>
+                            Rocket Rider is a fast-paced hack n slash, where the player rides a rocket as a
                             hoverboard, and uses that to perform attacks against robotic enemies.
                             </br>
                             </br>
@@ -150,15 +150,170 @@
                             </ul>
                         </section>
                     </div>
-                    <p>
-                        Rocket Riding is a fast-paced beat-em-up, where the player character rides a rocket as a
-                        hoverboard, and uses that to perform attacks against robotic enemies.
-                        </br>
-                        </br>
-                        Rocket Riding is a fast-paced beat-em-up, where the player character rides a rocket as a
-                        hoverboard, and uses that to perform attacks against robotic enemies.
-                    </p>
-                </section>
+                    <div class=gamedesc>
+                        <h2 style="text-align:center;">Major Contributions</h2>
+                        <div class="game-information">
+                            <p class="game-text"><span class="highlight">Gameplay Design:</span> Designed the
+                                player´s abilities, Damage over
+                                time(DOTs) and status effects.
+                                Moreover, introduced environmental obstacles, enhancing strategic depth.
+                            </p>
+                        </div>
+                        <div class="game-information">
+                            <p class="game-text"><span class="highlight">Level Design:</span> Drafted and whiteboxed
+                                multiple levels, incorporating
+                                diverse win conditions.
+                                Ensured balance between teaching mechanics, combat scenarios, and puzzle-solving
+                                elements.
+                            </p>
+                        </div>
+                        <div class="game-information">
+                            <p class="game-text"><span class="highlight">System Design:</span> Responsible for the
+                                delicate balance of the reverse
+                                progression system and gameplay elements.
+                                Conducted extensive playtesting, identifying and addressing bugs, and fine-tuning
+                                mechanics for an
+                                optimal player experience.
+                            </p>
+                        </div>    
+                        <div class="text-container">                 
+                        <h3>Read further down for more information on each category</h3>
+                    </div>  
+                    </div>
+
+                    <div class=gamedesc>
+                        <h2>Gameplay Design</h2>
+                        <div class="game-information">
+                            <p class="game-text">
+                                At the start of the project, I was entrusted with the making of the player´s abilities. Before
+                                starting to design skills that would work well for a
+                                strategic turn-based game, I focused on our main character Persona, the goddess Itzel, and what
+                                would fit her theme, not only mechanic-wise, but also
+                                from a narrative point of view. In doing so I started researching various Mythologies and their
+                                related gods, mostly Mesopotamian, Inca, and African
+                                until I found all the references I needed. The player has 4 abilities at their disposal each with a unique effect and different use case, they are:
+                            </p>                                                
+                        </div>
+                        <div class="game-info">
+                            <h3 class="highlight">Earthquake</h4>
+                            <p class="game-text">
+                                The earthquake is an ability that deals damage to enemies and pushes them away from the player,
+                                creating a shield of rocks and difficult terrain
+                                around Itzel. This skill was inspired by the Earth Mother and fertility goddess of Inca
+                                mythology Pachamama. Its main use is not only to damage enemies but to gain protection from ranged
+                                attacks or secure some time as melee enemies would have to
+                                find another path or break the newly created obstacle. The process in mind when designing this
+                                skill was
+                                to give the player some kind of survivability as they
+                                would be playing as one unit vs many.
+                            </p>                       
+                            <br>
+
+                            <h3 class="highlight">Meteor Fall</h4>
+                            <p class="game-text">
+                                The meteor fall is a short-range ability that deals massive damage, burns enemies in a large
+                                area, and destroys the obstacles hit.
+                                This skill was inspired by Ishtar the ancient Mesopotamian goddess of love, war, and fertility.
+                                This skill is meant to be used against a
+                                group of enemies or to open paths that would be inaccessible otherwise. The design for this
+                                ability was quite simple, the game required some
+                                kind of powerful attack to kill multiple enemies, so I created a short-range explosive spell,
+                                that would also modify the environment, as a meteor
+                                falling to the ground would definitely have a big effect in the area around it.
+                            </p>
+                            <br>
+
+                            <h3 class="highlight">Tornado</h4>
+                            <p class="game-text">
+                                The tornado is an ability that deals low damage and pushes all the enemies around it. This skill
+                                was inspired by Hadad the storm and rain god 
+                                in the Mesopotamian religions. The tornado's main use is to displace enemies into
+                                obstacles to damage or kill them. For example, the player
+                                could instantly kill a strong enemy by making it fall into a canyon. The process behind this
+                                skill was to create something that made the player
+                                interact with the environment and use it to its advantage, enabling various playstyles.
+                            </p>
+                            <br>
+
+                            <h3 class="highlight">Holy Smite</h4>
+                            <p class="game-text">
+                                The holy smite is a long-range ability that damages enemies and lowers their defense, moreover,
+                                it ignores obstacles in its trajectory,
+                                as it´s literal lightning falling from the sky. This skill was inspired by Inanna the ancient
+                                Mesopotamian goddess of fertility and enforcer
+                                of divine justice. This ability was the last one to be made, and while doing so, I realized how
+                                the player was missing a long-range attack
+                                or in general an action to make when enemies were still far away. For this reason, I opted for a
+                                long-range attack that debuffed enemies.
+                            </p>
+                        </div>
+
+                        <div class="game-information">
+                            <p class="game-text">
+                                After the abilities were done I needed to design various obstacles to fill the game grid with something other than walls and covers 
+                                and give a reason to the player to interact with the environment. Since my programmers already did the code for damage-over-time effects for the player´s abilities,
+                                 I decided to build upon them and add new effects with similar behaviors, so that I could modify them myself. I ended up creating over 10 different obstacles with 
+                                 distinctive effects, pointy walls that would make enemies bleed, columns that could be broken and stun enemies hit by the rubble, terrains that would slow or 
+                                 damage enemies, boulders that could be pushed and knock away enemies and so on.
+                            </p>                                                                     
+                        </div>
+                        <img class="gameimg" src="images/syclestats3.png">  
+
+                        <!-- mandare a capo -->
+                        <p style="line-height: 0; font-size: small; font-style: italic;">Some of the environmental obstacles.</p>
+
+                    </div>
+
+                    <div class=gamedesc>
+                        <h2>Level Design</h2>
+                        <div class="game-information">
+                            <p class="game-text">
+                                While I worked on the player´s abilities and obstacles, my colleagues designed 3 enemies with different behaviours. As soon as these elements were established in the game
+                                 I started planning our levels. I first studied our main references (XCOM, Warhammer Mechanicus) and tried to understand their process and goals when creating a level. 
+                                 Both of our references included controlling various allies while in our game we played as a single unit, so I had to be mindful of the enemy placement in the level, their range,
+                                  and movement speed. Now that I knew my constraints, before starting
+                                   to create mockups for the levels, I decided to write the goals and context that the levels should follow. Some levels focused on teaching certain mechanics to the player; others
+                                    would focus on pure combat and non-linearity, giving multiple routes to the player, to choose their favourite playstyle; another level would focus on puzzle solving, such as 
+                                    finding and activating all the altars in the level to open the exit door and escape the enemy patrols.
+                            </p>
+                        </div>
+                        <img class="gameimg" src="images/sycleLevelMockup.png">
+
+                         <!-- mandare a capo -->
+                         <p style="line-height: 0; font-size: small; font-style: italic;">One of the first level design mockups.</p>
+
+                    </div>
+
+                    <div class=gamedesc>
+                        <h2>System Design</h2>
+                        <div class="game-information">
+                            <p class="game-text">
+                                With the core elements in place, it was time to balance them. As the designer that created most of those elements, I playtested for many hours to discern if those mechanics provided the experience 
+                                I wanted for our players, and while I was at it, I also created a document for discovered bugs, with a guide on how to replicate them and a possible solution. Moreover, as this was a school project, 
+                                each week other students would playtest our game, so I prepared a form for them to compile to collect all that valuable feedback. Thanks to the playtest, we realized many issues 
+                                with the core loop and the balancing of the game. The game went through many changes, for example, at first we used AP (action points) to use our abilities, but we decided to change that resource to HP 
+                                (health point) to display even better our core pillar Sacrifice. With that update other problems arose, as we would be using our life for each spell thrown at the enemies, so I introduced a healing mechanic 
+                                when the player killed an enemy with a melee attack. In addition, I tweaked the player and enemies´ stats until the game reached the desired feel.
+                            </p>
+                            <div>
+                                <img style=" max-width: 350px;"  class="game-image" src="images/patch.png">
+                                <p style="line-height: 0; font-size: small; font-style: italic;margin-left: 40px;">Example of a game´s patch.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>Conclusion</h2>
+                    <div class="game-information">
+                        <p class="game-text">
+                            This project has been an important lesson. It was my and most of the group's first game in Unreal Engine, and we ended up overscoping a bit too much. 
+                            Even so, we learned a lot about the engine, and my contributions to the project were wide-spanning and focused a lot on both the team and my individual work. 
+                            I had the chance to focus on what I want to specialize in, that being Gameplay and System design. Moreover, I ended up having to take a lot of responsibility for the game,
+                             which I did not mind, and step in to help wherever we were struggling in the process. Our scope might have been too big for Sycle, resulting in a small demo rather than the
+                              complete game we desired, but it was a fun experience and a good lesson for the future.
+                        </p>
+                    </div>
+                    <hr style="width: 85vw; margin: 64px;">                
+        </section>
 
                 <!-- START SECTION Sycle-->
                 <section class="page-section section--Sycle">
@@ -307,8 +462,7 @@
                                     would fit her theme, not only mechanic-wise, but also
                                     from a narrative point of view. In doing so I started researching various Mythologies and their
                                     related gods, mostly Mesopotamian, Inca, and African
-                                    until I found all the references I needed. The player had 6 abilities at their disposal (only 4 made
-                                     it into the game), each with a unique effect and different use case, they are:
+                                    until I found all the references I needed. The player has 4 abilities at their disposal each with a unique effect and different use case, they are:
                                 </p>                                                
                             </div>
                             <div class="game-info">
@@ -417,8 +571,6 @@
                                     <p style="line-height: 0; font-size: small; font-style: italic;margin-left: 40px;">Example of a game´s patch.</p>
                                 </div>
                             </div>
-
-
                         </div>
 
                         <h2>Conclusion</h2>
@@ -432,7 +584,6 @@
                             </p>
                         </div>
                         <hr style="width: 85vw; margin: 64px;">
-                        <img style="align-self: center; max-width: 512px" src="images/demigameslogo.png" >
                     </div>                  
             </div>
             </section>
@@ -570,16 +721,19 @@
                                 giving the chance to the player to perform stunts to evade enemy projectiles or explore parts of the level too tight to be entered while in a horizontal position.
                             </p>   
                         </div>    
-                        <div  class="game-info">                   
+
+                        <div class="game-information">
                             <p class="game-text">
-                            Following I noticed how our collisions were not the best when the player hit a wall, as the plane
-                            would slide and tremble on the hit wall. To solve the issue I designed a bouncing mechanic, that
-                            bounced back the player's plane in the opposite direction from where they hit the wall, which
-                            shortly after, got implemented with its animation.
-                        </p>            
-                        <!-- mettere l immagine a lato del testo -->
-                        <img class="gameimg" src="images/wonderwingsNarrow.jpg">
-                    </div>
+                                Following I noticed how our collisions were not the best when the player hit a wall, as the plane
+                                would slide and tremble on the hit wall. To solve the issue I designed a bouncing mechanic, that
+                                bounced back the player's plane in the opposite direction from where they hit the wall, which
+                                shortly after, got implemented with its animation.
+                            </p>
+                            <div>
+                                <img style=" max-width: 350px;"  class="game-image" src="images/wonderbouncingGif.gif">
+                            </div>
+                        </div>              
+
                     <div  class="game-info">                   
                         <p class="game-text">
                             Moreover, after various playtests, I noticed how the automatic forward movement was giving problems to some of our players when they 
@@ -597,47 +751,64 @@
                         When the shooting of the player was done, I and another designer, started working on the enemies. We wanted to have a good variety of enemy types and behaviours, 
                         so we designed 4 different types of enemies, each with its own strenght and weaknesses, and they are:
                     </p>   
-                    <div class="game-info">
-                       
+                    
+                    <div class="game-info">                                                     
+                        
+                        <div class="game-information"> 
                         <p class="game-text">                
                         <b>Ground Stationary:</b> A ground unit that does not move, in our case, it was the Bigtopus, our game's boss, that spawns after all the enemies are defeated.
                          Being stationary makes it an easy target, but its health points and powerful melee and ranged attacks, make up for that weakness.
-                        </p>                       
+                        </p>   
+                        <img style=" max-width:250px; max-height: 250px;"  class="game-image" src="images/bigtopus.png">
+                            </div>                      
                         <br>
                       
+                        <div class="game-information"> 
                         <p class="game-text">                
                             <b>Ground Mobile:</b> The most frequent enemies, the unicorns are ground units that patrol in a set path. When the player enters their range, they start following them 
                             and shooting sparkly projectiles.The unicorn patrols vary in size, having both small unicorns with low health points, and bigger mama unicorns that are more resistant
                              to the player's magic. In addition, the unicorns deal low damage with their attacks but they have a unique rate of fire, almost like a laser, making them a threatening unit if not left alone.
-                        </p>                       
+                        </p>       
+                        <img style=" max-width:250px; max-height: 250px;"  class="game-image" src="images/unicorn.png">
+                            </div>                  
                         <br>
 
+                        <div class="game-information"> 
                         <p class="game-text">                
                             <b>Elevated Stationary: </b> The sharkmeids are non-moving units placed in elevated positions such as desks or tables. When the player enters their range, 
                             they shoot a high-speed beam of light from their trident. They have a slow rate of fire but they compensate thanks to their projectile speed and damage.
-                        </p>                       
+                        </p>      
+                        <img style=" max-width:250px; max-height: 250px;"  class="game-image" src="images/sharkmeid.png">
+                            </div>                   
                         <br>
 
+                        <div class="game-information"> 
                         <p class="game-text">                
                             <b>Flying Stationary:</b> The teru teru bozu are a flying unit attached to the roof thanks to a rope sustaining them. They also shoot the player as soon as they enter their range, 
                             but their attack is different from the rest. The teru teru bozu shoots a projectile that expands after a few seconds, forming a massive bubble that damages everything inside it. 
                             In exchange, they have a short range and even though they are flying, they do not move around, as their rope locks them in place.
-                        </p>                       
+                        </p>   
+                        <img style=" max-width:250px; max-height: 250px;"  class="game-image" src="images/teruteru.png">
+                            </div>                      
                 </div> 
+
                 
-                <h3 class="highlight">Feedback</h4>
-                <div class="game-information">
-                    <p class="game-text">
-                        After the core mechanics were ready, it was time to design how to communicate all those actions to the player. I started with a Health bar for both the player and the enemies, 
+               
+                    <h3 class="highlight">Feedback</h3>
+                    <div class="game-information">
+                        <p class="game-text">
+                            After the core mechanics were ready, it was time to design how to communicate all those actions to the player. I started with a Health bar for both the player and the enemies, 
                         showing their current health. After that, I added visual cues for player damage such as a red outline on the screen, and successively an animation, to communicate it as clearly as possible.
                         Following that, I also wanted to prevent spam shooting in our game, so I designed an overheat system that disabled the player´s shooting if they fired too many bullets in a short amount of time.
                          To convey that without adding an ammo counter, I added a red bar, inside the crosshair to be specific, that was slightly filled every time the player shot a bullet, and emptied if they did not shoot for a few seconds.
-                    </p>   
-                    <img style="margin-bottom: 0; margin-left: 48px;max-width: 350px;" class="gameimage" src="images/wonderCross.gif">
-                </div>
-
+                        </p>
+                        <div>
+                            <img style=" max-width: 350px;"  class="game-image" src="images/wonderCross.gif">
+                        </div>
+                    </div>
+                         
                 <div class="game-info">
-                    <h3 class="highlight">Replayability</h4>
+                    <h3 class="highlight">Replayability</h3>
                     <p class="game-text">
                         The game was supposed to have 5 different rooms for our players to explore, but our vertical slice only had 1 room to show our gameplay. Even so, during playtest we observed how some of our players
                          wanted to compete with each other, trying to complete the level in the fastest way possible. Analyzing that, I decided to add a score system, that gives points to the player on each enemy defeated 
@@ -648,18 +819,77 @@
                 </div>
             </div>
 
-                <div class=gamedesc>
-                    <h2>Level Design</h2>
-                    <div class="game-information">
-                        <p class="game-text">
-                            For this project I worked closely with the art department to create our game level. We wanted to have a believable space, so, before creating mockups or blockouts,
-                             each member of the team sent photos of their room as references. I started analyzing them to see where the furnishings were placed, which were the recurrent items,
-                              and how large our environment should be. After having a rough idea, I created the level blockout in engine. As soon as we started playtesting our movement in the scene,
-                               we noticed that if the player moved in a straight direction, they would traverse the entirety of the room in less than 10 seconds, and that was an issue.
-                        </p>
+            <div class=gamedesc>
+                <h2>Level Design</h2>
+                <div class="game-information">
+                    <p class="game-text">
+                        For this project I worked closely with the art department to create our game level. We wanted to have a believable space, so, before creating mockups or blockouts, each member of the team sent photos of their 
+                        room as references. I started analyzing them to see where the furnishings were placed, which were the recurrent items, and how large our environment should be. After having a rough idea, I created the level blockout 
+                        in engine. As soon as we started playtesting our movement in the scene, we noticed that if the player moved in a straight direction, they would traverse the entirety of the room in less than 10 seconds, and that was an issue.
+                    </p>
+                    <div>
+                        <img style=" max-width: 350px;"  class="game-image" src="images/earlyLevel.gif">
                     </div>
                 </div>
+                <div class="game-information">
+                    <p class="game-text">
+                        I and the rest of the team liked the movement speed of our character, so the only choice was to make the level bigger. I started looking at references of mansions´ rooms, to then create a new blockout that was 3 times larger when 
+                        compared to our old level. Then, I divided the new level into 7 different areas, each offering a somewhat unique experience, from safe zones to environmental mazes hiding power-ups and increased enemy encounters. The goal was to provide
+                         meaning and pacing in different parts of the room, contributing to an engaging gameplay experience.
+                        Moreover, while placing the enemies in the scene, I set the route of all the moving ones using a point to point movement system, and created various spawn points for them, to have kind of different runs everytime the player decided to run 
+                        the game.
+                        Here there are some screens of the level with a description of their features:
+                    </p>                
+                </div>
+                <br>
 
+                <div class="game-info">
+
+                    <div class="game-information">                 
+                    <p class="game-text">                
+                    <b>The desk</b> is a large section featuring sharkmeids and many patrolling enemies on the ground near it. It is a dangerous area having the highest amount of enemies per square meter,
+                     but it is worth the risk, as inside the desk, behind an environmental maze the strongest powerup lies in wait.
+                    </p>    
+                    <img style=" max-width: 350px;"  class="game-image" src="images/deskWW.png">
+                    </div>                   
+                    <br>
+                  
+                    <div class="game-information"> 
+                    <p class="game-text">                
+                        <b>The wardrobe</b> is a small area located to the right of the desk. It is a relatively safe area as there are only two enemies. This part of the level let players relax and rewards the ones
+                         that explore every nook and cranny of the level, as there are two hidden power-ups, one behind the boots inside the wardrobe and the other inside the basketball hoop.
+                    </p>      
+                    <img style=" max-width: 350px;"  class="game-image" src="images/wardrobeWW.png">
+                    </div>                   
+                    <br>
+
+                    <div class="game-information"> 
+                    <p class="game-text">                
+                        <b>The window </b> area, located on the left of the desk, hosts multiple types of enemies and shows in clear sight the shield power-up, which offers a strong buff to the player´s defense but it is risky to approach without
+                         clearing the enemies around it.
+                    </p>                       
+                    <img style=" max-width: 350px;"  class="game-image" src="images/windowWW.png">
+                    </div>  
+                    <br>
+
+                    <div class="game-information"> 
+                    <p class="game-text">                
+                        In this last picture we can see the<b>Bunk Bed</b> and our aesthetic final result with the shaders and lighting.
+                    </p>         
+                    <img style=" max-width: 350px;"  class="game-image" src="images/lv4.png">
+                    </div>                
+            </div> 
+            </div>
+
+            <h2>Conclusion</h2>
+            <div class="game-information">
+                <p class="game-text">
+                   Throughout this nine-week project, I had the privilege of wearing many hats and contributing to various aspects of our game. Having to step in and help wherever we faced difficulties,
+                    I am grateful for the many opportunities to learn and contribute in meaningful ways. Wonder Wings represents a project that I am particularly proud of at this moment in my game design journey,
+                     not just for the tasks I accomplished but more so for the successful result of our teamwork and the rewarding journey we navigated together.
+                </p>
+            </div>
+            <hr style="width: 85vw; margin: 64px;">
         </section>
         <!-- END SECTION WonderWings -->
 
@@ -670,44 +900,21 @@
                     Priestcore
                 </h2>
             </div>
-            <div class="portfolio-top">
-                <div class="content-placeholder" :before>
-                    <!-- <video autoplay controls muted>
-                        <source src="videos/SycleTrailer.mp4" type="video/mp4">
-                    </video> -->
-                    <video playsinline loop autoplay preload="metadata" muted>
-                        <source src="videos/SycleTrailer.mp4" type="video/mp4">
-                        Your browser does not support the video tag or the file format of this video.
-                    </video>
-                </div>
-                <h2>Priestcore  Game Trailer</h2>
-            </div>
+           
             <div class="projects">
                 <section class="project-card">
                     <h3>Project Summary</h3>
-                    Sycle is a turn-based roguelite with a Mesoamerican-like aesthetic and a unique twist, a
-                    reverse progression system.
-                    </br>
-                    In Sycle, the player's journey is marked by growing weaker as they advance. The crux of
-                    success lies in Strategic decision-making and resource management.
-                    The player assumes the role of Itzel, the Goddess of Change.
-                    Her role is to perpetually sacrifice a portion of herself within each cycle to breathe life
-                    back into a desolate world.
+                    Priestcore is a fast paced first person arena shooter with a cel-shaded aesthetic, set during the Apocalypse. The player takes the role of Father Gabriel, the priest of Belsit. His role? 
+                    Defend his cathedral from the incoming waves of demons, exterminate each one of them and survive.
                     </br>
                     </br>
-                    Our objective for this project was to carve out a niche in the realm of roguelites, charting
-                    a course different from contemporaries.
-                    For that, we chose Reverse Progression and Sacrifice as our main pillars, injecting an
-                    innovative dynamic where empowerment yields to vulnerability.
-                    </br>
-                    Additionally, we wanted to push for an aesthetic that was not seen much in the industry, and
-                    with some research,
-                    we discovered how the ancient Mesoamerican cultures like the Aztec and Maya, seamlessly
-                    integrated with the theme of Sacrifice.
+                    For this project, the team and I were aware that we would be using an unfamiliar engine called Tengine. Additionally, we had a strict deadline of 6 weeks to deliver a playable and enjoyable game. 
+                    Given these constraints, I carefully considered which game concept would be most suitable for such a short timeframe. Ultimately, I chose to develop an FPS Arena Shooter, which allowed the artist 
+                    to save time by focusing on a single environment and eliminating the need for a player character model.
                 </section>
                 <section class="project-card">
 
-                    <img style="height: 350px;" src="images/SycleNarrow.jpg">
+                    <img style="height: 350px;" src="images/PriestcoreCover.png">
 
                     <h3>Project Info</h3>
 
@@ -730,7 +937,7 @@
                                     d="M319.9 320c57.41 0 103.1-46.56 103.1-104c0-57.44-46.54-104-103.1-104c-57.41 0-103.1 46.56-103.1 104C215.9 273.4 262.5 320 319.9 320zM369.9 352H270.1C191.6 352 128 411.7 128 485.3C128 500.1 140.7 512 156.4 512h327.2C499.3 512 512 500.1 512 485.3C512 411.7 448.4 352 369.9 352zM512 160c44.18 0 80-35.82 80-80S556.2 0 512 0c-44.18 0-80 35.82-80 80S467.8 160 512 160zM183.9 216c0-5.449 .9824-10.63 1.609-15.91C174.6 194.1 162.6 192 149.9 192H88.08C39.44 192 0 233.8 0 285.3C0 295.6 7.887 304 17.62 304h199.5C196.7 280.2 183.9 249.7 183.9 216zM128 160c44.18 0 80-35.82 80-80S172.2 0 128 0C83.82 0 48 35.82 48 80S83.82 160 128 160zM551.9 192h-61.84c-12.8 0-24.88 3.037-35.86 8.24C454.8 205.5 455.8 210.6 455.8 216c0 33.71-12.78 64.21-33.16 88h199.7C632.1 304 640 295.6 640 285.3C640 233.8 600.6 192 551.9 192z">
                                 </path>
                             </svg>
-                            Team Size: 20
+                            Team Size: 11
                         </li>
                         <li>
                             <svg class="svg-inline--fa fa-user list-icon" aria-hidden="true" focusable="false"
@@ -740,7 +947,7 @@
                                     d="M256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512zM232 256C232 264 236 271.5 242.7 275.1L338.7 339.1C349.7 347.3 364.6 344.3 371.1 333.3C379.3 322.3 376.3 307.4 365.3 300L280 243.2V120C280 106.7 269.3 96 255.1 96C242.7 96 231.1 106.7 231.1 120L232 256z">
                                 </path>
                             </svg>
-                            Time frame: 9 Weeks
+                            Time frame: 6 Weeks
                         </li>
                         <li>
                             <svg class="svg-inline--fa fa-user list-icon" aria-hidden="true" focusable="false"
@@ -750,20 +957,17 @@
                                     d="M331.8 224.1c28.29 0 54.88 10.99 74.86 30.97l19.59 19.59c40.01-17.74 71.25-53.3 81.62-96.65c5.725-23.92 5.34-47.08 .2148-68.4c-2.613-10.88-16.43-14.51-24.34-6.604l-68.9 68.9h-75.6V97.2l68.9-68.9c7.912-7.912 4.275-21.73-6.604-24.34c-21.32-5.125-44.48-5.51-68.4 .2148c-55.3 13.23-98.39 60.22-107.2 116.4C224.5 128.9 224.2 137 224.3 145l82.78 82.86C315.2 225.1 323.5 224.1 331.8 224.1zM384 278.6c-23.16-23.16-57.57-27.57-85.39-13.9L191.1 158L191.1 95.99l-127.1-95.99L0 63.1l96 127.1l62.04 .0077l106.7 106.6c-13.67 27.82-9.251 62.23 13.91 85.39l117 117.1c14.62 14.5 38.21 14.5 52.71-.0016l52.75-52.75c14.5-14.5 14.5-38.08-.0016-52.71L384 278.6zM227.9 307L168.7 247.9l-148.9 148.9c-26.37 26.37-26.37 69.08 0 95.45C32.96 505.4 50.21 512 67.5 512s34.54-6.592 47.72-19.78l119.1-119.1C225.5 352.3 222.6 329.4 227.9 307zM64 472c-13.25 0-24-10.75-24-24c0-13.26 10.75-24 24-24S88 434.7 88 448C88 461.3 77.25 472 64 472z">
                                 </path>
                             </svg>
-                            Engine: Unreal Engine 4
+                            Engine: Tengine
                         </li>
                     </ul>
                 </section>
 
-                <div class="portfolio-top">
-                    <a class="button" href="https://eventhorizonschool.itch.io/sycle" style="margin: 32px"
-                        target="_blank">Check
-                        it out on itch!</a>
+                <div class="portfolio-top">                
                     <a class="button"
-                        href="https://docs.google.com/document/d/171HLWJCvZm-YUy2dTY8t4dwzI0sAJhjWA31JT3TunYQ/edit?usp=sharing"
+                        href="https://docs.google.com/document/d/1Hp69zKVTAUsgdJZ_JDhPd2rvBwsbrr7sBoh1mwWfbYc/edit?usp=sharing"
                         style="margin: 32px" target="_blank">Read the GDD</a>
                     <a class="button"
-                        href="https://docs.google.com/presentation/d/1LxJdfwlkz7L0reH7ykF_QQy3QxZZA47McK090EXd4os/edit?usp=sharing"
+                        href="https://docs.google.com/presentation/d/1b4m6S9um3LEikyqLARc3S7QpbeKkFGTK3tgB3Y1nsi0/"
                         style="margin: 32px" target="_blank">Look at the Pitch</a>
                 </div>
 
@@ -772,44 +976,88 @@
                 <div class=gamedesc>
                     <h2 style="text-align:center;">Major Contributions</h2>
                     <div class="game-information">
-                        <p class="game-text"><span class="highlight">Gameplay Design:</span> Designed the
-                            player´s abilities, Damage over
-                            time(DOTs) and status effects.
-                            Moreover, introduced environmental obstacles, enhancing strategic depth.
+                        <p class="game-text"><span class="highlight">Lead Designer:</span> Game vision, meetings, decision-making and presentations, as well as scrum master.
                         </p>
                     </div>
                     <div class="game-information">
-                        <p class="game-text"><span class="highlight">Level Design:</span> Drafted and whiteboxed
-                            multiple levels, incorporating
-                            diverse win conditions.
-                            Ensured balance between teaching mechanics, combat scenarios, and puzzle-solving
-                            elements.
+                        <p class="game-text"><span class="highlight">Gameplay Design:</span> Responsible of designing the game´s core mechanics, and the enemies behaviour.
                         </p>
                     </div>
                     <div class="game-information">
-                        <p class="game-text"><span class="highlight">System Design:</span> Responsible for the
-                            delicate balance of the reverse
-                            progression system and gameplay elements.
-                            Conducted extensive playtesting, identifying and addressing bugs, and fine-tuning
-                            mechanics for an
-                            optimal player experience.
+                        <p class="game-text"><span class="highlight">Level Design:</span> Designed the game level, whiteboxed it in engine, and added all the colliders and triggers required.
                         </p>
                     </div>
-                    <h2>Read further down for more information on each category</h2>
+                    <div class="game-information">
+                        <p class="game-text"><span class="highlight">System Design:</span> Balanced the enemies stats and the power-ups scaling. Moreover, designed a wave system to spawn enemies, that increases periodically.
+                        </p>
+                    </div>
+                    <h3>Read further down for more information on each category</h3>
+                </div>
+
+                <div class=gamedesc>
+                    <h2>Game Design</h2>
+                    <div class="game-information">
+                        <p class="game-text">
+                            The project began with a blank canvas and the excitement of possibility. I was entrusted with the responsibility of designing the game from scratch and writing the Game Design Document (GDD). 
+                            Though I had the final say on our decisions, the team had a lot of interesting and exciting ideas for features, mechanics, animations, and more. Everyone had suggestions and was involved in shaping the game.
+                    </div>          
+                </div>
+
+                <div class=gamedesc>
+                    <h2>Project Management</h2>
+                    <div class="game-information">
+                        <p class="game-text">
+                            In the role of project manager, I found myself in the position of a guiding hand, ensuring the team remained focused and efficient. I was the scrum leader every morning, and I also handled the task of balancing resources,
+                             managing timelines, and coordinating efforts with respect for each team member's unique contributions.
+                    </div>          
+                </div>
+    
+                <div class=gamedesc>
+                    <h2>Gameplay Design</h2>
+                    <div class="game-information">
+                        <p class="game-text">
+                            In this project we wanted the player to experience the power and tension that comes from playing a fast-paced shooter, where they always have to be on the move and obliterate an infinite amount of enemies. 
+                            Our gameplay was very inspired by games like Doom and Ultrakill, we wanted enemy variety, but we chose to have only two enemy types for time constraints as we were developing the game in an almost barebone engine, and our programmers
+                            had a lot to focus on.
+                        </br>
+                        </br>
+                             These enemies were: a small Imp demon that would chase the player and die with a few projectiles, its strenght being in its speed and numbers; and a bigger unit called the Hog, that would shoot the player when they enter 
+                             its range, but in exchange of its attack range and large quantity of health points, it was a rarer and much slower unit.
+                            </br>
+                            </br>
+                            Moreover, I designed the movement and shooting mechanic of our player. For the movement, the goal was to make the player feel light on their feet while moving around, for that I designed a fast movement speed with a low 
+                            gravity on the player, and a dash mechanic to dodge enemy projectiles or quickly reposition on the map.
+                            Regarding the shooting, we did not have enough time to develop different guns, so I focused on giving the player an automatic weapon with flat damage no matter the distance, as they would be fighting infinite waves of enemies,
+                             and I felt that was the best choice to support the fast-pace feeling of our game and have a good playtime, as the player could continuously shoot enemies from far away if they kept moving. If they ever stopped they would get drowned by the amount of incoming enemies.
+                        </p>                  
+                    </div>
+                </div>
+
+                <div class=gamedesc>
+                    <h2>Level Design</h2>
+                    <div class="game-information">
+                        <p class="game-text">
+                            Before focusing on our game level I expanded the game setting to have a coherent space. Our final setting was very similar to the Castlevania TV series, basically waves of demons were pillaging the Earth and attacking 
+                            any people or religious building. The player would play as a priest protecting his cathedral and for this reason, the game level resembled a real cathedral. In fact, before working on the actual level, I researched the 
+                            architecture of many cathedrals (I was lucky enough to have visited many of them in Italy), the key elements that most if not all of them shared, like benches, pillars or the altars, and I also noticed how most of the 
+                            buildings also shared the same cross shape. After collecting enough info I and the other designer started working on some level mockups. My goal for the level was to have a large space around the pillars for the player 
+                            to run around, and an altar area where our power-ups would spawn. After completing our mockups, we compared them to see the strong and weak aspects of both, and for the final product we decided to mix our game levels 
+                            into one to utilize the strenghts of both. For example, I wanted to add some kind of siderooms in my level as it was very rectangular shaped and the experience inside it felt kinda monotonous. To solve this, inspired 
+                            by my colleague´s level, I added into mine a second floor that drastically improved the gameplay. After that, I noticed how the enemies could block the entrances to the second floor if there were too many, so I changed
+                             the pathways to reach it, adding a total of five different routes. Now that I had a level, I needed some kind of obstacles or props to fill the empty space, and knowing that the game was set in an Apocalypse, I talked 
+                             with our artists to break existing assets in our level, making the level feel affected by the changes in the game world. This resulted in using broken pillars or benches as obstacles.
+                        </p>                  
+                    </div>
                 </div>
 
                 <h2>Conclusion</h2>
                 <div class="game-information">
                     <p class="game-text">
-                        This project has been an important lesson. It was my and most of the group's first game in Unreal Engine, and we ended up overscoping a bit too much. 
-                        Even so, we learned a lot about the engine, and my contributions to the project were wide-spanning and focused a lot on both the team and my individual work. 
-                        I had the chance to focus on what I want to specialize in, that being Gameplay and System design. Moreover, I ended up having to take a lot of responsibility for the game,
-                         which I did not mind, and step in to help wherever we were struggling in the process. Our scope might have been too big for Sycle, resulting in a small demo rather than the
-                          complete game we desired, but it was a fun experience and a good lesson for the future.
+                        All in all, it was a good experience to learn how challenging it can be to work with a new tool such as a different Engine. We had to adapt our game to our constraints and look for creative solutions to obtain 
+                        good performance and mechanics. I had the opportunity to be the Project Lead and take a lot of responsibility for the game, stepping in to help wherever we were struggling in the process.
                     </p>
                 </div>
                 <hr style="width: 85vw; margin: 64px;">
-                <img style="align-self: center; max-width: 512px" src="images/demigameslogo.png" >
             </div>                  
     </section>
     <!-- END SECTION Priestcore -->
@@ -836,29 +1084,19 @@
         <div class="projects">
             <section class="project-card">
                 <h3>Project Summary</h3>
-                Sycle is a turn-based roguelite with a Mesoamerican-like aesthetic and a unique twist, a
-                reverse progression system.
-                </br>
-                In Sycle, the player's journey is marked by growing weaker as they advance. The crux of
-                success lies in Strategic decision-making and resource management.
-                The player assumes the role of Itzel, the Goddess of Change.
-                Her role is to perpetually sacrifice a portion of herself within each cycle to breathe life
-                back into a desolate world.
+                Nocturnal is a 2D platformer set in a dark and challenging environment. Tasked with overcoming deadly trials, the player navigates the shadows, utilizing three distinct abilities to reach their ultimate goal.
                 </br>
                 </br>
-                Our objective for this project was to carve out a niche in the realm of roguelites, charting
-                a course different from contemporaries.
-                For that, we chose Reverse Progression and Sacrifice as our main pillars, injecting an
-                innovative dynamic where empowerment yields to vulnerability.
-                </br>
-                Additionally, we wanted to push for an aesthetic that was not seen much in the industry, and
-                with some research,
-                we discovered how the ancient Mesoamerican cultures like the Aztec and Maya, seamlessly
-                integrated with the theme of Sacrifice.
+                This was my very first group project, and our team was largely comprised of individuals with limited experience, so we opted for a simple yet impactful concept, a 2D platformer.
+            </br>
+        </br> 
+                One of our key constraints was 
+                to use only black and white colors for the majority of the game. Throughout the development journey, my primary focus revolved around designing and refining core mechanics, as well as crafting a level with diverse
+                 challenges to deliver a gratifying experience to our players.
             </section>
             <section class="project-card">
 
-                <img style="height: 350px;" src="images/SycleNarrow.jpg">
+                <img style="height: 350px;" src="images/NocturnalNarrow.jpg">
 
                 <h3>Project Info</h3>
 
@@ -907,14 +1145,11 @@
             </section>
 
             <div class="portfolio-top">
-                <a class="button" href="https://eventhorizonschool.itch.io/sycle" style="margin: 32px"
+                <a class="button" href="https://eventhorizonschool.itch.io/nocturnal" style="margin: 32px"
                     target="_blank">Check
                     it out on itch!</a>
                 <a class="button"
-                    href="https://docs.google.com/document/d/171HLWJCvZm-YUy2dTY8t4dwzI0sAJhjWA31JT3TunYQ/edit?usp=sharing"
-                    style="margin: 32px" target="_blank">Read the GDD</a>
-                <a class="button"
-                    href="https://docs.google.com/presentation/d/1LxJdfwlkz7L0reH7ykF_QQy3QxZZA47McK090EXd4os/edit?usp=sharing"
+                    href="https://docs.google.com/presentation/d/1iw3mHkLS-xvY_zglB2lxxBqjRo6cfgp5/edit#slide=id.p1"
                     style="margin: 32px" target="_blank">Look at the Pitch</a>
             </div>
 
@@ -923,45 +1158,78 @@
             <div class=gamedesc>
                 <h2 style="text-align:center;">Major Contributions</h2>
                 <div class="game-information">
-                    <p class="game-text"><span class="highlight">Gameplay Design:</span> Designed the
-                        player´s abilities, Damage over
-                        time(DOTs) and status effects.
-                        Moreover, introduced environmental obstacles, enhancing strategic depth.
+                    <p class="game-text"><span class="highlight">Gameplay Design:</span> Designed the player's abilities and oversaw the design of the game camera to complement the platforming experience.
                     </p>
                 </div>
                 <div class="game-information">
-                    <p class="game-text"><span class="highlight">Level Design:</span> Drafted and whiteboxed
-                        multiple levels, incorporating
-                        diverse win conditions.
-                        Ensured balance between teaching mechanics, combat scenarios, and puzzle-solving
-                        elements.
+                    <p class="game-text"><span class="highlight">Level Design:</span> Designed and whiteboxed the level with a variety of different obstacles.
                     </p>
                 </div>
                 <div class="game-information">
-                    <p class="game-text"><span class="highlight">System Design:</span> Responsible for the
-                        delicate balance of the reverse
-                        progression system and gameplay elements.
-                        Conducted extensive playtesting, identifying and addressing bugs, and fine-tuning
-                        mechanics for an
-                        optimal player experience.
+                    <p class="game-text"><span class="highlight">System Design:</span> Adjusted player stats to align with the game level. Defined the range and timing parameters for moving obstacles,
+                         and introduced a beat chart to map the difficulty curve, aiding in identifying and addressing challenges during playtesting.
                     </p>
+                </div>    
+                <div class="text-container">                 
+                <h3>Read further down for more information on each category</h3>
+            </div>  
+            </div>
+
+            <div class=gamedesc>
+                <h2>Gameplay Design</h2>
+                <div class="game-information">
+                    <p class="game-text">
+                        In the early stages, the group decided on a 2D platformer with the unique twist of abilities acting as keys to specific challenges. As the person in charge of designing these abilities,
+                         knowing we lacked animators for this project, I designed simple mechanics that would not require distinctive animations.
+                        The finalized abilities included a double jump, a shrinking ability for tight spaces to evade traps, and a phantom creation feature to unlock doors.
+                </div>          
+            </div>
+
+            <div class=gamedesc>
+                <h2>Level Design</h2>
+                <div class="game-information">
+                    <p class="game-text">
+                        As my first level design experience, I started by observing references of Trial & Error platformers such as Limbo and Toby the Secret Mine, and I was also slightly inspired by
+                         Hollow Knight´s white palace, as I was playing it at the time. After analyzing those games, I created a legend of assets that I would need for our level. Knowing our game would be set 
+                         in a dark forest, these included spiky vines, swinging trunks, moving platforms, and moving snail as our enemies. With that ready I started sketching possible platforming challenges that 
+                         utilized one or a mix of our abilities. When I had a couple dozen of those sketches, I created a mockup of a possible game level and successively whiteboxed it in the engine.
+                    </p>
+                    <div>
+                        <img style="max-width: 400px; max-height: 300px;"  class="game-image" src="images/oldLevel.jpg">
+                        <p style="line-height: 0; font-size: small; font-style: italic;margin-left: 40px; margin-top: 10px;">The first development cycle of the game level.</p>
+                    </div>
                 </div>
-                <h2>Read further down for more information on each category</h2>
+
+                <div class="game-information">
+                    <p class="game-text">
+                        As soon as our abilities were ready, the group started to playtest the level, and here I noticed how the majority of the playtesters struggled to surpass some sections.
+                         After collecting feedback, I ended up reworking the level, introducing a tutorial for each ability at the start of the game, lowering the difficulty curve in some areas, and making the jump sections more intuitive.
+                    </p>                                                                     
+                </div>
+                <img class="gameimg" src="images/fullLev.jpg"> 
+                <p style="line-height: 0; font-size: small; font-style: italic;margin-left: 40px; margin-top: 10px;">The final look of the level.</p>
+            </div>
+
+            <div class=gamedesc>
+                <h2>System Design</h2>
+                <div class="game-information">
+                    <p class="game-text">
+                        After the level was ready, I tweaked the player´s speed and jump height to fit to the game level. I also set the range and timer for the moving platforms, spikes, and trunks.
+                        Moreover, as said before, in the game's first playtest the level was too hard for the majority of the players. As a solution, I reworked the level, but to prepare for future playtests
+                         I also created a beat chart to map the difficulty curve in each section of the level as a graph. This graph would let me know if I would have to rework other obstacles in certain areas 
+                         or add safe zones to break the pacing of the level and let players relax for a short while.
+                </div>          
             </div>
 
             <h2>Conclusion</h2>
             <div class="game-information">
                 <p class="game-text">
-                    This project has been an important lesson. It was my and most of the group's first game in Unreal Engine, and we ended up overscoping a bit too much. 
-                    Even so, we learned a lot about the engine, and my contributions to the project were wide-spanning and focused a lot on both the team and my individual work. 
-                    I had the chance to focus on what I want to specialize in, that being Gameplay and System design. Moreover, I ended up having to take a lot of responsibility for the game,
-                     which I did not mind, and step in to help wherever we were struggling in the process. Our scope might have been too big for Sycle, resulting in a small demo rather than the
-                      complete game we desired, but it was a fun experience and a good lesson for the future.
+                    Nocturnal stands as a significant milestone in my game design journey, marking my initiation into group projects. It was both a rewarding and challenging experience, offering valuable lessons,
+                     for example the importance of adapting a concept to fit the needs or constraints of the group, to obtain the best possible result.
                 </p>
             </div>
-            <hr style="width: 85vw; margin: 64px;">
-            <img style="align-self: center; max-width: 512px" src="images/demigameslogo.png" >
-        </div>                  
+            <hr style="width: 85vw; margin: 64px;">                
+</div>
 </section>
 <!-- END SECTION Nocturnal -->
 
