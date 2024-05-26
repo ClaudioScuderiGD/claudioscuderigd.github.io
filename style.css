@@ -1,4 +1,5 @@
-﻿body, html {
+﻿body,
+html {
     font-family: Montserrat, sans-serif;
     font-size: 16px;
     color: #e2f0f0;
@@ -16,33 +17,42 @@ html {
 p {
     text-align: justify;
     text-justify: inter-word;
-    letter-spacing: 0.05em; /* Default letter spacing */
-    margin: 0; /* Remove default margin */
-    font-size: 1rem; /* Base font size */
-   
+    letter-spacing: 0.05em;
+    /* Default letter spacing */
+    margin: 0;
+    /* Remove default margin */
+    font-size: 1rem;
+    /* Base font size */
+
 }
 
 /* Responsive styles for small screens */
 @media (max-width: 600px) {
     p {
-        font-size: 0.875rem; /* Smaller font size for mobile devices */
-        letter-spacing: 0.03em; /* Adjust letter spacing for smaller screens */
+        font-size: 0.875rem;
+        /* Smaller font size for mobile devices */
+        letter-spacing: 0.03em;
+        /* Adjust letter spacing for smaller screens */
     }
 }
 
 /* Responsive styles for medium screens */
 @media (min-width: 601px) and (max-width: 1024px) {
     p {
-        font-size: 1rem; /* Medium font size for tablets */
-        letter-spacing: 0.05em; /* Adjust letter spacing for medium screens */
+        font-size: 1rem;
+        /* Medium font size for tablets */
+        letter-spacing: 0.05em;
+        /* Adjust letter spacing for medium screens */
     }
 }
 
 /* Responsive styles for large screens */
 @media (min-width: 1025px) {
     p {
-        font-size: 1.125rem; /* Larger font size for desktops */
-        letter-spacing: 0.07em; /* Adjust letter spacing for larger screens */
+        font-size: 1.125rem;
+        /* Larger font size for desktops */
+        letter-spacing: 0.07em;
+        /* Adjust letter spacing for larger screens */
     }
 }
 
@@ -73,14 +83,14 @@ body.modal-active {
     font-size: 1px;
     line-height: 1px;
     overflow: hidden;
-    clip: rect(0,0,0,0);
+    clip: rect(0, 0, 0, 0);
     border: 0;
     outline: 0
 }
 
 @media(min-width: 1200px) {
     #app {
-        padding:16px
+        padding: 16px
     }
 }
 
@@ -127,9 +137,9 @@ body.modal-active {
     }
 }
 
-.content-wrapper .header h1 small{
+.content-wrapper .header h1 small {
     margin-top: 4px;
-    display:block;
+    display: block;
     font-size: 1.124rem;
     font-weight: 400;
 }
@@ -167,7 +177,7 @@ body.modal-active {
 
 @media(min-width: 768px) {
     .content-wrapper .header {
-        margin-bottom:256px;
+        margin-bottom: 256px;
         flex-direction: row;
         padding: 32px 16px 0 16px;
         margin: -32px -16px 16px -16px
@@ -182,7 +192,7 @@ body.modal-active {
 
 @media(min-width: 768px) {
     .about-information {
-        display:flex;
+        display: flex;
         flex-direction: row;
         align-items: center;
         margin-bottom: 5vh;
@@ -199,7 +209,7 @@ body.modal-active {
 }
 
 .profile-image:hover {
-    transform: translate(0px,-10px);
+    transform: translate(0px, -10px);
     transition-duration: 0.3s;
     border: 4px solid #f52c0d;
 }
@@ -210,7 +220,7 @@ body.modal-active {
 
 @media(min-width: 768px) {
     .about-information .profile-image {
-        margin-bottom:0;
+        margin-bottom: 0;
         margin-right: 48px;
     }
 }
@@ -223,7 +233,7 @@ body.modal-active {
 
 @media(min-width: 768px) {
     .about-information .about-text {
-        font-weight:300;
+        font-weight: 300;
         font-size: 2rem;
     }
 }
@@ -237,7 +247,7 @@ h2 {
 
 @media(min-width: 768px) {
     h2 {
-        font-size:2rem;
+        font-size: 2rem;
         margin: 16px 0;
     }
 }
@@ -263,7 +273,7 @@ h2 {
 
 @media(min-width: 768px) {
     .projects button.project-card {
-        margin:8px;
+        margin: 8px;
         font-size: 1.125rem;
         width: calc(50% - 16px)
     }
@@ -271,7 +281,7 @@ h2 {
 
 @media(min-width: 768px) {
     .projects section.project-card {
-        margin:8px;
+        margin: 8px;
         font-size: 1.125rem;
         width: calc(50% - 16px)
     }
@@ -300,19 +310,20 @@ h2 {
     background-color: #252525;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    overflow: hidden
+    overflow: hidden;
+    border-radius: 5px 5px 0px 0px;
 }
 
-.projects video{
+.projects video {
     width: 100%;
-    filter: grayscale(.5);
+    filter: grayscale(0);
 }
 
 .projects .project-card .project-video:before {
     content: "";
     -webkit-animation: placeholderAnimate-44a9db24 1s ease-in-out infinite;
     animation: placeholderAnimate-44a9db24 1s ease-in-out infinite;
-    background: linear-gradient(90deg,#252525 0,#1e1e1e 50%,#252525);
+    background: linear-gradient(90deg, #252525 0, #1e1e1e 50%, #252525);
     display: block;
     height: 100%;
     width: 33%;
@@ -329,7 +340,7 @@ h2 {
     margin-right: -32px;
     margin-bottom: -52px;
     left: -8px;
-    background-color: rgba(30,30,30,.8);
+    background-color: rgba(30, 30, 30, .8);
     top: -50px;
     font-size: .875rem
 }
@@ -344,7 +355,7 @@ h2 {
 
 @media(min-width: 768px) {
     .projects .project-card h3 {
-        font-size:1.5rem
+        font-size: 1.5rem
     }
 }
 
@@ -352,13 +363,14 @@ h2 {
     color: #f46049;
     display: flex;
     flex-wrap: wrap;
-    align-items: center
+    align-items: center;
 }
 
 .projects .project-card h3 small {
     display: block;
     font-weight: 400;
-    color: #e2f0f0
+    color: #e2f0f0;
+    font-size: 0.6em;
 }
 
 * {
@@ -387,7 +399,11 @@ h2 {
     width: 100%;
 }
 
-button,input,outgroup,select,textarea {
+button,
+input,
+outgroup,
+select,
+textarea {
     font-family: inherit;
     font-size: 100%;
     line-height: 1.15;
@@ -408,7 +424,7 @@ button,input,outgroup,select,textarea {
 
 @media(min-width: 768px) {
     .badge-list {
-        padding:8px 46px 0 46px;
+        padding: 8px 46px 0 46px;
     }
 }
 
@@ -454,7 +470,7 @@ button,input,outgroup,select,textarea {
 
 @media(min-width: 768px) {
     .information-section {
-        background:unset
+        background: unset
     }
 
     .information-section:after {
@@ -484,7 +500,7 @@ button,input,outgroup,select,textarea {
 
 @media(min-width: 768px) {
     .information-section .information-section-background {
-        margin-top:-101px;
+        margin-top: -101px;
         margin-left: -32px;
         padding-top: 85px;
         width: 100.6vw
@@ -493,7 +509,7 @@ button,input,outgroup,select,textarea {
 
 @media(min-width: 1216px) {
     .information-section .information-section-background {
-        margin-left:calc(-50vw + 575px);
+        margin-left: calc(-50vw + 575px);
         padding-left: calc(50vw - 575px);
         padding-right: calc(50vw - 575px)
     }
@@ -501,24 +517,29 @@ button,input,outgroup,select,textarea {
 
 @media(min-width: 1200px) {
     .information-section {
-        padding-top:30px;
+        padding-top: 30px;
         padding-bottom: 0px;
     }
 }
 
 .information-section .information-header {
     color: #ffffff;
+    margin-bottom: 25px;
 }
 
 .information-section .information-text {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     line-height: 1.44;
-    padding: 0
+    padding: 0 !important;
+}
+
+.information-section .information-text p {
+    letter-spacing: 0 !important;
 }
 
 @media(min-width: 768px) {
     .information-section .information-text {
-        padding:0 32px;
+        padding: 0 32px;
         font-size: 1.5rem
     }
 }
@@ -571,7 +592,7 @@ button,input,outgroup,select,textarea {
     content: "";
     -webkit-animation: placeholderAnimate-5e3d8dec 1s ease-in-out infinite;
     animation: placeholderAnimate-5e3d8dec 1s ease-in-out infinite;
-    background: linear-gradient(90deg,#252525 0,#1e1e1e 50%,#252525);
+    background: linear-gradient(90deg, #252525 0, #1e1e1e 50%, #252525);
     display: block;
     height: 100%;
     width: 33%;
@@ -582,8 +603,8 @@ button,input,outgroup,select,textarea {
 
 .portfolio-top video {
     width: 100%;
-    border-top-left-radius:5px;
-    border-top-right-radius:5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .project-top video {
@@ -592,14 +613,15 @@ button,input,outgroup,select,textarea {
     flex-wrap: wrap
 }
 
-.content-placeholder img,.content-placeholder video {
+.content-placeholder img,
+.content-placeholder video {
     z-index: 0;
     width: 100%
 }
 
 @media(min-width: 768px) {
     .project-top video {
-        width:calc(33.33333% - 8px)
+        width: calc(33.33333% - 8px)
     }
 }
 
@@ -609,13 +631,13 @@ button,input,outgroup,select,textarea {
     font-size: 1.125rem;
     margin-bottom: -49px;
     padding: 16px 16px;
-    background-color: rgba(30,30,30,.8);
+    background-color: rgba(30, 30, 30, .8);
     height: 53px
 }
 
 @media(min-width: 768px) {
     .portfolio-top h2 {
-        margin-bottom:-74px;
+        margin-bottom: -74px;
         top: -88px;
         font-size: 2rem;
         height: 69px;
@@ -1496,7 +1518,7 @@ body.isHome .goHomeButton {
     border-radius: 25px;
 }
 
-.goHomeButton button:hover{
+.goHomeButton button:hover {
     background-color: #f6bbb2;
 }
 
@@ -1542,6 +1564,7 @@ body.isHome .goHomeButton {
         padding-bottom: 1em;
     }
 }
+
 /* fatte da ME */
 
 
@@ -1563,15 +1586,15 @@ body.isHome .goHomeButton {
 
 @media(min-width: 768px) {
     .gamedesc .gamedesc-p {
-        margin:8px;
+        margin: 8px;
         font-size: 1.125rem;
-        width: 100%       
+        width: 100%
     }
 }
 
 @media(min-width: 768px) {
     .gamedesc section.gamedesc-p {
-        margin:8px;
+        margin: 8px;
         font-size: 1.125rem;
         width: calc(50% - 16px)
     }
@@ -1580,6 +1603,7 @@ body.isHome .goHomeButton {
 .game-information .game-text {
     color: #ffffff;
     margin: 0;
+    margin-bottom: 20px;
     font-size: 1.5rem;
 }
 
@@ -1605,7 +1629,7 @@ body.isHome .goHomeButton {
     }
 }
 
-.highlight{
+.highlight {
     font-weight: bold;
     color: #fbbe5b;
 }
@@ -1619,7 +1643,7 @@ game-information {
 /* prima era 5vh  */
 @media(min-width: 768px) {
     .game-information {
-        display:flex;
+        display: flex;
         flex-direction: row;
         align-items: center;
         margin-bottom: 1vh;
@@ -1627,82 +1651,218 @@ game-information {
     }
 }
 
-.game-information .game-image { 
+.game-information .game-image {
     max-width: 300px;
     margin: 0 auto 48px auto
 }
 
 @media(min-width: 768px) {
     .game-information .game-image {
-        margin-bottom:0;
+        margin-bottom: 0;
         margin-left: 48px;
     }
 }
 
-game-info{
+game-info {
     font-size: 1.5rem;
     flex-direction: column;
     margin-bottom: 48px
 }
 
 @media(min-width: 768px) {
-    .game-info{
+    .game-info {
         flex-direction: row;
         align-items: center;
         margin-bottom: 5vh;
         padding-top: 32px
     }
-}   
+}
 
 @media(min-width: 768px) {
     .game-info .game-text {
-        font-weight:300;
+        font-weight: 300;
         font-size: 1.2rem;
     }
 }
 
 .gameimg {
-    max-width: 100%;  /* Allow the image to scale down with the screen size */
-    width: 100%;      /* Ensure the image takes up 100% of the container width */
-    height: auto;     /* Maintain the aspect ratio of the image */
+    max-width: 100%;
+    /* Allow the image to scale down with the screen size */
+    width: 100%;
+    /* Ensure the image takes up 100% of the container width */
+    height: auto;
+    /* Maintain the aspect ratio of the image */
     margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
-    display: block;   /* Center the image horizontally */
+    display: block;
+    /* Center the image horizontally */
 }
 
 .text-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center; /* Center text horizontally */
-    padding: 20px; /* Optional: Add some padding */
-    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+    text-align: center;
+    /* Center text horizontally */
+    padding: 20px;
+    /* Optional: Add some padding */
+    box-sizing: border-box;
+    /* Ensure padding is included in the element's total width and height */
 }
 
 /* H3 styles */
 .text-container h3 {
-    margin: 0; /* Remove default margin */
-    font-size: 1.5rem; /* Base font size */
-    color: #ffffff; /* Text color */
-    letter-spacing: 0.05em; /* Increase letter spacing */
+    margin: 0;
+    /* Remove default margin */
+    font-size: 1.5rem;
+    /* Base font size */
+    color: #ffffff;
+    /* Text color */
+    letter-spacing: 0.05em;
+    /* Increase letter spacing */
 }
 
 /* Responsive text sizes */
 @media (max-width: 600px) {
     .text-container h3 {
-        font-size: 1.25rem; /* Smaller font size for mobile devices */
+        font-size: 1.25rem;
+        /* Smaller font size for mobile devices */
     }
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
     .text-container h3 {
-        font-size: 1.5rem; /* Medium font size for tablets */
+        font-size: 1.5rem;
+        /* Medium font size for tablets */
     }
 }
 
 @media (min-width: 1025px) {
     .text-container h3 {
-        font-size: 1.75rem; /* Larger font size for desktops */
+        font-size: 1.75rem;
+        /* Larger font size for desktops */
     }
+}
+
+
+/* MODIFICHE GIACOMO */
+
+.center-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.projects-info-container {
+    width: 100%;
+    display: flex;
+}
+
+.gameDesch2 {
+    width: 100%;
+    background: #f46049;
+    margin: -22px;
+    margin-left: -54px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    width: calc(100% + 80px);
+    box-sizing: border-box;
+    padding: 20px 10px 20px 50px;
+    text-transform: uppercase;
+    position: relative;
+    color: #fff;
+    box-shadow: 5px 5px 5px rgba(30, 30, 30, .8);
+}
+
+.gameDesch2::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 20px 30px;
+    border-color: transparent transparent #f46049 transparent;
+}
+
+@media screen and (max-width: 1260px) {
+    .gameDesch2::before {
+        content: none;
+    }
+
+    .gameDesch2 {
+        margin-left: -24px;
+        margin-top: -22px;
+        border-radius: 5px 5px 0px 0px;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .projects-info-container {
+        flex-direction: column-reverse;
+    }
+
+    .projects section.project-card {
+        width: 100%;
+    }
+
+    .projects-info-container img {
+        max-height: 100px;
+    }
+
+    .portfolio-top.center-buttons {
+        flex-direction: column;
+    }
+
+    .about-information .about-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content-wrapper .header .links.top {
+        display: none;
+    }
+
+    .about-information img.profile-image {
+        display: none;
+    }
+
+    .about-information {
+        padding-top: 0px;
+        margin-bottom: 35px;
+    }
+
+    .about-information .about-text {
+        font-size: 1.1rem;
+    }
+
+    .content-wrapper .header {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gameDesch2 {
+        font-size: 1.2em;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+    }
+}
+
+footer {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
 }
