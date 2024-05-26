@@ -448,8 +448,8 @@
                                 </p>
                             </div>    
                             <div class="text-container">                 
-                            <h3>Read further down for more information on each category</h3>
-                        </div>  
+                                <h3>Read further down for more information on each category</h3>
+                            </div>    
                         </div>
 
                         <div class=gamedesc>
@@ -698,7 +698,9 @@
                             <p class="game-text"><span class="highlight">System Design:</span> Responsible for the balancing of player and enemy stats, including those of the boss character.
                             </p>
                         </div>
-                        <h3>Read further down for more information on each category</h3>
+                        <div class="text-container">                 
+                            <h3>Read further down for more information on each category</h3>
+                        </div>  
                     </div>
 
                     <div class=gamedesc>
@@ -712,8 +714,9 @@
                                 The game core loop revolves around exploring rooms within a house, searching for power-ups and secrets, battling malevolent toys, and ultimately facing off against each room's boss.
                             </p>
                         </div>
-                        <div class="game-info">
-                            <h3 class="highlight">Movement</h4>
+
+                        <h2 style="margin-top: 50px;" class="highlight">Movement</h2>
+                        <div class="game-information">
                             <p class="game-text">
                                 Movement was one of our core mechanics, and we wanted it to be intuitive and easy to control, so even a younger audience could play without problems. 
                                 I started by giving the toy plane a permanent forward movement, so that our players would have only to steer and worry about the direction rather than their speed. 
@@ -734,24 +737,26 @@
                             </div>
                         </div>              
 
-                    <div  class="game-info">                   
+                    <div class="game-information">                   
                         <p class="game-text">
                             Moreover, after various playtests, I noticed how the automatic forward movement was giving problems to some of our players when they 
                             tried to make precise maneuvers, so later on, I decided to add two buttons, one to speed up and one to slow down the movement speed of our plane,
                              giving more control to the players that desired it.
                     </p>                          
                 </div>
-
-                <div class="game-info">
-                    <h3 class="highlight">Combat</h4>
+       
+                <h2 style="margin-top: 50px;" class="highlight">Combat</h2>
+                <div class="game-information">
                     <p class="game-text">
                         While designing the movement of our player, I was also keeping in mind our second core mechanic, that being the shooting of our player but also of the game's enemies. 
                         For the player, I decided to have two distinct shooting modes, one with a high rate of fire and a low damage output, and the second one being a powerful attack characterized by a slow rate of fire,
                          that zoomed our camera in to take aim and unleash a magical rocket. Each shooting type had its projectile lifetime, speed, reload time, and magazine size.
-                        When the shooting of the player was done, I and another designer, started working on the enemies. We wanted to have a good variety of enemy types and behaviours, 
+                        When the shooting of the player was done, I and another designer, started working on the enemies. 
+                        <br>
+                        We wanted to have a good variety of enemy types and behaviours, 
                         so we designed 4 different types of enemies, each with its own strenght and weaknesses, and they are:
                     </p>   
-                    
+                </div>
                     <div class="game-info">                                                     
                         
                         <div class="game-information"> 
@@ -766,7 +771,7 @@
                         <div class="game-information"> 
                         <p class="game-text">                
                             <b>Ground Mobile:</b> The most frequent enemies, the unicorns are ground units that patrol in a set path. When the player enters their range, they start following them 
-                            and shooting sparkly projectiles.The unicorn patrols vary in size, having both small unicorns with low health points, and bigger mama unicorns that are more resistant
+                            and shooting sparkly projectiles. The unicorn patrols vary in size, having both small unicorns with low health points, and bigger mama unicorns that are more resistant
                              to the player's magic. In addition, the unicorns deal low damage with their attacks but they have a unique rate of fire, almost like a laser, making them a threatening unit if not left alone.
                         </p>       
                         <img style=" max-width:250px; max-height: 250px;"  class="game-image" src="images/unicorn.png">
@@ -794,10 +799,12 @@
 
                 
                
-                    <h3 class="highlight">Feedback</h3>
+                    <h2 class="highlight">Feedback</h2>
                     <div class="game-information">
                         <p class="game-text">
-                            After the core mechanics were ready, it was time to design how to communicate all those actions to the player. I started with a Health bar for both the player and the enemies, 
+                            After the core mechanics were ready, it was time to design how to communicate all those actions to the player.
+                            <br>
+                            I started with a Health bar for both the player and the enemies, 
                         showing their current health. After that, I added visual cues for player damage such as a red outline on the screen, and successively an animation, to communicate it as clearly as possible.
                         Following that, I also wanted to prevent spam shooting in our game, so I designed an overheat system that disabled the player´s shooting if they fired too many bullets in a short amount of time.
                          To convey that without adding an ammo counter, I added a red bar, inside the crosshair to be specific, that was slightly filled every time the player shot a bullet, and emptied if they did not shoot for a few seconds.
@@ -807,8 +814,8 @@
                         </div>
                     </div>
                          
-                <div class="game-info">
-                    <h3 class="highlight">Replayability</h3>
+                    <h2 style="margin-top: 50px;" class="highlight">Replayability</h2>
+                <div class="game-information">
                     <p class="game-text">
                         The game was supposed to have 5 different rooms for our players to explore, but our vertical slice only had 1 room to show our gameplay. Even so, during playtest we observed how some of our players
                          wanted to compete with each other, trying to complete the level in the fastest way possible. Analyzing that, I decided to add a score system, that gives points to the player on each enemy defeated 
@@ -823,8 +830,10 @@
                 <h2>Level Design</h2>
                 <div class="game-information">
                     <p class="game-text">
-                        For this project I worked closely with the art department to create our game level. We wanted to have a believable space, so, before creating mockups or blockouts, each member of the team sent photos of their 
-                        room as references. I started analyzing them to see where the furnishings were placed, which were the recurrent items, and how large our environment should be. After having a rough idea, I created the level blockout 
+                        For this project I worked closely with the art department to create our game level. We wanted to have a believable space, so, before creating mockups or blockouts, each member of the team sent photos of 
+                        rooms as references.
+                        <br>
+                         I started analyzing them to see where the furnishings were placed, which were the recurrent items, and how large our environment should be. After having a rough idea, I created the level blockout 
                         in engine. As soon as we started playtesting our movement in the scene, we noticed that if the player moved in a straight direction, they would traverse the entirety of the room in less than 10 seconds, and that was an issue.
                     </p>
                     <div>
@@ -834,11 +843,14 @@
                 <div class="game-information">
                     <p class="game-text">
                         I and the rest of the team liked the movement speed of our character, so the only choice was to make the level bigger. I started looking at references of mansions´ rooms, to then create a new blockout that was 3 times larger when 
-                        compared to our old level. Then, I divided the new level into 7 different areas, each offering a somewhat unique experience, from safe zones to environmental mazes hiding power-ups and increased enemy encounters. The goal was to provide
+                        compared to our old level.
+                        <br>
+                        <br>
+                        Then, I divided the new level into 7 different areas, each offering a somewhat unique experience, from safe zones to environmental mazes hiding power-ups and increased enemy encounters. The goal was to provide
                          meaning and pacing in different parts of the room, contributing to an engaging gameplay experience.
                         Moreover, while placing the enemies in the scene, I set the route of all the moving ones using a point to point movement system, and created various spawn points for them, to have kind of different runs everytime the player decided to run 
                         the game.
-                        Here there are some screens of the level with a description of their features:
+                        Here there are some examples of the level areas with a description of their features:
                     </p>                
                 </div>
                 <br>
@@ -991,7 +1003,9 @@
                         <p class="game-text"><span class="highlight">System Design:</span> Balanced the enemies stats and the power-ups scaling. Moreover, designed a wave system to spawn enemies, that increases periodically.
                         </p>
                     </div>
-                    <h3>Read further down for more information on each category</h3>
+                    <div class="text-container">                 
+                        <h3>Read further down for more information on each category</h3>
+                    </div>              
                 </div>
 
                 <div class=gamedesc>
@@ -1040,10 +1054,16 @@
                             Before focusing on our game level I expanded the game setting to have a coherent space. Our final setting was very similar to the Castlevania TV series, basically waves of demons were pillaging the Earth and attacking 
                             any people or religious building. The player would play as a priest protecting his cathedral and for this reason, the game level resembled a real cathedral. In fact, before working on the actual level, I researched the 
                             architecture of many cathedrals (I was lucky enough to have visited many of them in Italy), the key elements that most if not all of them shared, like benches, pillars or the altars, and I also noticed how most of the 
-                            buildings also shared the same cross shape. After collecting enough info I and the other designer started working on some level mockups. My goal for the level was to have a large space around the pillars for the player 
+                            buildings also shared the same cross shape. 
+                            <br>
+                            <br>
+                            After collecting enough info I and the other designer started working on some level mockups. My goal for the level was to have a large space around the pillars for the player 
                             to run around, and an altar area where our power-ups would spawn. After completing our mockups, we compared them to see the strong and weak aspects of both, and for the final product we decided to mix our game levels 
                             into one to utilize the strenghts of both. For example, I wanted to add some kind of siderooms in my level as it was very rectangular shaped and the experience inside it felt kinda monotonous. To solve this, inspired 
-                            by my colleague´s level, I added into mine a second floor that drastically improved the gameplay. After that, I noticed how the enemies could block the entrances to the second floor if there were too many, so I changed
+                            by my colleague´s level, I added into mine a second floor that drastically improved the gameplay. 
+                            <br>
+                            <br>
+                            After that, I noticed how the enemies could block the entrances to the second floor if there were too many, so I changed
                              the pathways to reach it, adding a total of five different routes. Now that I had a level, I needed some kind of obstacles or props to fill the empty space, and knowing that the game was set in an Apocalypse, I talked 
                              with our artists to break existing assets in our level, making the level feel affected by the changes in the game world. This resulted in using broken pillars or benches as obstacles.
                         </p>                  
@@ -1179,7 +1199,7 @@
                 <h2>Gameplay Design</h2>
                 <div class="game-information">
                     <p class="game-text">
-                        In the early stages, the group decided on a 2D platformer with the unique twist of abilities acting as keys to specific challenges. As the person in charge of designing these abilities,
+                        In the early stages, the group decided on making a 2D platformer where abilities acts as keys to specific challenges. As the person in charge of designing these abilities,
                          knowing we lacked animators for this project, I designed simple mechanics that would not require distinctive animations.
                         The finalized abilities included a double jump, a shrinking ability for tight spaces to evade traps, and a phantom creation feature to unlock doors.
                 </div>          
@@ -1255,7 +1275,7 @@
                     <section>
                         <div class="project-video" :before>
                             <video playsinline loop autoplay preload="metadata" muted>
-                                <source src="videos/RocketRiderShort.mp4" type="video/mp4">
+                                <source src="videos/RocketRiderShortt.mp4" type="video/mp4">
                                 " Your browser does not support the video tag or the file format of this video.
                                 "
                             </video>
@@ -1293,7 +1313,7 @@
                             </div>
                         </div>
                         <h3 class="clickable-card-header" :not>
-                            Rocket Rider (WIP)
+                            Rocket Rider
                             <svg class="svg-inline--fa fa-chevron-right clickable-header-icon" aria-hidden="true"
                                 focusable="false" data-prefix="fas" data-icon="chevron-right" role="img"
                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
@@ -1304,7 +1324,7 @@
                             <small>Gameplay, System & UI Designer</small>
                         </h3>
                         <p>
-                            Rocket Riding is a fast-paced beat-em-up, where the player character rides a rocket as a
+                            Rocket Rider is a fast-paced hack n slash, where the player rides a rocket as a
                             hoverboard, and uses that to perform attacks against robotic enemies.
                         </p>
                     </section>
