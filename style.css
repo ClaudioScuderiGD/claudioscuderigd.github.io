@@ -1866,3 +1866,18 @@ footer {
     display: flex;
     justify-content: flex-end;
 }
+
+.aboutimage{
+border: 4px solid #f46049;
+    max-width: 248px;
+    border-radius: 50%;
+    filter: grayscale(40%);
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.aboutText{
+    font-size: 2rem;
+    }
