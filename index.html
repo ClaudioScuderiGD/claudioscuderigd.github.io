@@ -214,11 +214,17 @@
                         <div class="projects-info-container">
                         <section class="project-card">
                             <h3>Project Summary</h3>
-                            Rocket Rider is a fast-paced hack & slash, where the player rides a rocket as a
-                            hoverboard, and uses that to perform attacks against robotic enemies.
+                            Rocket Rider is an action game that fuses platforming with intense hack & slash combat. 
+                            The game is set in a dystopian futuristic city heavily controlled by the authorities that oppress the citizens with unending curfews.
+                        </br>
+                            The player assumes the role of John Rider, a rocket-riding rebel, too stubborn and knowledgeable to bend to the regime.
+                        </br>
+                            His goal? To ignite the spark of rebellion, dismantle the enforcers' armies and free the city!
                             </br>
                             </br>
-                            
+                            Our goal for this project was to develop a distinctive hack-and-slash game where the player is constantly on the move, riding a rocket. 
+                            We aimed to deliver a power fantasy experience, allowing players to deal immense damage while also being highly vulnerable to enemy attacks. 
+                            This design encourages players to rely on their rapid movement to navigate and survive, rather than confronting enemies head-on.                           
                         </section>
                         <section class="project-card">
                             <img style="height: 350px;" src="images/RocketRiderPoster.png">
@@ -327,7 +333,7 @@
                                     Designed the game UI and implemented its functionality.
                                 </p>
                                 <p class="game-text">
-                                    Created a bug list document to keep track of issues and fix them following their priority
+                                    Created a bug list document to keep track of issues and fix them following their priority.
                                 </p>
                             </div>
                         </div>
@@ -336,115 +342,62 @@
                         </div>
                     </div>
 
-                    <!-- 
+                     
                     <div class=gamedesc>
                         <h2 class="gameDesch2">Gameplay Design</h2>
                         <div class="game-information">
-                            <p class="game-text">
-                                At the start of the project, I was entrusted with the making of the player´s abilities.
-                                Before
-                                starting to design skills that would work well for a
-                                strategic turn-based game, I focused on our main character Persona, the goddess Itzel,
-                                and what
-                                would fit her theme, not only mechanic-wise, but also
-                                from a narrative point of view. In doing so I started researching various Mythologies
-                                and their
-                                related gods, mostly Mesopotamian, Inca, and African
-                                until I found all the references I needed. The player has 4 abilities at their disposal
-                                each with a unique effect and different use case, they are:
-                            </p>
-                        </div>
-                        <div class="game-info">
-                            <h3 class="highlight">Earthquake</h4>
+                            
+                            <div>
                                 <p class="game-text">
-                                    The earthquake is an ability that deals damage to enemies and pushes them away from
-                                    the player,
-                                    creating a shield of rocks and difficult terrain
-                                    around Itzel. This skill was inspired by the Earth Mother and fertility goddess of
-                                    Inca
-                                    mythology Pachamama. Its main use is not only to damage enemies but to gain
-                                    protection from ranged
-                                    attacks or secure some time as melee enemies would have to
-                                    find another path or break the newly created obstacle. The process in mind when
-                                    designing this
-                                    skill was
-                                    to give the player some kind of survivability as they
-                                    would be playing as one unit vs many.
-                                </p>
-                                <br>
-
-                                <h3 class="highlight">Meteor Fall</h4>
-                                    <p class="game-text">
-                                        The meteor fall is a short-range ability that deals massive damage, burns
-                                        enemies in a large
-                                        area, and destroys the obstacles hit.
-                                        This skill was inspired by Ishtar the ancient Mesopotamian goddess of love, war,
-                                        and fertility.
-                                        This skill is meant to be used against a
-                                        group of enemies or to open paths that would be inaccessible otherwise. The
-                                        design for this
-                                        ability was quite simple, the game required some
-                                        kind of powerful attack to kill multiple enemies, so I created a short-range
-                                        explosive spell,
-                                        that would also modify the environment, as a meteor
-                                        falling to the ground would definitely have a big effect in the area around it.
-                                    </p>
-                                    <br>
-
-                                    <h3 class="highlight">Tornado</h4>
-                                        <p class="game-text">
-                                            The tornado is an ability that deals low damage and pushes all the enemies
-                                            around it. This skill
-                                            was inspired by Hadad the storm and rain god
-                                            in the Mesopotamian religions. The tornado's main use is to displace enemies
-                                            into
-                                            obstacles to damage or kill them. For example, the player
-                                            could instantly kill a strong enemy by making it fall into a canyon. The
-                                            process behind this
-                                            skill was to create something that made the player
-                                            interact with the environment and use it to its advantage, enabling various
-                                            playstyles.
-                                        </p>
-                                        <br>
-
-                                        <h3 class="highlight">Holy Smite</h4>
-                                            <p class="game-text">
-                                                The holy smite is a long-range ability that damages enemies and lowers
-                                                their defense, moreover,
-                                                it ignores obstacles in its trajectory,
-                                                as it´s literal lightning falling from the sky. This skill was inspired
-                                                by Inanna the ancient
-                                                Mesopotamian goddess of fertility and enforcer
-                                                of divine justice. This ability was the last one to be made, and while
-                                                doing so, I realized how
-                                                the player was missing a long-range attack
-                                                or in general an action to make when enemies were still far away. For
-                                                this reason, I opted for a
-                                                long-range attack that debuffed enemies.
-                                            </p>
-                        </div>
-
-                        <div class="game-information">
-                            <p class="game-text">
-                                After the abilities were done I needed to design various obstacles to fill the game grid
-                                with something other than walls and covers
-                                and give a reason to the player to interact with the environment. Since my programmers
-                                already did the code for damage-over-time effects for the player´s abilities,
-                                I decided to build upon them and add new effects with similar behaviors, so that I could
-                                modify them myself. I ended up creating over 10 different obstacles with
-                                distinctive effects, pointy walls that would make enemies bleed, columns that could be
-                                broken and stun enemies hit by the rubble, terrains that would slow or
-                                damage enemies, boulders that could be pushed and knock away enemies and so on.
+                                At the start of the project, I was entrusted to design most of the gameplay elements such as the player movement, camera, and attacks, while my colleagues focused on the level design.
                             </p>
+
+                            <h2 style="margin-top: 50px;" class="highlight">Player Movement</h2>
+                            <div class="game-information">
+                            <p class="game-text">
+                                Given the premise of riding a rocket and engaging multiple enemies, I opted for high movement speed and a lerp for rotation to avoid quick turns, simulating a more realistic rocket maneuver. 
+                                Additionally, I introduced a boost mechanic to provide a quick burst of speed, useful in both combat and platforming scenarios.
+                            </p>   
+                            <!-- <img style=" max-width:250px; max-height: 200px;" class="game-image" src="images/unicorn.png"> -->
                         </div>
-                        <img class="gameimg" src="images/syclestats3.png">
 
-                       
-                        <p style="line-height: 0; font-size: small; font-style: italic;">Some of the environmental
-                            obstacles.</p>
+                        <h2 style="margin-top: 50px;" class="highlight">Player Camera</h2>
+                            <div class="game-information">
+                            <p class="game-text">
+                                For the camera, I was inspired by Devil May Cry 5 and Hi-Fi Rush. I implemented a close third-person perspective with the player centered on the screen. 
+                                The camera dynamically adjusts, pulling back when the player moves and allowing for independent rotation input. This setup enables the player to move in the camera's direction if desired.
+                            </p>   
+                            <!-- <img style=" max-width:250px; max-height: 250px;" class="game-image" src="images/unicorn.png"> -->
+                        </div>
 
-                    </div>
+                        <h2 style="margin-top: 50px;" class="highlight">Combat Design</h2>
+                            <div class="game-information">
+                            <p class="game-text">
+                                Once the movement mechanics were finalized, I shifted focus to combat. I designed two enemy types and used flowcharts to communicate their behaviors to the programmers. 
+                                The first enemy, Goro, is a slow but powerful melee unit, while the second, Beedrone, is a fast but fragile ranged enemy.
+                            </p>   
+                        </div>
 
+                            <p class="game-text">
+                                For the player's attacks, I drew from references and ideas from my teammates, ultimately deciding on three distinct attacks:
+                            </p>
+                                <p class="game-text">
+                                <b>Rocket Swirl:</b> A melee attack with a fast animation, that can combo up to 3 times, dealing massive damage and repositioning the player out of enemy range.
+                               
+                                </p> 
+                                <p class="game-text">
+                                <b>Rocket Slam:</b> A powerful area-of-effect (AOE) explosion with a cooldown, damaging everything within its range.
+                                </p> 
+                                <p class="game-text">
+                                <b>Rocket Barrage:</b> A ranged attack that shoots a burst of missiles from the player's back. While it doesn't deal significant damage, it is useful for poking enemies and maintaining Style Points.
+                                </p> 
+                                              
+                            </div>
+
+                        </div>
+                    </div>      
+
+                    <!--
                     <div class=gamedesc>
                         <h2 class="gameDesch2">Level Design</h2>
                         <div class="game-information">
