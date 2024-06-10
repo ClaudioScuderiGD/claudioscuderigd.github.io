@@ -361,7 +361,7 @@
 
                      
                     <div class=gamedesc>
-                        <h2 class="gameDesch2">Gameplay Design</h2>
+                        <h2 class="gameDesch2">Gameplay Design (Coming Soon)</h2>
                         <div class="game-information">
                             
                             <div>
@@ -369,26 +369,41 @@
                                 At the start of the project, I was entrusted to design most of the gameplay elements such as the player movement, camera, and attacks, while my colleagues focused on the level design.
                             </p>
 
-                            <h2 style="margin-top: 50px;" class="highlight">Player Movement</h2>
-                            <div class="game-information">
+                            <h2 style="margin-top: 50px;" class="highlight">Player Movement</h2>   
                             <p class="game-text">
-                                Given the premise of riding a rocket and engaging multiple enemies, I opted for high movement speed and a lerp for rotation to avoid quick turns, simulating a more realistic rocket maneuver. 
-                                Additionally, I introduced a boost mechanic to provide a quick burst of speed, useful in both combat and platforming scenarios.
+                                Designing the movement for this game was a big challenge, as at the start of the project we did not have a clear direction or reference to follow.
+                            </p>
+                            <p class="game-text">
+                                Given the premise of riding a rocket and engaging multiple enemies, I opted for a forward movement with a high movement speed and the use of a 
+                                lerp for rotation to avoid quick turns, simulating a more realistic rocket maneuver. 
+                                <center><img class="gameimg" src="images/RocketRiderMovement.gif"></center>
+                            </p>
+                            <p style="margin-top: 40px;" class="game-text">
+                                After that, I had to imagine what would happen if the player´s rocket got destroyed, so I added a basic movement for the character when grounded. 
+                            </p>
+                            <p class="game-text">
+                                Then, after playtesting, the team noticed how boring it was to be grounded and run around only to wait for the rocket to respawn.
+                            </p>
+
+                            <p class="game-text">
+                                To solve this issue, we tried different solutions, like giving the player more things to do while on ground like using stun grenades or doing precise platforming, but
+                                at the end we chose to completely get rid of the ground movement as that slowed too much the pacing of our game and we wanted our focus to be on rocket-riding.
                             </p>   
-                            <!-- <img style=" max-width:250px; max-height: 200px;" class="game-image" src="images/unicorn.png"> -->
+                            </div>
                         </div>
 
                         <h2 style="margin-top: 50px;" class="highlight">Player Camera</h2>
                             <div class="game-information">
                             <p class="game-text">
                                 For the camera, I was inspired by Devil May Cry 5 and Hi-Fi Rush. I implemented a close third-person perspective with the player centered on the screen. 
-                                The camera dynamically adjusts, pulling back when the player moves and allowing for independent rotation input. This setup enables the player to move in the camera's direction if desired.
+                                The camera dynamically adjusts, pulling back when the player moves and allowing for independent rotation input. This setup enables the player to move in the camera's direction if desired
+                                 or to look around without heading in that direction.
                             </p>   
                             <!-- <img style=" max-width:250px; max-height: 250px;" class="game-image" src="images/unicorn.png"> -->
                         </div>
 
                         <h2 style="margin-top: 50px;" class="highlight">Combat Design</h2>
-                            <div class="game-information">
+                        <div class="game-information">
                             <p class="game-text">
                                 Once the movement mechanics were finalized, I shifted focus to combat. I designed two enemy types and used flowcharts to communicate their behaviors to the programmers. 
                                 The first enemy, Goro, is a slow but powerful melee unit, while the second, Beedrone, is a fast but fragile ranged enemy.
@@ -399,7 +414,7 @@
                                 For the player's attacks, I drew from references and ideas from my teammates, ultimately deciding on three distinct attacks:
                             </p>
                                 <p class="game-text">
-                                <b>Rocket Swirl:</b> A melee attack with a fast animation, that can combo up to 3 times, dealing massive damage and repositioning the player out of enemy range.
+                                <b>Rocket Swirl:</b> A melee attack with a fast animation, that can combo up to 3 times, dealing medium damage and repositioning the player out of enemy range.
                                
                                 </p> 
                                 <p class="game-text">
@@ -408,10 +423,20 @@
                                 <p class="game-text">
                                 <b>Rocket Barrage:</b> A ranged attack that shoots a burst of missiles from the player's back. While it doesn't deal significant damage, it is useful for poking enemies and maintaining Style Points.
                                 </p> 
-                                              
-                            </div>
-
-                        </div>
+                                       
+                                <div class="game-information">
+                                    <div>
+                                <p class="game-text">
+                                    After the attacks were done, I noticed that some players struggled to hit enemies with their melee attack, as the player always kept on moving
+                                    while on the rocket, so I designed a lock-on system to guide the player´s attacks towards the enemy closest to them or the center of the camera.
+                                    Then, I rendered a widget on top of the locked on enemy to give a visual feedback to the player. 
+                                    <br>
+                                    This solution drastically improved our game 
+                                    combat, making it more intuitive.
+                                </p>
+                                <center><img class="gameimg" src="images/RocketRiderLocking.gif"></center>
+                                    </div>
+                            </div>                
                     </div>      
 
                     <!--
@@ -1631,18 +1656,7 @@
                         Nocturnal
                     </h2>
                 </div>
-                <div class="portfolio-top">
-                    <div class="content-placeholder" :before>
-                        <!-- <video autoplay controls muted>
-                    <source src="videos/SycleTrailer.mp4" type="video/mp4">
-                </video> -->
-                        <video playsinline loop autoplay preload="metadata" muted>
-                            <source src="videos/SycleTrailer.mp4" type="video/mp4">
-                            Your browser does not support the video tag or the file format of this video.
-                        </video>
-                    </div>
-                    <h2>Nocturnal Game Trailer</h2>
-                </div>
+                
                 <div class="projects">
                     <div class="projects-info-container">
                     <section class="project-card">
