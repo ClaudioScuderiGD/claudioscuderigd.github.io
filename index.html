@@ -2045,7 +2045,7 @@
                     <button type="button" class="project-card section-trigger" data-section="RocketRider">
                         <section>
                             <div class="project-video" :before>
-                                <video class="playonhover" playsinline loop _autoplay preload="metadata" muted
+                                <video class="1playonhover" playsinline loop autoplay preload="metadata" muted
                                     poster="images/RocketRiderFirstFrame.jpg" poster="images/Loading.png">
                                     <source src="videos/RocketRiderShorttCompressed.mp4" type="video/mp4">
                                     " Your browser does not support the video tag or the file format of this video.
@@ -2106,7 +2106,7 @@
                     <button type="button" class="project-card section-trigger" data-section="Sycle">
                         <section>
                             <div class="project-video" :before>
-                                <video class="playonhover" playsinline loop preload="metadata" muted
+                                <video class="1playonhover" playsinline autoplay loop preload="metadata" muted
                                     poster="images/SycleFirstFrame.jpg">
                                     <source src="videos/SyclePreviewComp.mp4" type="video/mp4">
                                     " Your browser does not support the video tag or the file format of this video.
@@ -2168,7 +2168,7 @@
                     <button type="button" class="project-card section-trigger" data-section="WonderWings">
                         <section>
                             <div class="project-video" :before>
-                                <video class="playonhover" playsinline loop preload="metadata" muted
+                                <video class="1playonhover" playsinline autoplay loop preload="metadata" muted
                                     poster="images/WonderWingsFirstFrame.jpg">
                                     <source src="videos/WonderWingsShortCompressed.mp4" type="video/mp4">
                                     " Your browser does not support the video tag or the file format of this video.
@@ -2231,7 +2231,7 @@
                     <button type="button" class="project-card section-trigger" data-section="Priestcore">
                         <section>
                             <div class="project-video" :before>
-                                <video class="playonhover" playsinline loop preload="metadata" muted
+                                <video class="1playonhover" playsinline autoplay loop preload="metadata" muted
                                     poster="images/PriestcoreFirstFrame.jpg">
                                     <source src="videos/PriestcoreGameplayCompressed.mp4" type="video/mp4">
                                     " Your browser does not support the video tag or the file format of this video.
@@ -2293,7 +2293,7 @@
                     <button type="button" class="project-card section-trigger" data-section="Nocturnal">
                         <section>
                             <div class="project-video" :before>
-                                <video class="playonhover" playsinline loop preload="metadata" muted
+                                <video class="1playonhover" playsinline autoplay loop preload="metadata" muted
                                     poster="images/NocturnalFirstFrame.jpg">
                                     <source src="videos/NocturnalGameplayComp.mp4" type="video/mp4">
                                     " Your browser does not support the video tag or the file format of this video.
@@ -2631,7 +2631,7 @@
             })
         })
 
-        document.querySelectorAll('.project-card').forEach(el => {
+        /* document.querySelectorAll('.project-card').forEach(el => {
             if (!el.querySelector('video')) return
             const video = el.querySelector('video')
             el.addEventListener('mouseenter', (e) => {
@@ -2642,6 +2642,7 @@
                 video.pause()
             })
         })
+        */
 
         document.querySelectorAll('.section-trigger, .goHomeButton button').forEach(el => {
             el.addEventListener('click', (e) => {
