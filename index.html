@@ -414,7 +414,7 @@
                                             for a forward movement with a high movement speed and the use of a lerp for
                                             rotation to avoid quick turns, simulating a more realistic rocket maneuver.
                                         </p>
-                                        <center><img class="gameimg" src="images/RocketRiderMovement.gif"></center>
+                                        <img class="smallgameimg" src="images/RocketRiderMovement.gif">
                                         <p class="game-text" style="margin-top: 40px;">
                                             After that, I needed to consider what would happen if the player´s rocket
                                             was destroyed, so I added a basic movement for the character when grounded.
@@ -455,16 +455,23 @@
                                         the programmers.
                                         The first enemy, Goro, is a slow but powerful melee unit, while the second,
                                         Beedrone, is a fast but fragile ranged enemy.
+                                        <br>
+                                        <br>
+                                        Both these enemies were designed to emphasize the mechanic of constant movement.
+                                        In a ideal scenario, the player would be surrounded by both types of enemies, forcing them to navigate the arena strategically.
+                                        <br>
+                                        They would need to dodge Goro’s strong melee attacks while also avoiding the Beedrones’ ranged projectiles. 
+                                        This setup naturally encourages the player to stay on the move, balancing their attention between the different threats.
                                     </p>
                                 </div>
 
                                 <p class="game-text">
-                                    For the player's attacks, I drew from references and ideas from my teammates,
+                                    For the player's attacks, I drew inspiration from references and ideas from my teammates,
                                     ultimately deciding on three distinct attacks:
                                 </p>
                                 <p class="game-text">
                                     <b>Rocket Swirl:</b> A melee attack with a fast animation, that can combo up to 3
-                                    times, dealing massive damage and repositioning the player out of enemy range.
+                                    times, dealing medium damage and able to reposition the player out of enemy range.
 
                                 </p>
                                 <p class="game-text">
@@ -473,7 +480,7 @@
                                 </p>
                                 <p class="game-text">
                                     <b>Rocket Barrage:</b> A ranged attack that shoots a burst of missiles from the
-                                    player's back. While it doesn't deal significant damage, it is useful for poking
+                                    player's back. Although it doesn't deal significant damage, it is useful for poking
                                     enemies and maintaining Style Points.
                                 </p>
                             </div>
@@ -492,7 +499,7 @@
                                     providing clear feedback to the player.
                                     This solution drastically improved the combat experience, making it more intuitive.
                                 </p>
-                                <center><img class="gameimg" src="images/RocketRiderLocking.gif"></center>
+                               <img class="smallgameimg" src="images/RocketRiderLocking.gif">
                             </div>
                         </div>
                     </div>
@@ -1137,33 +1144,27 @@
                                     explore
                                     parts of the level too tight to be entered while in a horizontal position.
                                 </p>
-                            </div>
-                        </div>
-
-                        <div class="game-information">
-                            <p class="game-text">
-                                Following I noticed how our collisions were not the best when the player hit a wall, as
-                                the plane
-                                would slide and tremble on the hit wall. To solve the issue I designed a bouncing
-                                mechanic, that
-                                bounced back the player's plane in the opposite direction from where they hit the wall,
-                                which
-                                shortly after, got implemented with its animation.
-                            </p>
-                            <div>
-                                <img style=" max-width: 350px;" class="game-image" src="images/wonderbouncingGif.gif">
-                            </div>
-                        </div>
-
-                        <div class="game-information">
-                            <p class="game-text">
-                                Moreover, after various playtests, I noticed how the automatic forward movement was
-                                giving problems to some of our players when they
-                                tried to make precise maneuvers, so later on, I decided to add two buttons, one to speed
-                                up and one to slow down the movement speed of our plane,
-                                giving more control to the players that desired it.
-                            </p>
-                        </div>
+                                <p class="game-text">
+                                    Following I noticed how our collisions were not the best when the player hit a wall, as
+                                    the plane
+                                    would slide and tremble on the hit wall. To solve the issue I designed a bouncing
+                                    mechanic, that
+                                    bounced back the player's plane in the opposite direction from where they hit the wall,
+                                    which
+                                    shortly after, got implemented with its animation.
+                                </p>
+                                <img class="smallgameimg" src="images/wonderbouncingGif.gif">
+                                <br>
+                                <br>
+                                <p class="game-text">
+                                    Moreover, after various playtests, I noticed how the automatic forward movement was
+                                    giving problems to some of our players when they
+                                    tried to make precise maneuvers, so later on, I decided to add two buttons, one to speed
+                                    up and one to slow down the movement speed of our plane,
+                                    giving more control to the players that desired it.
+                                </p>
+                            </div>                          
+                        </div>                  
 
                         <h2 style="margin-top: 50px;" class="highlight">Combat</h2>
                         <div class="game-information">
@@ -1254,8 +1255,6 @@
                             </div>
                         </div>
 
-
-
                         <h2 class="highlight">Feedback</h2>
                         <div class="game-information">
                             <div>
@@ -1284,10 +1283,8 @@
                                     to be specific, that was slightly filled every time the player shot a bullet, and
                                     emptied if they did not shoot for a few seconds.
                                 </p>
-                            </div>
-                            <div>
-                                <img style=" max-width: 350px;" class="game-image" src="images/wonderCross.gif">
-                            </div>
+                                <img class="smallgameimg" src="images/wonderCross.gif">
+                            </div>                          
                         </div>
 
                         <h2 style="margin-top: 50px;" class="highlight">Replayability</h2>
@@ -1338,13 +1335,9 @@
                                 the player moved in a straight direction, they would traverse the entirety of the room
                                 in
                                 less than 10 seconds, and that was an issue.</p>
-                        </div>
-                        <div>
-                            <img style=" max-width: 350px;" class="game-image" src="images/earlyLevel.gif">
-                        </div>
-                    </div>
-                    <div class="game-information">
-                        <div>
+                            <img class="smallgameimg" src="images/earlyLevel.gif">
+                            <br>
+                            <br>
                             <p class="game-text">
                                 I and the rest of the team liked the movement speed of our character, so the only choice
                                 was
@@ -1368,55 +1361,53 @@
                                 the game.
                                 Here there are some examples of the level areas with a description of their features:
                             </p>
-                        </div>
-                    </div>
-                    <br>
-
-                    <div class="game-info">
-
-                        <div class="game-information">
-                            <p class="game-text">
-                                <b>The desk</b> is a large section featuring sharkmeids and many patrolling enemies on
-                                the ground near it. It is a dangerous area having the highest amount of enemies per
-                                square meter,
-                                but it is worth the risk, as inside the desk, behind an environmental maze the strongest
-                                powerup lies in wait.
-                            </p>
-                            <img style=" max-width: 350px;" class="game-image" src="images/deskWW.png">
-                        </div>
-                        <br>
-
-                        <div class="game-information">
-                            <p class="game-text">
-                                <b>The wardrobe</b> is a small area located to the right of the desk. It is a relatively
-                                safe area as there are only two enemies. This part of the level let players relax and
-                                rewards the ones
-                                that explore every nook and cranny of the level, as there are two hidden power-ups, one
-                                behind the boots inside the wardrobe and the other inside the basketball hoop.
-                            </p>
-                            <img style=" max-width: 350px;" class="game-image" src="images/wardrobeWW.png">
-                        </div>
-                        <br>
-
-                        <div class="game-information">
-                            <p class="game-text">
-                                <b>The window </b> area, located on the left of the desk, hosts multiple types of
-                                enemies and shows in clear sight the shield power-up, which offers a strong buff to the
-                                player´s defense but it is risky to approach without
-                                clearing the enemies around it.
-                            </p>
-                            <img style=" max-width: 350px;" class="game-image" src="images/windowWW.png">
-                        </div>
-                        <br>
-
-                        <div class="game-information">
-                            <p class="game-text">
-                                In this last picture we can see the<b>Bunk Bed</b> and our aesthetic final result with
-                                the shaders and lighting.
-                            </p>
-                            <img style=" max-width: 350px;" class="game-image" src="images/lv4.png">
-                        </div>
-                    </div>
+                            
+                            <div class="game-info">
+                                <div class="game-information">
+                                    <p class="game-text">
+                                        <b>The desk</b> is a large section featuring sharkmeids and many patrolling enemies on
+                                        the ground near it. It is a dangerous area having the highest amount of enemies per
+                                        square meter,
+                                        but it is worth the risk, as inside the desk, behind an environmental maze the strongest
+                                        powerup lies in wait.
+                                    </p>
+                                    <img style=" max-width: 350px;" class="game-image" src="images/deskWW.png">
+                                </div>
+                                <br>
+        
+                                <div class="game-information">
+                                    <p class="game-text">
+                                        <b>The wardrobe</b> is a small area located to the right of the desk. It is a relatively
+                                        safe area as there are only two enemies. This part of the level let players relax and
+                                        rewards the ones
+                                        that explore every nook and cranny of the level, as there are two hidden power-ups, one
+                                        behind the boots inside the wardrobe and the other inside the basketball hoop.
+                                    </p>
+                                    <img style=" max-width: 350px;" class="game-image" src="images/wardrobeWW.png">
+                                </div>
+                                <br>
+        
+                                <div class="game-information">
+                                    <p class="game-text">
+                                        <b>The window </b> area, located on the left of the desk, hosts multiple types of
+                                        enemies and shows in clear sight the shield power-up, which offers a strong buff to the
+                                        player´s defense but it is risky to approach without
+                                        clearing the enemies around it.
+                                    </p>
+                                    <img style=" max-width: 350px;" class="game-image" src="images/windowWW.png">
+                                </div>
+                                <br>
+        
+                                <div class="game-information">
+                                    <p class="game-text">
+                                        In this last picture we can see the<b>Bunk Bed</b> and our aesthetic final result with
+                                        the shaders and lighting.
+                                    </p>
+                                    <img style=" max-width: 350px;" class="game-image" src="images/lv4.png">
+                                </div>
+                            </div>
+                        </div>                                         
+                  </div>
                 </div>
 
                 <h2>Conclusion</h2>
@@ -1438,7 +1429,6 @@
                         </p>
                     </div>
                 </div>
-                <hr style="width: 85vw; margin: 64px;">
             </section>
             <!-- END SECTION WonderWings -->
 
