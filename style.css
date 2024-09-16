@@ -19,6 +19,11 @@ html {
     height: -webkit-fill-available;
 }
 
+ul li::marker {
+    font-size: 1.8em;
+    color: #f8bc61;
+  }
+
 p {
     text-align: justify;
     text-justify: inter-word;
@@ -1657,6 +1662,11 @@ body.isHome .goHomeButton {
 .highlight {
     font-weight: bold;
     color: #f46049;
+}
+
+.bold {
+    font-weight: bold;
+    color: #f8bc61;
 }
 
 game-information {

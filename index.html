@@ -254,9 +254,11 @@
                         <div class="projects-info-container">
                             <section class="project-card">
                                 <h3>Project Summary</h3>
-                                Rocket Rider is an action game that fuses platforming with intense hack & slash combat.
-                                The game is set in a dystopian futuristic city heavily controlled by the authorities
-                                that oppress the citizens with unending curfews.
+                                Rocket Rider is an action game that <b class="bold">fuses platforming with intense hack
+                                    & slash combat.</b>
+                                The game is set in a Japanese <b class="bold">futuristic dystopia</b> heavily controlled
+                                by authorities
+                                that oppress citizens with unending curfews.
                                 </br>
                                 The player assumes the role of John Rider, a rocket-riding rebel, too stubborn and
                                 knowledgeable to bend to the regime.
@@ -265,11 +267,13 @@
                                 city!
                                 </br>
                                 </br>
-                                Our goal for this project was to develop a distinctive hack-and-slash game where the
-                                player is constantly on the move, riding a rocket.
-                                We aimed to deliver a power fantasy experience, allowing players to deal immense damage
-                                while also being highly vulnerable to enemy attacks.
-                                This design encourages players to rely on their rapid movement to navigate and survive,
+                                The project goal was to develop a distinctive hack & slash game where the
+                                <b class="bold">player is constantly on the move,</b> riding a rocket.
+                                </br>
+                                Players will <b class="bold">deal immense damage</b>
+                                while also being <b class="bold">highly vulnerable to enemy attacks.</b>
+                                This <b class="bold">design encourages</b> players to rely on their <b
+                                    class="bold">rapid movement</b> to navigate and survive,
                                 rather than confronting enemies head-on.
                             </section>
                             <section class="project-card">
@@ -284,7 +288,7 @@
                                                 d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z">
                                             </path>
                                         </svg>
-                                        Role: Gameplay, System & UI Design
+                                        Role: Combat, 3C, System & UI Design
                                     </li>
                                     <li>
                                         <svg class="svg-inline--fa fa-user list-icon" aria-hidden="true"
@@ -331,18 +335,18 @@
                         <h2 class="gameDesch2">Major Contributions</h2>
                         <div class="game-information">
                             <div>
-                                <p class="game-text"><span class="highlight">Gameplay Design:</span><br />
+                                <p class="game-text"><span class="highlight">Combat Design:</span><br />
                                     Designed three unique player attacks.
                                 </p>
                                 <p class="game-text">
-                                    Designed two different enemy types and conceptualized their behaviours using
-                                    flowcharts, as well as the game Boss Fight using Unreal Behaviour Trees.
+                                    Designed two different enemy types and conceptualized their behaviors using
+                                    flowcharts, as well as the game Boss Fight using Unreal Behavior Trees.
                                 </p>
                                 <p class="game-text">
                                     Designed a lock-on system for the player to direct their attacks towards the enemy
                                     closest to their world location and center of the camera. Then, used a widget to
-                                    show a crosshair on the targeted enemy.                                  
-                                </p>                             
+                                    show a crosshair on the targeted enemy.
+                                </p>
                                 <p class="game-text">
                                     Implemented a Hack & Slash Style System, and an interaction system to buy healings
                                     from certain actors in the world.
@@ -364,7 +368,7 @@
                         <div class="game-information">
                             <div>
                                 <p class="game-text"><span class="highlight">General Game Design:</span><br />
-                                    Designed the game UI and implemented its functionality.
+                                    Designed the game camera and controls.
                                 </p>
                                 <p class="game-text">
                                     Created an asset list, organized meetings, and pitched the game presentations.
@@ -373,7 +377,7 @@
                                     Placed all the checkpoints, collectables and healings in the level.
                                 </p>
                                 <p class="game-text">
-                                    Implemented and tweaked most VFXs and sounds in the game, using unreal blueprints,
+                                    Implemented UI, VFXs and sounds in the game, using unreal blueprints,
                                     animation notifies and sound cues.
                                 </p>
                                 <p class="game-text">
@@ -392,199 +396,376 @@
 
 
                     <div class=gamedesc>
-                        <h2 class="gameDesch2">Gameplay Design</h2>
+                        <h2 class="gameDesch2">Combat Design</h2>
                         <div class="game-information">
 
                             <div>
                                 <p class="game-text">
-                                    At the start of the project, I was entrusted to design most of the gameplay elements
-                                    such as the player movement, camera, and attacks, while my colleagues focused on the
-                                    level design.
-                                </p>
+                                    For the combat design, I started this task by researching and studying the enemy
+                                    design of my main references Hifi Rush and Devil May Cry 5.
+                                    To create a fast-paced game as we wanted,
+                                    I introduced the player to three distinct attacks <b class="bold">(Swirl, Slam, and
+                                        Barrage)</b> and included a boost ability.
+                                    </br>
+                                    </br>
+                                    I made the following key decisions to move in this direction:</p>
 
-                                <h2 style="margin-top: 50px;" class="highlight">Player Movement</h2>
+                                <ul>
+                                    <li>
+                                        <p class="game-text">
+                                            <b class="bold">Attack Commitment:</b> Attacks cannot be interrupted by
+                                            other inputs, encouraging players to commit to their actions and make
+                                            strategic
+                                            decisions before executing moves. This adds depth to the combat and rewards
+                                            careful planning.
+                                        </p>
+                                    </li>
+
+                                    <li>
+                                        <p class="game-text"><b class="bold">Animation Montages:</b> We used animation
+                                            montages for attacks, providing a more responsive gameplay experience.
+                                            This approach also eliminated the need for complex blending animations,
+                                            making the animation process quicker and more efficient.
+                                        </p>
+                                    </li>
+
+                                    <li>
+                                        <p class="game-text"><b class="bold">Constant Player Movement:</b> The player's
+                                            rocket is always in motion, forcing them to think and react
+                                            quickly during combat. This continuous forward momentum keeps the gameplay
+                                            fast-paced and keeps players engaged.
+                                        </p>
+                                    </li>
+                                </ul>
+
+                                <h2 style="margin-top: 50px;" class="highlight">Rocket Swirl</h2>
                                 <div class="game-information">
                                     <div>
                                         <p class="game-text">
-                                            Designing the movement for this game was a big challenge, as at the start of
-                                            the project we did not have a clear direction or reference to follow.
+                                            The light attack or <i>Rocket Swirl</i> is intended to be the primary choice
+                                            throughout the game.
+                                            It <b class="bold">executes quickly</b>, causes <b class="bold">little
+                                                damage,</b> and can be chained into a <b class="bold">three-hit
+                                                combo</b>
+                                            when used in rapid succession. Each <b class="bold">consecutive strike</b>
+                                            within the combo <b class="bold">deals bonus damage.</b>
+                                            In the initial iteration, the attack halted the player's movement. However,
+                                            <b class="bold">after extensive playtesting,</b> I reworked it
+                                            into a <b class="bold">dashing attack</b> that <b class="bold">locks onto
+                                                the target.</b> This adjustment not only complemented the game’s
+                                            fast-paced nature but
+                                            also added a strategic element, allowing players to use the attack for both
+                                            offense and repositioning.
                                         </p>
+                                        <img class="smallgameimg" src="images/Swirl.gif">
+                                    </div>
+                                </div>
+
+                                <h2 style="margin-top: 50px;" class="highlight">Rocket Slam</h2>
+                                <div class="game-information">
+                                    <div>
                                         <p class="game-text">
-                                            Given the premise of riding a rocket and engaging multiple enemies, I opted
-                                            for a forward movement with a high movement speed and the use of a lerp for
-                                            rotation to avoid quick turns, simulating a more realistic rocket maneuver.
+                                            The <i>Rocket Slam</i> <b class="bold">takes longer to execute</b> but
+                                            creates a powerful <b class="bold">Area Of Effect (AOE)</b> explosion,
+                                            dealing <b class="bold">massive damage</b>.
+                                            This design follows the <b class="bold">risk-reward</b> principle, requiring
+                                            precise timing for maximum payoff.
+                                            <br>
+                                            During playtesting, I observed that players mainly used this ability while
+                                            in combat. To balance its power,
+                                            I introduced a <b class="bold">cooldown</b> to it, ensuring that its use
+                                            remained strategic and didn't overshadow other combat mechanics.
                                         </p>
-                                        <img class="smallgameimg" src="images/RocketRiderMovement.gif">
-                                        <p class="game-text" style="margin-top: 40px;">
-                                            After that, I needed to consider what would happen if the player´s rocket
-                                            was destroyed, so I added a basic movement for the character when grounded.
-                                        </p>
+                                        <img class="smallgameimg" src="images/Slam.gif">
+                                    </div>
+                                </div>
+
+                                <h2 style="margin-top: 50px;" class="highlight">Rocket Barrage</h2>
+                                <div class="game-information">
+                                    <div>
                                         <p class="game-text">
-                                            During playtesting, the team realized that being grounded and simply waiting
-                                            for the rocket to respawn was tedious.
+                                            The <i>Rocket Barrage</i> is a <b class="bold">ranged attack</b> and a <b
+                                                class="bold">resource sink</b>. It <b class="bold">consumes Scrap</b>
+                                            to shoot a burst of missiles from the player's back,
+                                            the more Scrap spent the more the missiles. Although it deals <b
+                                                class="bold">low damage</b>, it is useful for poking enemies
+                                            and <b class="bold">maintaining Style Points.</b>
                                         </p>
+                                        <img class="smallgameimg" src="images/Barrage.gif">
+                                    </div>
+                                </div>
+
+                                <h2 style="margin-top: 50px;" class="highlight">Lock-on System</h2>
+                                <div class="game-information">
+                                    <div>
                                         <p class="game-text">
-                                            To address this, we experimented with various solutions, such as providing
-                                            the player additional mechanics while grounded, like using stun grenades or
-                                            engaging in precise platforming.
-                                            However, we ultimately decided to eliminate ground movement altogether, as
-                                            it slowed the game's pacing too much. Our focus was on maintaining the
-                                            excitement of rocket-riding.
+                                            After the attacks were done, during playtests, I noticed some players
+                                            struggled to land hits with the Swirl
+                                            attack due to the <b class="bold">constant forward movement</b> of the
+                                            player's rocket. To address this, I designed a <b class="bold">lock-on
+                                                system</b> that <b class="bold">guides</b> the player's <b
+                                                class="bold">attacks</b> toward the nearest enemy or the center of the
+                                            camera.
+                                            The Barrage also relies on this system, and can only be executed when an
+                                            enemy is locked on.
+                                            <br>
+                                            Then, I implemented a <b class="bold">visual widget</b> to highlight the
+                                            locked-on target, providing clear feedback to the player.
+                                            This solution drastically improved the combat experience, making it more
+                                            intuitive and accessible.
+                                        </p>
+                                        <img class="smallgameimg" src="images/RocketRiderLocking.gif">
+                                    </div>
+                                </div>
+
+                                <h2 style="margin-top: 50px;" class="highlight">Style System</h2>
+                                <div class="game-information">
+                                    <div>
+                                        <p class="game-text">
+                                            Like many Hack & Slash, our game needed a <b class="bold">Style System</b>
+                                            to boost the player's excitement
+                                            as they landed <b class="bold">consecutive hits</b> on enemies <b
+                                                class="bold">without taking damage</b>.
+                                            I designed multiple <b class="bold">style levels,</b> ranging from <b
+                                                class="bold">D to S</b> and culminating in R: RocketTastic</b>.
+                                            <br>
+                                            <br>
+                                            With the help of a programmer, we created a <b class="bold">custom event</b>
+                                            that gets called every time the style level changes.
+                                            I used this event to play <b class="bold">unique sounds</b> and dynamically
+                                            <b class="bold">amplify the game’s music</b>
+                                            as players reached higher style levels.
+                                            <br>
+                                            Then I implemented the <b class="bold">UI elements</b> to display the
+                                            current style rank.
+                                            <br>
+                                            In a future iteration, I desire to <b class="bold">multiply the resource
+                                                gains</b> based on the style points obtained during combat, further
+                                            rewarding skillful play.
+                                        </p>
+                                        <!-- <img class="smallgameimg" src="images/RocketRiderMovement.gif"> -->
+                                    </div>
+                                </div>
+
+                                <h2 style="margin-top: 50px;" class="highlight">Balancing</h2>
+                                <div class="game-information">
+                                    <div>
+                                        <p class="game-text">
+                                            As the gameplay and system designer, I needed room to change and tweak
+                                            various key elements
+                                            such as <b class="bold">damage values, hitboxes,</b> and so on.
+                                            <br>
+                                            Working closely with the programmers we developed a suite of <b class="bold">tools and
+                                            components</b> to quickly visualize and access the required
+                                            stats within the Engine.
+                                            <br>
+                                            These tools enabled me to easily <b class="bold">tweak damage, hitbox size,
+                                                knockback, and attack speed</b> for each attack.
+                                            We applied the same approach to enemies so that I could easily balance their
+                                            <b class="bold">health points, movement speed,</b>
+                                            and other critical stats.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <img style=" max-width: 450px;" class="game-image" src="images/AttackComponent.png">
+                                        <!-- <p style="line-height: 0; font-size: small; font-style: italic;margin-left: 40px;">
+                                            Example of a game´s patch.</p> -->
+                                    </div>
+                                </div>
+                            
+                                <h2 style="margin-top: 50px;margin-bottom: 10px;" class="highlight">Animations</h2>
+                                <div class="game-information">
+                                    <div>
+                                        <p class="game-text">
+                                            With the assistance of the programmers, we created a method for <b
+                                                class="bold">tweaking animation keyframes</b> corresponding to different
+                                            phases.
+                                            <br>
+                                            <br>
+                                            In this case,<b class="bold">PlayerSwirl</b> spawns the attack Hitbox, activating damage
+                                            and disabling all player inputs except movement,
+                                            while <b class="bold">PlayerSwirlFinish</b> deactivates damage and restores all
+                                            inputs.
+                                            I also used the <b
+                                                class="bold">animation notifies,</b>
+                                            to add <b class="bold">sounds</b> and <b class="bold">VFXs</b> in the right
+                                            keyframes to each animation.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <img style=" max-width: 500px;" class="game-image" src="images/AnimationSwirl.gif">
+                                        <!-- <p style="line-height: 0; font-size: small; font-style: italic;margin-left: 40px;">
+                                            Example of a game´s patch.</p> -->
+                                    </div>
+                                </div>
+                                
+
+                                <h2 style="margin-top: 50px;" class="highlight">Enemy Design</h2>
+                                <div class="game-information">
+                                    <div>
+                                        <p class="game-text">
+                                            During the project, I learned to use Unreal Engine 5's AI framework (AI
+                                            Controller, Behavior Tree, and Blackboard)
+                                            to assist the programmers in <b class="bold">prototyping</b> and <b
+                                                class="bold">implementing</b> the AI. After consulting the programmers,
+                                            I created <b class="bold">three enemy types</b>, one being a boss enemy, and
+                                            used flowcharts to communicate their behaviors to the team.
+                                            Furthermore, I was in charge of implementing all the <b
+                                                class="bold">VFXs</b> and <b class="bold">sounds</b> for each enemy.
                                         </p>
                                     </div>
                                 </div>
 
-                                <h2 style="margin-top: 50px;" class="highlight">Player Camera</h2>
+                                <h2 style="margin-top: 50px;" class="highlight">Goro Enemy</h2>
                                 <div class="game-information">
-                                    <p class="game-text">
-                                        For the camera, I was inspired by Devil May Cry 5 and Hi-Fi Rush. I implemented
-                                        a close third-person perspective with the player centered on the screen.
-                                        The camera dynamically adjusts, pulling back when the player moves and allowing
-                                        for independent rotation input. This setup enables the player to move in the
-                                        camera's direction if desired.
-                                    </p>
-                                    <!-- <img style=" max-width:250px; max-height: 250px;" class="game-image" src="images/unicorn.png"> -->
+                                    <div>
+                                        <p class="game-text">
+                                            The first enemy, Goro, is a <b class="bold">slow but powerful melee unit</b>
+                                            with <b class="bold">moderate health</b>.
+                                            It delivers heavy, slow punches and will constantly attempt to close the
+                                            distance to engage the player in close combat.
+                                            If the player is too far away or unreachable, Goro will perform a <b
+                                                class="bold">Jump attack</b> to quickly cover ground and strike.
+                                            <br>
+                                            <br>
+                                            Moreover, considering the <b class="bold">game's setting,</b> I wanted to
+                                            emphasize the <b class="bold">enemies' cooperation,</b>
+                                            as from a narrative point of view, they are both part of the enforcers
+                                            controlling the city.
+                                            For instance, Goros will <b class="bold">guard and protect</b> the second
+                                            enemy type, the Beedrone, while it charges its attack,
+                                            highlighting their role as a unified force in maintaining order.
+                                        </p>
+                                        <img class="smallgameimg" src="images/GoroFlowchart.png">
+                                    </div>
                                 </div>
 
-                                <h2 style="margin-top: 50px;" class="highlight">Combat Design</h2>
+                                <h2 style="margin-top: 50px;" class="highlight">Beedrone Enemy</h2>
                                 <div class="game-information">
-                                    <p class="game-text">
-                                        Once the movement mechanics were finalized, I shifted focus to combat.
-                                        <br>
-                                        I designed two enemy types and used flowcharts to communicate their behaviors to
-                                        the programmers.
-                                        The first enemy, Goro, is a slow but powerful melee unit, while the second,
-                                        Beedrone, is a fast but fragile ranged enemy.
-                                        <br>
-                                        <br>
-                                        Both these enemies were designed to emphasize the mechanic of constant movement.
-                                        In a ideal scenario, the player would be surrounded by both types of enemies, forcing them to navigate the arena strategically.
-                                        <br>
-                                        They would need to dodge Goro’s strong melee attacks while also avoiding the Beedrones’ ranged projectiles. 
-                                        This setup naturally encourages the player to stay on the move, balancing their attention between the different threats.
-                                    </p>
+                                    <div>
+                                        <p class="game-text">
+                                            The Beedrone is a <b class="bold">swift but fragile ranged enemy</b> whose
+                                            primary role is to fire at the player,
+                                            forcing them to stay mobile. Its attacks are designed to keep the player on
+                                            their toes,
+                                            reinforcing the game’s emphasis on constant movement.
+                                        </p>
+                                        <img class="smallgameimg" src="images/BeedroneFlowchart.png">
+                                    </div>
                                 </div>
 
-                                <p class="game-text">
-                                    For the player's attacks, I drew inspiration from references and ideas from my teammates,
-                                    ultimately deciding on three distinct attacks:
-                                </p>
-                                <p class="game-text">
-                                    <b>Rocket Swirl:</b> A melee attack with a fast animation, that can combo up to 3
-                                    times, dealing medium damage and able to reposition the player out of enemy range.
+                                <h2 style="margin-top: 50px;margin-bottom: 10px;" class="highlight">Boss Enemy</h2>
+                                <div class="game-information">
+                                    <div>
+                                        <p class="game-text">
+                                            For the game’s boss fight, the team designed a variety of attacks for the
+                                            boss to use.
+                                            <br>
+                                            Once the programmers implemented these attacks, my role was to build the <b
+                                                class="bold">boss phases</b> using <b class="bold">Unreal Behavior
+                                                Trees.</b>
+                                            Using my custom nodes, I adjusted the <b class="bold">number, speed, and
+                                                timing between attacks</b> to establish a rhythmic flow to the fight.
+                                            After each phase, I introduced <b class="bold">new attacks</b> and <b
+                                                class="bold">reduced the dodge window</b> to progressively
+                                            increase the difficulty and challenge the player.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <img style=" max-width: 500px;" class="game-image" src="images/BossOrbital.png">
+                                        <!-- <p style="line-height: 0; font-size: small; font-style: italic;margin-left: 40px;">
+                                            Example of a game´s patch.</p> -->
+                                    </div>
+                                </div>
 
-                                </p>
-                                <p class="game-text">
-                                    <b>Rocket Slam:</b> A powerful area-of-effect (AOE) explosion with a cooldown,
-                                    damaging everything within its range.
-                                </p>
-                                <p class="game-text">
-                                    <b>Rocket Barrage:</b> A ranged attack that shoots a burst of missiles from the
-                                    player's back. Although it doesn't deal significant damage, it is useful for poking
-                                    enemies and maintaining Style Points.
-                                </p>
                             </div>
-
                         </div>
+                    </div>
+
+                    <!-- 3C Design -->
+                    <div class=gamedesc>
+                        <h2 class="gameDesch2">3C Design</h2>
                         <div class="game-information">
                             <div>
-                                <p class="game-text">
-                                    After the attacks were done, I noticed that some players struggled to hit enemies
-                                    with their melee attacks, as the player always kept on moving while on the rocket.
-                                    To address this, I designed a lock-on system that guides the player's attacks
-                                    towards the nearest enemy or the center of the camera.
-                                </p>
-                                <p class="game-text">
-                                    Additionally, I implemented a visual widget to highlight the locked-on enemy,
-                                    providing clear feedback to the player.
-                                    This solution drastically improved the combat experience, making it more intuitive.
-                                </p>
-                               <img class="smallgameimg" src="images/RocketRiderLocking.gif">
+
+                                <h2 class="highlight">Character</h2>
+                                <div class="game-information">
+                                    <div>
+                                        <p class="game-text">
+                                            Designing the movement for this game was a big challenge, as we did not have a clear direction or reference at the start of the project. 
+                                            The Overrider demo came out during the development, which was an optimal reference for some aspects.
+                                            <br>
+                                            <br>
+                                            Given the premise of <b class="bold">riding a rocket</b> and engaging multiple enemies, I opted for an <b class="bold">automatic forward movement</b>
+                                             with a high movement speed and the use of a <b class="bold">lerp for rotation</b> to avoid quick turns, simulating a more realistic rocket maneuver.
+                                            <br>
+                                            <br>
+                                            After that, I needed to consider <b class="bold">what would happen if the player´s rocket was destroyed,</b> 
+                                            so I added a <b class="bold">basic movement</b> for the character <b class="bold">when grounded.</b>
+                                            <br>
+                                            During playtesting, the team realized that being grounded and simply waiting for the rocket to respawn was tedious.
+                                            To address this, we experimented with various solutions, such as providing the player a
+                                            dditional mechanics while grounded, like using stun grenades or engaging in precise platforming.
+                                            However, we ultimately <b class="bold">decided to eliminate ground movement,</b> as it slowed the game's pacing too much. 
+                                            <br>
+                                            Our focus was on <b class="bold">maintaining a fast-paced rocket-riding</b> experience.
+                                        </p>
+                                        <img class="smallgameimg" src="images/RocketRiderMovement.gif">               
+                                    </div>
+                                </div>
+
+                                <h2 style="margin-top: 50px;" class="highlight">Camera</h2>
+                                <div class="game-information">
+                                    <div>
+                                        <p class="game-text">
+                                            For the camera, I took inspiration from Devil May Cry 5 and Hi-Fi Rush, 
+                                            making key design choices that significantly influenced the gameplay experience:
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <p class="game-text">
+                                                    <b class="bold">Close Third-Person Perspective:</b> Opting for a close third-person view immerses the player in 
+                                                    the game world while maintaining clear visibility of the surrounding environment around the character.
+                                                </p>
+                                            </li>
+        
+                                            <li>
+                                                <p class="game-text"><b class="bold">Dynamic Camera:</b> The camera adapts fluidly to the player's movement. 
+                                                    When the player is in motion, it pulls back slightly, providing a broader field of view and better spatial awareness. 
+                                                    When the player stops, the camera moves in closer, heightening the sensation of speed and intensity during high-action moments.
+                                                </p>
+                                            </li>
+        
+                                            <li>
+                                                <p class="game-text"><b class="bold">Independent Rotation:</b> Players can rotate the camera freely with input controls,
+                                                     allowing them to move in one direction while looking in another. This offers great flexibility in combat and exploration.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <img class="smallgameimg" src="images/RocketCamera.gif">               
+                                    </div>
+                                </div>     
+                                
+                                <h2 style="margin-top: 50px;" class="highlight">Controls</h2>
+                                <div class="game-information">
+                                    <div>
+                                        <p class="game-text">
+                                            I mapped the light attack, <i>Rocket Swirl,</i> to the right trigger and Square, following the conventions of many hack-and-slash games. 
+                                            Lock-on was assigned to the left trigger, while movement boost was placed on both bumpers for quick and intuitive access. 
+                                            Special attacks were triggered using Triangle and Circle, while X served as the standard jump button.
+                                            <br>
+                                            <br>
+                                            I implemented dynamic <b class="bold">vibration feedback</b> on the controller, varying the intensity and pattern based on the player's actions. 
+                                            Each attack, boost, and railgrind triggers a unique vibration response, providing <b class="bold">tactile feedback</b> to the player.
+                                        </p>
+                                        <img class="smallgameimg" src="images/RocketControls.png">               
+                                    </div>
+                                </div>
+
+
                             </div>
                         </div>
-                    </div>
-
-                    <div class=gamedesc>
-                        <h2 class="gameDesch2">System Design (Coming Soon)</h2>
-                        <div class="game-information">
-                        </div>
-                    </div>
-
-                    <!--
-                    <div class=gamedesc>
-                        <h2 class="gameDesch2">Level Design</h2>
-                        <div class="game-information">
-                            <p class="game-text">
-                                While I worked on the player´s abilities and obstacles, my colleagues designed 3 enemies
-                                with different behaviours. As soon as these elements were established in the game
-                                I started planning our levels. I first studied our main references (XCOM, Warhammer
-                                Mechanicus) and tried to understand their process and goals when creating a level.
-                                Both of our references included controlling various allies while in our game we played
-                                as a single unit, so I had to be mindful of the enemy placement in the level, their
-                                range,
-                                and movement speed. Now that I knew my constraints, before starting
-                                to create mockups for the levels, I decided to write the goals and context that the
-                                levels should follow. Some levels focused on teaching certain mechanics to the player;
-                                others
-                                would focus on pure combat and non-linearity, giving multiple routes to the player, to
-                                choose their favourite playstyle; another level would focus on puzzle solving, such as
-                                finding and activating all the altars in the level to open the exit door and escape the
-                                enemy patrols.
-                            </p>
-                        </div>
-                        <img class="gameimg" src="images/sycleLevelMockup.png">
-
-                       
-                        <p style="line-height: 0; font-size: small; font-style: italic;">One of the first level design
-                            mockups.</p>
-
-                    </div>
-
-                    <div class=gamedesc>
-                        <h2 class="gameDesch2">System Design</h2>
-                        <div class="game-information">
-                            <p class="game-text">
-                                With the core elements in place, it was time to balance them. As the designer that
-                                created most of those elements, I playtested for many hours to discern if those
-                                mechanics provided the experience
-                                I wanted for our players, and while I was at it, I also created a document for
-                                discovered bugs, with a guide on how to replicate them and a possible solution.
-                                Moreover, as this was a school project,
-                                each week other students would playtest our game, so I prepared a form for them to
-                                compile to collect all that valuable feedback. Thanks to the playtest, we realized many
-                                issues
-                                with the core loop and the balancing of the game. The game went through many changes,
-                                for example, at first we used AP (action points) to use our abilities, but we decided to
-                                change that resource to HP
-                                (health point) to display even better our core pillar Sacrifice. With that update other
-                                problems arose, as we would be using our life for each spell thrown at the enemies, so I
-                                introduced a healing mechanic
-                                when the player killed an enemy with a melee attack. In addition, I tweaked the player
-                                and enemies´ stats until the game reached the desired feel.
-                            </p>
-                            <div>
-                                <img style=" max-width: 350px;" class="game-image" src="images/patch.png">
-                                <p style="line-height: 0; font-size: small; font-style: italic;margin-left: 40px;">
-                                    Example of a game´s patch.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h2>Conclusion</h2>
-                    <div class="game-information">
-                        <p class="game-text">
-                            This project has been an important lesson. It was my and most of the group's first game in
-                            Unreal Engine, and we ended up overscoping a bit too much.
-                            Even so, we learned a lot about the engine, and my contributions to the project were
-                            wide-spanning and focused a lot on both the team and my individual work.
-                            I had the chance to focus on what I want to specialize in, that being Gameplay and System
-                            design. Moreover, I ended up having to take a lot of responsibility for the game,
-                            which I did not mind, and step in to help wherever we were struggling in the process. Our
-                            scope might have been too big for Sycle, resulting in a small demo rather than the
-                            complete game we desired, but it was a fun experience and a good lesson for the future.
-                        </p>
-                    </div>
-                    <hr style="width: 85vw; margin: 64px;"> -->
+                    </div>               
                 </section>
 
                 <!-- START SECTION Sycle-->
@@ -1145,11 +1326,13 @@
                                     parts of the level too tight to be entered while in a horizontal position.
                                 </p>
                                 <p class="game-text">
-                                    Following I noticed how our collisions were not the best when the player hit a wall, as
+                                    Following I noticed how our collisions were not the best when the player hit a wall,
+                                    as
                                     the plane
                                     would slide and tremble on the hit wall. To solve the issue I designed a bouncing
                                     mechanic, that
-                                    bounced back the player's plane in the opposite direction from where they hit the wall,
+                                    bounced back the player's plane in the opposite direction from where they hit the
+                                    wall,
                                     which
                                     shortly after, got implemented with its animation.
                                 </p>
@@ -1159,12 +1342,13 @@
                                 <p class="game-text">
                                     Moreover, after various playtests, I noticed how the automatic forward movement was
                                     giving problems to some of our players when they
-                                    tried to make precise maneuvers, so later on, I decided to add two buttons, one to speed
+                                    tried to make precise maneuvers, so later on, I decided to add two buttons, one to
+                                    speed
                                     up and one to slow down the movement speed of our plane,
                                     giving more control to the players that desired it.
                                 </p>
-                            </div>                          
-                        </div>                  
+                            </div>
+                        </div>
 
                         <h2 style="margin-top: 50px;" class="highlight">Combat</h2>
                         <div class="game-information">
@@ -1284,7 +1468,7 @@
                                     emptied if they did not shoot for a few seconds.
                                 </p>
                                 <img class="smallgameimg" src="images/wonderCross.gif">
-                            </div>                          
+                            </div>
                         </div>
 
                         <h2 style="margin-top: 50px;" class="highlight">Replayability</h2>
@@ -1361,53 +1545,62 @@
                                 the game.
                                 Here there are some examples of the level areas with a description of their features:
                             </p>
-                            
+
                             <div class="game-info">
                                 <div class="game-information">
                                     <p class="game-text">
-                                        <b>The desk</b> is a large section featuring sharkmeids and many patrolling enemies on
-                                        the ground near it. It is a dangerous area having the highest amount of enemies per
+                                        <b>The desk</b> is a large section featuring sharkmeids and many patrolling
+                                        enemies on
+                                        the ground near it. It is a dangerous area having the highest amount of enemies
+                                        per
                                         square meter,
-                                        but it is worth the risk, as inside the desk, behind an environmental maze the strongest
+                                        but it is worth the risk, as inside the desk, behind an environmental maze the
+                                        strongest
                                         powerup lies in wait.
                                     </p>
                                     <img style=" max-width: 350px;" class="game-image" src="images/deskWW.png">
                                 </div>
                                 <br>
-        
+
                                 <div class="game-information">
                                     <p class="game-text">
-                                        <b>The wardrobe</b> is a small area located to the right of the desk. It is a relatively
-                                        safe area as there are only two enemies. This part of the level let players relax and
+                                        <b>The wardrobe</b> is a small area located to the right of the desk. It is a
+                                        relatively
+                                        safe area as there are only two enemies. This part of the level let players
+                                        relax and
                                         rewards the ones
-                                        that explore every nook and cranny of the level, as there are two hidden power-ups, one
+                                        that explore every nook and cranny of the level, as there are two hidden
+                                        power-ups, one
                                         behind the boots inside the wardrobe and the other inside the basketball hoop.
                                     </p>
                                     <img style=" max-width: 350px;" class="game-image" src="images/wardrobeWW.png">
                                 </div>
                                 <br>
-        
+
                                 <div class="game-information">
                                     <p class="game-text">
-                                        <b>The window </b> area, located on the left of the desk, hosts multiple types of
-                                        enemies and shows in clear sight the shield power-up, which offers a strong buff to the
+                                        <b>The window </b> area, located on the left of the desk, hosts multiple types
+                                        of
+                                        enemies and shows in clear sight the shield power-up, which offers a strong buff
+                                        to the
                                         player´s defense but it is risky to approach without
                                         clearing the enemies around it.
                                     </p>
                                     <img style=" max-width: 350px;" class="game-image" src="images/windowWW.png">
                                 </div>
                                 <br>
-        
+
                                 <div class="game-information">
                                     <p class="game-text">
-                                        In this last picture we can see the<b>Bunk Bed</b> and our aesthetic final result with
+                                        In this last picture we can see the<b>Bunk Bed</b> and our aesthetic final
+                                        result with
                                         the shaders and lighting.
                                     </p>
                                     <img style=" max-width: 350px;" class="game-image" src="images/lv4.png">
                                 </div>
                             </div>
-                        </div>                                         
-                  </div>
+                        </div>
+                    </div>
                 </div>
 
                 <h2>Conclusion</h2>
@@ -1523,6 +1716,9 @@
                         <a class="button"
                             href="https://docs.google.com/presentation/d/1b4m6S9um3LEikyqLARc3S7QpbeKkFGTK3tgB3Y1nsi0/"
                             target="_blank">Look at the Pitch</a>
+                            <a class="button"
+                            href="https://www.youtube.com/watch?v=uLAWYRYB2MM"
+                            target="_blank">Hear the Music</a>
                     </div>
 
                     <hr style="width: 85vw; margin: 32px;">
@@ -2008,11 +2204,11 @@
                 <div class="about-information">
                     <img class="profile-image" src="images/Claudio_comic_potrait.png">
                     <p class="about-text">
-                        Ciao! I’m Claudio, a game designer specialized in Gameplay and Technical Design. 
+                        Ciao! I’m Claudio, a game designer specialized in Gameplay and Technical Design.
                         I love prototyping mechanics, balancing
                         systems, and creating exciting challenges for players!
                         </br>
-                        Now looking for an internship in Game Design.                    
+                        Now looking for an internship in Game Design.
                     </p>
                 </div>
 
