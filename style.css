@@ -1736,6 +1736,7 @@ game-information {
     .game-information .game-image {
         width: 100%;
         margin-bottom: 16px;
+        margin: auto;
     }
 }
 
