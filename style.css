@@ -1720,13 +1720,25 @@ game-information {
 }
 
 .game-information .game-image {
+    max-width: 100%;
     max-width: 300px;
-    margin: 0 auto 48px auto
+    margin-left: 48px;
+
 }
 
-@media(min-width: 768px) {
+@media (max-width: 768px) {
     .game-information .game-image {
-        margin-bottom: 0;
+        width: 80%;
+        margin-bottom: 24px;
+        margin-left: 48px;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .game-information .game-image {
+        width: 100%;
+        margin-bottom: 16px;
         margin-left: 48px;
     }
 }
