@@ -24,44 +24,51 @@
         function openInNewTab(url) {
             window.open(url, '_blank').focus();
         }
+
+        function toggleDropdown() {
+           document.body.classList.toggle("menuVisible");
+        }
     </script>
 </head>
 
 <body>
     <div id="app">
         <div class="content-wrapper">
-            <div class="header">
-                <h1>
+
+            <div class="header isMobile">
+                <h1 class="titolo">
                     <a href="javascript:void(0)"
                         class="router-link-active router-link-exact-active header-link section-trigger"
                         data-section="home">Claudio Scuderi</a>
                     <small id="main-subtitle">Gameplay & Technical Designer</small>
                 </h1>
-                <div class="links top">
-                    <a class="link" href="https://www.linkedin.com/in/cs-gd/" target="_blank" title="LinkedIn"><span
-                            class="sr-only">Claudio Scuderi LinkedIn account</span>
-                        <svg class="svg-inline--fa fa-linkedin link-icon" aria-hidden="true" focusable="false"
+            
+                <!-- Dropdown button for mobile screens -->
+                <div class="dropdown-btn" onclick="toggleDropdown()">
+                    <div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            
+                <div class="links top" id="mobile-links">
+                    <!-- Your links go here -->
+                    <div class="iconsContainer">
+                        <a class="link navicon" href="https://www.linkedin.com/in/cs-gd/" target="_blank" title="LinkedIn">
+                            <!-- LinkedIn icon and link -->
+                            <svg class="svg-inline--fa fa-linkedin link-icon" aria-hidden="true" focusable="false"
                             data-prefix="fab" data-icon="linkedin" role="img" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 448 512">
                             <path class="" fill="currentColor"
                                 d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
                             </path>
                         </svg>
-                    </a>
-                    <!-- <a class="link" href="https://infinityclaa.itch.io/" target="_blank" title="Itch.io"><span
-                            class="sr-only">Claudio Scuderi Itch.io account</span>
-                        <svg class="svg-inline--fa fa-linkedin link-icon" aria-hidden="true" focusable="false"
-                            data-prefix="fab" data-icon="linkedin" role="img" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 448 512">
-                            <path class="" fill="currentColor"
-                                d="M71.92 34.77C50.2 47.67 7.4 96.84 7 109.73v21.34c0 27.06 25.29 50.84 48.25 50.84 27.57 0 50.54-22.85 50.54-50 0 27.12 22.18 50 49.76 50s49-22.85 49-50c0 27.12 23.59 50 51.16 50h.5c27.57 0 51.16-22.85 51.16-50 0 27.12 21.47 50 49 50s49.76-22.85 49.76-50c0 27.12 23 50 50.54 50 23 0 48.25-23.78 48.25-50.84v-21.34c-.4-12.9-43.2-62.07-64.92-75C372.56 32.4 325.76 32 256 32S91.14 33.1 71.92 34.77zm132.32 134.39c-22 38.4-77.9 38.71-99.85.25-13.17 23.14-43.17 32.07-56 27.66-3.87 40.15-13.67 237.13 17.73 269.15 80 18.67 302.08 18.12 379.76 0 31.65-32.27 21.32-232 17.75-269.15-12.92 4.44-42.88-4.6-56-27.66-22 38.52-77.85 38.1-99.85-.24-7.1 12.49-23.05 28.94-51.76 28.94a57.54 57.54 0 0 1-51.75-28.94zm-41.58 53.77c16.47 0 31.09 0 49.22 19.78a436.91 436.91 0 0 1 88.18 0C318.22 223 332.85 223 349.31 223c52.33 0 65.22 77.53 83.87 144.45 17.26 62.15-5.52 63.67-33.95 63.73-42.15-1.57-65.49-32.18-65.49-62.79-39.25 6.43-101.93 8.79-155.55 0 0 30.61-23.34 61.22-65.49 62.79-28.42-.06-51.2-1.58-33.94-63.73 18.67-67 31.56-144.45 83.88-144.45zM256 270.79s-44.38 40.77-52.35 55.21l29-1.17v25.32c0 1.55 21.34.16 23.33.16 11.65.54 23.31 1 23.31-.16v-25.28l29 1.17c-8-14.48-52.35-55.24-52.35-55.24z">
-                            </path>
-                        </svg>
-                    </a> -->
-
-                    <a class="link" href="mailto:claudioscuderi.gd@gmail.com" target="_blank" title="Mail"><span
-                            class="sr-only">Mail</span>
-                        <svg class="svg-inline--fa fa-linkedin link-icon" aria-hidden="true" focusable="false"
+                        </a>
+                
+                        <a class="link navicon" href="mailto:claudioscuderi.gd@gmail.com" target="_blank" title="Mail">
+                            <!-- Mail icon and link -->
+                            <svg class="svg-inline--fa fa-linkedin link-icon" aria-hidden="true" focusable="false"
                             data-prefix="fab" role="img" width="56px" height="42px" viewBox="-1.2 -1.2 26.40 26.40"
                             fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="SVGRepo_bgCarrier" stroke-width="0">
@@ -79,7 +86,99 @@
                                     stroke="#000000" stroke-width="1.752" stroke-linecap="round"></path>
                             </g>
                         </svg>
+                        </a>
+                    </div>
+            
+                    <div class="dropdown">
+                        <!-- Projects dropdown and links -->
+                        <a class="link resume section-trigger" data-section="home" href="" title="Home"
+                        data-v-7f29b621="">
+                        <span class="sr-only" data-v-7f29b621="">Projects</span>
+                        <span data-v-7f29b621="">Projects</span>
+                        <svg class="svg-inline--fa fa-arrow-down link-icon" aria-hidden="true" viewBox="6 6 12 12"
+                            xmlns="http://www.w3.org/2000/svg" fill="#f46049" stroke="#f46049"
+                            stroke-width="0.00024000000000000003">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
+                                stroke="#CCCCCC" stroke-width="0.528"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <rect x="0" fill="none" width="24" height="24"></rect>
+                                <g>
+                                    <path d="M7 10l5 5 5-5"></path>
+                                </g>
+                            </g>
+                        </svg>
                     </a>
+                    <div class="dropdown-content">
+                        <a class="resume section-trigger" data-section="RocketRider" href="" title="RocketRider"
+                            data-v-7f29b621="">Rocket Rider</a>
+                        <a class="resume section-trigger" data-section="Sycle" href="" title="Sycle"
+                            data-v-7f29b621="">Sycle</a>
+                        <a class="resume section-trigger" data-section="WonderWings" href="" title="WonderWings"
+                            data-v-7f29b621="">Wonder Wings</a>
+                        <a class="resume section-trigger" data-section="Priestcore" href="" title="Priestcore"
+                            data-v-7f29b621="">Priestcore</a>
+                        <a class="resume section-trigger" data-section="Nocturnal" href="" title="Nocturnal"
+                            data-v-7f29b621="">Nocturnal</a>
+                    </div>
+                    </div>
+            
+                    <a class="link resume section-trigger" data-section="home" href="" title="Home">
+                        <span class="sr-only">Home</span>
+                        <span>Home</span>
+                    </a>
+            
+                    <a class="link resume section-trigger" data-section="About" href="" title="AboutMe">
+                        <span class="sr-only">About Me</span>
+                        <span>About Me</span>
+                    </a>
+            
+                    <a class="link resume section-trigger" data-section="Resume" href="" title="Resume">
+                        <span class="sr-only">Resume</span>
+                        <span>Resume</span>
+                        <!-- Arrow down icon -->
+                    </a>
+                </div>
+            </div>
+
+           <div class="header isDesktop">
+                <h1>
+                    <a href="javascript:void(0)"
+                        class="router-link-active router-link-exact-active header-link section-trigger"
+                        data-section="home">Claudio Scuderi</a>
+                    <small id="main-subtitle">Gameplay & Technical Designer</small>
+                </h1>
+                <div class="links top">
+                    <a class="link" href="https://www.linkedin.com/in/cs-gd/" target="_blank" title="LinkedIn"><span
+                            class="sr-only">Claudio Scuderi LinkedIn account</span>
+                        <svg class="svg-inline--fa fa-linkedin link-icon" aria-hidden="true" focusable="false"
+                            data-prefix="fab" data-icon="linkedin" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <path class="" fill="currentColor"
+                                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                            </path>
+                        </svg>
+                    </a>
+                   
+                    <a class="link" href="" target="_blank" title="Mail"><span class="sr-only">Mail</span>
+                        <svg width="56px" height="42px" viewBox="-1.2 -1.2 26.40 26.40" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0">
+                                <rect x="-1.2" y="-1.2" width="26.40" height="26.40" rx="5.28" fill="currentColor"
+                                    strokewidth="0"></rect>
+                            </g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
+                                stroke="#CCCCCC" stroke-width="0.528"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path d="M4 9.00005L10.2 13.65C11.2667 14.45 12.7333 14.45 13.8 13.65L20 9"
+                                    stroke="#000000" stroke-width="1.752" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path
+                                    d="M3 9.17681C3 8.45047 3.39378 7.78123 4.02871 7.42849L11.0287 3.5396C11.6328 3.20402 12.3672 3.20402 12.9713 3.5396L19.9713 7.42849C20.6062 7.78123 21 8.45047 21 9.17681V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V9.17681Z"
+                                    stroke="#000000" stroke-width="1.752" stroke-linecap="round"></path>
+                            </g>
+                        </svg>
+                    </a>               
 
                     <div class="dropdown">
                         <a class="link resume section-trigger" data-section="home" href="" title="Home"
@@ -135,8 +234,8 @@
                             </path>
                         </svg>
                     </a>
-                </div>
-            </div>
+                </div> 
+            </div>      
 
             <!-- EXAMPLE OF SECTION -->
             <!-- ADD A SECTION WITH CLASS "page-section section--{pageName}"-->
@@ -679,7 +778,7 @@
                                         </p>
                                     </div>
                                     <div>
-                                        <img style=" max-width: 450px;" class="game-image"
+                                        <img style="max-width: 450px;" class="game-image"
                                             src="images/AnimationSwirl.gif">
                                         <!-- <p style="line-height: 0; font-size: small; font-style: italic;margin-left: 40px;">
                                             Example of a game´s patch.</p> -->
@@ -1238,7 +1337,7 @@
                                     </p>
                                 </div>
                                 <div>
-                                    <img style=" max-width: 350px;" class="game-image" src="images/patch.png">
+                                    <img class="game-image" src="images/patch.png">
                                     <!-- <p style="line-height: 0; font-size: small; font-style: italic;margin-left: 40px;">
                                         Example of a game´s patch.</p> -->
                                 </div>
@@ -1507,7 +1606,7 @@
                                     Being stationary makes it an easy target, but its health points and powerful melee
                                     and ranged attacks, make up for that weakness.
                                 </p>
-                                <img style=" max-width:250px; max-height: 250px;" class="game-image"
+                                <img class="game-image"
                                     src="images/bigtopus.png">
                             </div>
                             <br>
@@ -1523,7 +1622,7 @@
                                     but they have a unique rate of fire, almost like a laser, making them a threatening
                                     unit if not left alone.
                                 </p>
-                                <img style=" max-width:250px; max-height: 250px;" class="game-image"
+                                <img class="game-image"
                                     src="images/unicorn.png">
                             </div>
                             <br>
@@ -1535,7 +1634,7 @@
                                     they shoot a high-speed beam of light from their trident. They have a slow rate of
                                     fire but they compensate thanks to their projectile speed and damage.
                                 </p>
-                                <img style=" max-width:250px; max-height: 250px;" class="game-image"
+                                <img class="game-image"
                                     src="images/sharkmeid.png">
                             </div>
                             <br>
@@ -1551,7 +1650,7 @@
                                     In exchange, they have a short range and even though they are flying, they do not
                                     move around, as their rope locks them in place.
                                 </p>
-                                <img style=" max-width:250px; max-height: 250px;" class="game-image"
+                                <img class="game-image"
                                     src="images/teruteru.png">
                             </div>
                         </div>
@@ -1675,7 +1774,7 @@
                                         strongest
                                         powerup lies in wait.
                                     </p>
-                                    <img style=" max-width: 350px;" class="game-image" src="images/deskWW.png">
+                                    <img class="game-image" src="images/deskWW.png">
                                 </div>
                                 <br>
 
@@ -1690,7 +1789,7 @@
                                         power-ups, one
                                         behind the boots inside the wardrobe and the other inside the basketball hoop.
                                     </p>
-                                    <img style=" max-width: 350px;" class="game-image" src="images/wardrobeWW.png">
+                                    <img class="game-image" src="images/wardrobeWW.png">
                                 </div>
                                 <br>
 
@@ -1703,7 +1802,7 @@
                                         player´s defense but it is risky to approach without
                                         clearing the enemies around it.
                                     </p>
-                                    <img style=" max-width: 350px;" class="game-image" src="images/windowWW.png">
+                                    <img class="game-image" src="images/windowWW.png">
                                 </div>
                                 <br>
 
@@ -1713,7 +1812,7 @@
                                         result with
                                         the shaders and lighting.
                                     </p>
-                                    <img style=" max-width: 350px;" class="game-image" src="images/lv4.png">
+                                    <img class="game-image" src="images/lv4.png">
                                 </div>
                             </div>
                         </div>
@@ -2835,7 +2934,7 @@
             </section>
             <!-- END SECTION HOME-->
         </div>
-        <footer>
+        <footer class="isDesktop">
             <div class="content-wrapper">
                 <div class="header">
                     <div class="links">
@@ -2954,6 +3053,7 @@
                 if (name !== 'home') document.body.classList.remove('isHome')
                 else document.body.classList.add('isHome')
                 muteall()
+                document.body.classList.remove("menuVisible");
             })
         })
 
@@ -2968,6 +3068,7 @@
             if (name !== 'home') document.body.classList.remove('isHome')
             else document.body.classList.add('isHome')
             muteall()
+            document.body.classList.remove("menuVisible");
         }
 
         window.addEventListener('popstate', popState);
