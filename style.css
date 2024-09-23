@@ -3,6 +3,7 @@ html {
     font-family: Montserrat, sans-serif;
     font-size: 16px;
     color: #e2f0f0;
+    font-weight: 400; /* Regular weight */
     /* background-image: url('images/Eclipse.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -289,7 +290,7 @@ img {
 }
 
 p {
-    text-align: justify;
+    text-align: left;
     text-justify: inter-word;
     letter-spacing: 0.05em;
     /* Default letter spacing */
@@ -1929,7 +1930,7 @@ body.isHome .goHomeButton {
 }
 
 .bold {
-    font-weight: bold;
+
     color: #f8bc61;
 }
 
