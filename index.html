@@ -577,39 +577,40 @@
                                     For the combat design, I started this task by researching and studying the enemy
                                     design of my main references Hifi Rush and Devil May Cry 5.
                                 </br>
-                                    To create a fast-paced game as we wanted,
-                                    I introduced the player to three distinct attacks <span class="bold">(Swirl, Slam, and
-                                        Barrage)</span> and included a boost ability.
+                                    The first <span class="bold">challenge</span> was how to design a <span class="bold">fun, fast-paced combat</span> while maintaining the identity of the game,
+                                    meaning all combat would happen while riding a rocket.
+                                </br>
+                                </br>
+                                    So, I came up with three unique attacks that used the player's rocket in different ways <span class="bold">(Swirl, Slam, and
+                                        Barrage)</span> and included a <span class="bold">boost</span> ability, used to disengage enemies or perform platforming.
                                     </br>
                                     </br>
-                                    I made the following key decisions to obtain our desired experience:</p>
+                                    Then, to reach our intended experience, I decided on some key elements:</p>
 
                                 <ul class="list">
-                                    <li>
-                                        <p class="game-text">
-                                            <span class="bold">Attack Commitment:</span> Attacks cannot be interrupted by
-                                            other inputs, encouraging players to commit to their actions and make
-                                            strategic
-                                            decisions before executing moves. This adds depth to the combat and rewards
-                                            careful planning.
-                                        </p>
-                                    </li>
-
-                                    <li>
-                                        <p class="game-text"><span class="bold">Animation Montages:</span> We used animation
-                                            montages for attacks, providing a more responsive gameplay experience.
-                                            This approach also eliminated the need for complex blending animations,
-                                            making the animation process quicker and more efficient.
-                                        </p>
-                                    </li>
 
                                     <li>
                                         <p class="game-text"><span class="bold">Constant Player Movement:</span> The player's
                                             rocket is always in motion, forcing them to think and react
-                                            quickly during combat. This continuous forward momentum keeps the gameplay
+                                            quickly during combat. This <span class="bold">continuous forward momentum</span> keeps the gameplay
                                             fast-paced and keeps players engaged.
                                         </p>
                                     </li>
+
+                                    <li>
+                                        <p class="game-text"><span class="bold">Animation Montages:</span> Having only one animator, we used animation
+                                            montages for attacks, to speed up production, as this approach <span class="bold">eliminated</span> the need for <span class="bold">blending animations</span>.
+                                        </p>
+                                    </li>
+
+                                    <li>
+                                        <p class="game-text">
+                                            <span class="bold">Attack Commitment:</span> Attacks cannot be interrupted by
+                                            other inputs, except movement, or the current animation montage would be disrupted.
+                                            Started as a setback, but ended adding depth to the combat, <span class="bold">rewarding strategic decision-making</span>.
+                                        </p>
+                                    </li>                              
+                                   
                                 </ul>
                             </div>
                         </div>
@@ -619,8 +620,8 @@
                                 <div class="game-information">
                                     <div>
                                         <p class="game-text">
-                                            The light attack or <i>Rocket Swirl</i> is intended to be the primary choice
-                                            throughout the game.
+                                            The light attack or <i>Rocket Swirl</i> is intended to be the main choice
+                                            through the game.
                                             It <span class="bold">executes quickly</span>, causes <span class="bold">little
                                                 damage,</span> and can be chained into a <span class="bold">three-hit
                                                 combo</span>
@@ -628,8 +629,8 @@
                                             within the combo <span class="bold">deals bonus damage.</span>
                                             <br/>
                                             <br/>
-                                            In the initial iteration, the attack halted the player's movement. However,
-                                            <span class="bold">after extensive playtesting,</span> I reworked it
+                                            In the first iteration, the attack stopped the player's movement. However,
+                                            <span class="bold">after playtesting,</span> I reworked it
                                             into a <span class="bold">dashing attack</span> that <span class="bold">locks onto
                                                 the target.</span> This adjustment not only complemented the game’s
                                             fast-paced nature but
@@ -685,6 +686,7 @@
                                                 attack due to the <span class="bold">constant forward movement</span> of the
                                                 player's rocket. 
                                             </br>
+                                        </br>
                                                 To address this, I designed a <span class="bold">lock-on
                                                     system</span> that <span class="bold">guides</span> the player's <span
                                                     class="bold">attacks</span> toward the nearest enemy or the center of the
@@ -694,12 +696,12 @@
                                                 enemy is locked on.
                                     </div>
                                     <div>
-                                        <img style=" max-width: 500px;" class="game-image" src="images/RocketRiderLocking.gif">
+                                        <img style="max-width: 500px;" class="game-image" src="images/RocketRiderLocking.gif">
                                     </div>
                                 </div>
 
                                 <div class="game-information">
-                                    <div>
+                                    <div>                                   
                                         <p class="game-text">                                         
                                             Then, I implemented through Blueprints a <span class="bold">visual widget</span> to highlight the
                                             locked-on target, providing clear feedback to the player.
@@ -708,7 +710,7 @@
                                         </p>
                                         <iframe style="width: 100%; height:450px;" src="https://blueprintue.com/render/-4ytw81t/" scrolling="no" allowfullscreen></iframe>
                                         <p class="game-text">
-                                            The blueprint checks if an enemy is inside the locking range. When they are it renders the health bar and targeting widgets.
+                                            The blueprint checks if an enemy is inside the locking range. When they are, it renders the health bar and targeting widgets.
                                             As soon as the enemy is outside locking range it sets the visibility of the widgets as false.
                                         </p>
                                     </div>
@@ -723,15 +725,15 @@
                                             as they landed <span class="bold">consecutive hits</span> on enemies <span
                                                 class="bold">without taking damage</span>.
                                                  </br>
-                                            I designed multiple <span class="bold">style levels,</span> ranging from <span
-                                                class="bold">D to S</span> and culminating in R: RocketTastic.
+                                            I designed multiple <span class="bold">style levels,</span> ranging from D to S and culminating in R: RocketTastic.
                                             <br>
                                             <br>
-                                            With the help of a programmer, we created a <span class="bold">custom event</span>
+                                            Then, I created a <span class="bold">custom event</span>
                                             that gets called every time the style level changes.
                                             I used this event to play <span class="bold">unique sounds</span> and dynamically
                                             <span class="bold">amplify the game’s music</span>
                                             as players reached higher style levels.
+                                            <br>
                                             <br>
                                             Then I implemented the <span class="bold">UI elements</span> to display the
                                             current style rank.
@@ -748,19 +750,19 @@
                                 <div class="game-information">
                                     <div>
                                         <p class="game-text">
-                                            As the gameplay and system designer, I needed room to change and tweak
+                                            As the gameplay and system designer, I needed to be able to tweak
                                             various key elements
-                                            such as <span class="bold">damage values, hitboxes,</span> and so on.
+                                            such as <span class="bold">damage values, speed,</span> and so on.
                                             <br>
                                             <br>
-                                            Working closely with the programmers we developed a suite of <span
+                                            Working with the programmers we developed a suite of <span
                                                 class="bold">tools and
                                                 components</span> to quickly visualize and access the required
                                             stats within the Engine.
                                             <br>
                                             <br>
-                                            These tools enabled me to easily <span class="bold">tweak damage, hitbox size,
-                                                knockback, and attack speed</span> for each attack.
+                                            These tools enabled me to <span class="bold">tweak damage, hitbox size,
+                                                knockback</span>, and so on, for each attack.
                                             We applied the same approach to enemies so that I could easily balance their
                                             <span class="bold">health points, movement speed,</span>
                                             and other critical stats.
@@ -776,22 +778,18 @@
                                 <div class="game-information">
                                     <div>
                                         <p class="game-text">
-                                            With the assistance of the programmers, we created a method for <span
-                                                class="bold">tweaking animation keyframes</span> corresponding to different
-                                            phases.
+                                            With our combo system, we had to find a visual way to tell when an attack animation was done so we could kick off the next one.
                                             <br>
                                             <br>
-                                            In this case, <span class="bold">PlayerSwirl</span> spawns the attack Hitbox,
-                                            activating damage
-                                            and disabling all player inputs except movement,
-                                            while <span class="bold">PlayerSwirlFinish</span> deactivates damage and restores
-                                            all
-                                            inputs.
+                                            Collaborating with my programmers, we designed a method to <span
+                                            class="bold">tweak animation keyframes</span> for different phases.
                                             <br>
                                             <br>
-                                            I also used the <span class="bold">animation notifies,</span>
-                                            to add <span class="bold">sounds</span> and <span class="bold">VFXs</span> in the right
-                                            keyframes to each animation.
+                                            For instance, <span class="bold">PlayerSwirl</span> spawns the attack Hitbox, which deals damage and limits player inputs to movement only, 
+                                            while <span class="bold">PlayerSwirlFinish</span> disables damage and lets all inputs back in. 
+                                            <br>
+                                            <br>
+                                            I also took advantage of <span class="bold">animation notifies</span> to add <span class="bold">sounds</span> and <span class="bold">VFX</span> at the right keyframes for each animation.
                                         </p>
                                     </div>
                                     <div>
@@ -805,10 +803,9 @@
                                 <div class="game-information">
                                     <div>
                                         <p class="game-text">
-                                            During the project, I learned to use Unreal Engine 5's AI framework (AI
-                                            Controller, Behavior Tree, and Blackboard)
-                                            to assist the programmers in <span class="bold">prototyping</span> and <span
-                                                class="bold">implementing</span> the AI. After consulting the programmers,
+                                            During the project, I dived into Unreal Engine 5's AI framework (AI Controller, Behavior Tree, and Blackboard) 
+                                            to help the programmers <span class="bold">prototype</span> and <span class="bold">implementing</span> the AI. 
+                                            After consulting the programmers,
                                             I created <span class="bold">three enemy types</span>, one being a boss enemy, and
                                             used flowcharts to communicate their behaviors to the team.
                                             Furthermore, I was in charge of implementing all the <span
