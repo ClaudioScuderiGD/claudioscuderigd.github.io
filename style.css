@@ -920,6 +920,36 @@ textarea {
     }
 }
 
+.portfolio-top {
+    position: relative;
+}
+
+.portfolio-top .content-placeholder {
+    position: relative;
+}
+.portfolio-top .content-placeholder--youtube {
+    padding-top: 56.5%;
+}
+
+.portfolio-top .content-placeholder--youtube::after {
+    content: "";
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+}
+
+.portfolio-top .content-placeholder iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .portfolio-top h2 {
     position: relative;
     top: -56px;
