@@ -660,7 +660,7 @@
                                 <p class="game-text"><span class="bold">System Design:</span><br />
                                     Adapted player combat to simulate slingshots.
                                 </p>
-                                 <p class="game-text">
+                                <p class="game-text">
                                     Improved player death feedback.
                                 </p>
                                 <p class="game-text">
@@ -678,7 +678,7 @@
                         <h2 class="gameDesch2">Technical Design</h2>
                         <div class="game-information">
 
-                            <div>                     
+                            <div>
                                 <p class="game-text">
                                     In this project, my main goal was to ensure that all gameplay mechanics, especially
                                     combat, functioned seamlessly in a <span class="bold">multiplayer
@@ -728,67 +728,103 @@
                                 </p>
 
                                 <p class="game-text">
-                                    The first tool was a <span class="bold">random and non asset spawner</span>, with customizable parameters like speed, direction, and rotation. We primarily used it to populate background clutter and add variety to our scenes.
+                                    The first tool was a <span class="bold">random and non asset spawner</span>, with
+                                    customizable parameters like speed, direction, and rotation. We primarily used it to
+                                    populate background clutter and add variety to our scenes.
                                 </p>
 
                                 <p class="game-text">
-                                    The second tool was a <span class="bold">magical floating effect</span> Blueprint that made selected assets levitate and rotate gently. 
-                                    This gave the environment a more dynamic and enchanted feel. The parameters such as float distance and rotation speed were fully adjustable. 
+                                    The second tool was a <span class="bold">magical floating effect</span> Blueprint
+                                    that made selected assets levitate and rotate gently.
+                                    This gave the environment a more dynamic and enchanted feel. The parameters such as
+                                    float distance and rotation speed were fully adjustable.
                                     I also used this tool to animate tutorial elements in the player lobby.
                                 </p>
-                                <img class="smallgameimg" src="images/WizardTools.gif">
+                                <video class="smallgameimg" autoplay loop muted playsinline>
+                                    <source src="videos/WizardTools.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
                             </div>
                         </div>
 
                         <div class="game-information">
                             <div>
                                 <p class="game-text">
-                                    One of the more complex tools I built addressed a <span class="bold">specific challenge</span> in our player lobby. 
-                                    We wanted the lobby to feel like part of the game world, immersive and <span class="bold">free of traditional UI</span>, but still allow players to select their character and color. 
-                                    To achieve this, I implemented a sort of <span class="bold">diegetic UI</span> blueprint where players could shoot at magic mirrors and canvases to cycle through available options. 
-                                    This required tracking which player fired the shot, retrieving their current character and color indexes, and updating the correct array based on whether they hit the mirror or canvas.
+                                    One of the more complex tools I built addressed a <span class="bold">specific
+                                        challenge</span> in our player lobby.
+                                    We wanted the lobby to feel like part of the game world, immersive and <span
+                                        class="bold">free of traditional UI</span>, but still allow players to select
+                                    their character and color.
+                                    To achieve this, I implemented a sort of <span class="bold">diegetic UI</span>
+                                    blueprint where players could shoot at magic mirrors and canvases to cycle through
+                                    available options.
+                                    This required tracking which player fired the shot, retrieving their current
+                                    character and color indexes, and updating the correct array based on whether they
+                                    hit the mirror or canvas.
                                 </p>
-                                <img class="smallgameimg" src="images/WizardColors.gif">
+                                <video class="smallgameimg" autoplay loop muted playsinline>
+                                    <source src="videos/WizardColor.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
                             </div>
                         </div>
 
                         <div class="game-information">
                             <div>
                                 <p class="game-text">
-                                    Finally, to start the game without on-screen buttons, I also created a <span class="bold">diegetic ready-up system</span>. Players stand on gems embedded in the lobby floor to signal they are ready. 
-                                    Once all players are ready, a Blueprint spawns a black hole that pulls them into a portal, transitioning them into a random level.
+                                    Finally, to start the game without on-screen buttons, I also created a <span
+                                        class="bold">diegetic ready-up system</span>. Players stand on gems embedded in
+                                    the lobby floor to signal they are ready.
+                                    Once all players are ready, a Blueprint spawns a black hole that pulls them into a
+                                    portal, transitioning them into a random level.
                                 </p>
-                                <img class="smallgameimg" src="images/WizardPortal.gif">
+                                <video class="smallgameimg" autoplay loop muted playsinline>
+                                    <source src="videos/WizardPortal.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
                             </div>
                         </div>
 
                         <div class=gamedesc>
                             <h2 class="gameDesch2">System Design</h2>
                             <div class="game-information">
-                            <div>
-                                <p class="game-text">
+                                <div>
+                                    <p class="game-text">
                                         In parallel with gameplay implementation, I worked on <span class="bold">system
                                             balancing</span> and tuning to ensure a fun multiplayer experience.</p>
 
-                                    <p class="game-text"> Balancing was an ongoing process that required a lot of playtesting and discussion within the team. 
+                                    <p class="game-text"> Balancing was an ongoing process that required a lot of
+                                        playtesting and discussion within the team.
                                     </p>
 
-                                     <p class="game-text">  One of the core systems that went through significant evolution was the <span class="bold">player shooting</span>. 
-                                        In the early stages of development, charging an attack had no effect until the player held it for a fixed duration. 
-                                        This felt unresponsive and failed to reward precision. In response, we redesigned the mechanic: <span class="bold">the longer a player charges a shot, 
-                                        the faster and farther the projectile travels</span>. However, to introduce a tradeoff, charging now <span class="bold">reduces the player’s movement speed by half</span>, making them more vulnerable while aiming.
+                                    <p class="game-text"> One of the core systems that went through significant
+                                        evolution was the <span class="bold">player shooting</span>.
+                                        In the early stages of development, charging an attack had no effect until the
+                                        player held it for a fixed duration.
+                                        This felt unresponsive and failed to reward precision. In response, we
+                                        redesigned the mechanic: <span class="bold">the longer a player charges a shot,
+                                            the faster and farther the projectile travels</span>. However, to introduce
+                                        a tradeoff, charging now <span class="bold">reduces the player’s movement speed
+                                            by half</span>, making them more vulnerable while aiming.
                                     </p>
 
-                                          <p class="game-text"> Another key area that I felt required improvement was the <span class="bold">player death feedback</span>.
-                                             During playtests, eliminations often went unnoticed with all the chaos happening on screen. 
-                                           To address this, I coordinated with our artists to create a <span class="bold">flashy visual effect</span>, and I enhanced it with <span class="bold">slow motion, camera shake,
-                                             and a distinct audio cue</span>. 
-                                             These changes made deaths more noticeable and impactful.
-                                          </p>
-                                <img class="smallgameimg" src="images/WizardDeath.gif">
+                                    <p class="game-text"> Another key area that I felt required improvement was the
+                                        <span class="bold">player death feedback</span>.
+                                        During playtests, eliminations often went unnoticed with all the chaos happening
+                                        on screen.
+                                        To address this, I coordinated with our artists to create a <span
+                                            class="bold">flashy visual effect</span>, and I enhanced it with <span
+                                            class="bold">slow motion, camera shake,
+                                            and a distinct audio cue</span>.
+                                        These changes made deaths more noticeable and impactful.
+                                    </p>
+                                    <video class="smallgameimg" autoplay loop muted playsinline>
+                                    <source src="videos/WizardDeath.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>                        
+                                </div>
                             </div>
-                        </div>
-                            
+
                         </div>
 
                 </section>
