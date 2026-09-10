@@ -315,7 +315,7 @@
                                                 It was there that I decided to shift my focus to <span class="bold">game
                                                     design</span>, studying at Event
                                                 Horizon School for three years,
-                                                where I learned the core skills to be a game designer, and currently at
+                                                where I learned the core skills to be a game designer, and then at
                                                 PlaygroundSquad to expand my knowledge and refine my skills.
                                                 <br>
                                                 <br>
@@ -443,12 +443,12 @@
                         <div class="content-placeholder content-placeholder--youtube">
                             <button class="toggleVolume muted"></button>
                             <iframe class="trailer"
-                                src="https://www.youtube.com/embed/71BvuIBUJg8?si=04t0E12Oa-x8Dr-K&autoplay=1&mute=1&controls=0&loop=1&playlist=71BvuIBUJg8"
+                                src="https://www.youtube.com/embed/OaJen0aI_GU?si=5QKEX348JVPovSUD-K&autoplay=1&mute=1&controls=0&loop=1&playlist=71BvuIBUJg8"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
-                        <h2>Equinox: Homecoming Game Trailer coming soon</h2>
+                        <h2>Equinox: Homecoming Game Trailer</h2>
                     </div>
                     <div class="projects">
                         <div class="projects-info-container">
@@ -513,16 +513,16 @@
                                     Designed and implemented Quests using the company in-house tool.
                                 </p>
                                 <p class="game-text">
-                                    Created blueprints for interactable assets.
+                                    Blueprinting for interactables and quest objects.
                                 </p>
                                 <p class="game-text">
-                                    Worked with Data Layers to optimize performances and loading times.
+                                    Level Streaming with Data Layer and World Partition Subsystem to optimize performances and loading times.
                                 </p>
                                 <p class="game-text">
                                     Created level sequences for in-game cutscenes.
                                 </p>
                                 <p class="game-text">
-                                    Developed and executed the localization pipeline to systematically implement translations across all game chapters.
+                                    Localization pipeline setup and implementation to systematically translate all game chapters.
                                 </p>
                             </div>
                         </div>
@@ -533,17 +533,78 @@
 
 
                     <div class=gamedesc>
-                        <h2 class="gameDesch2">Page work in progress</h2>
+                        <h2 class="gameDesch2">Quest Design</h2>
                         <div class="game-information">
 
                             <div>
                                 <p class="game-text">
-                                    More information coming soon.
-                                    <!-- The first <span class="bold">challenge</span> of the project was to learn what<span class="bold">Replication</span> was and how it worked in Unreal.
-                    No one in the team had any experience with a multiplayer project, so we all started by watching tutorials and documentation regarding Unreal Replication. -->
+                                    One of my main responsibilities on Equinox: Homecoming was working with the game's quest system.
+                                    I worked with the company's in-house quest tools to set up and implement quests throughout the game. 
+                                    </br>
+                                    </br>
+                                    This involved taking the intended quest flow and translating it into a functional sequence of <span class="bold">objectives, interactions and progression states.</span>
+                                      </br></br> 
+                                    A major part of this work was making sure that the quests correctly reacted to what the player was doing in the world. 
+                                    Objectives needed to update at the appropriate time, interactions had to trigger the correct quest progression, and different parts of the quest 
+                                    needed to remain consistent as the player explored the island.
+                                  </br></br> 
+                                    Working closely with the artists and programmers, I helped turn the planned quest structures into playable experiences directly inside the engine.                         
                                 </p>
                             </div>
                         </div>
+
+                         <h2 class="gameDesch2">Technical Design</h2>
+                        <div class="game-information">
+                            <div>
+                                <p class="game-text">
+                                   A large part of my technical design work involved creating  <span class="bold">Blueprints for interactable assets and quest objects.</span>
+                                   </br></br> 
+                                    These Blueprints allowed objects in the world to communicate with the quest system and perform specific actions when interacted with. 
+                                    This was particularly important for creating quests that were driven by the player's interactions with the environment rather than only through traditional UI elements.
+                                    </br></br> 
+                                    I focused on making these objects <span class="bold">reusable and easy to configure</span>, allowing different quest objects to share common behaviours while still 
+                                    <span class="bold">exposing the variables</span> needed for individual interactions.
+                                </p>                           
+                            </div>
+                        </div>
+
+                        <h2 style="margin-top: 50px;" class="highlight">Level Streaming</h2>
+                        <div class="game-information">
+                            <div>
+                                <p class="game-text">
+                                   Equinox: Homecoming features large environments that require careful management of the content loaded at any given time.
+                                   </br></br> 
+                                    I worked with Unreal Engine 5's Data Layer Subsystem to <span class="bold">organize and control level content.</span>
+                                     Data Layers allowed us to separate different versions and states of the world and <span class="bold">control which content was active</span> depending 
+                                     on the current gameplay situation.
+                                     </br></br> 
+                                    I used this system to help manage what was loaded and visible in different parts of the game, contributing to <span class="bold">better performance 
+                                    and loading times</span> while keeping the levels manageable for the team.
+                                    </br></br> 
+                                    Working with Data Layers also gave me a deeper understanding of how Unreal Engine handles large environments 
+                                    and how technical design decisions can affect both the player's experience and the development workflow.
+                                </p>
+                            </div>
+                        </div>
+
+                        <h2 style="margin-top: 50px;" class="highlight">Localization</h2>
+                        <div class="game-information">
+                            <div>
+                                <p class="game-text">
+                                   Another area I worked on was setting up and implementing the localization pipeline for the project.
+                                   </br></br> 
+                                    The goal was to establish a  <span class="bold">consistent workflow</span> for taking the game's text and making it available across the different languages supported by the project.
+                                       </br></br> 
+                                    I worked on integrating the localization process into the development workflow so that <span class="bold">translated content could be systematically implemented</span> 
+                                    across the game's chapters.
+                                    This required paying close attention to how text was structured and referenced throughout the game, making sure that localized versions 
+                                    could replace the original text without breaking quest progression or gameplay interactions.
+                                    </br></br> 
+                                    The pipeline also helped make the localization process more predictable for the team, reducing the amount of manual work required when adding or updating translated content.
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
                 </section>
                 <!-- END SECTION BLUE SCARAB-->
