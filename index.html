@@ -516,13 +516,13 @@
                                     Blueprinting for interactables and quest objects.
                                 </p>
                                 <p class="game-text">
+                                    Setting up items and currency spawn points, rarity and placement in the world.
+                                </p>
+                                <p class="game-text">
                                     Level Streaming with Data Layer and World Partition Subsystem to optimize performances and loading times.
-                                </p>
+                                </p>                               
                                 <p class="game-text">
-                                    Created level sequences for in-game cutscenes.
-                                </p>
-                                <p class="game-text">
-                                    Localization pipeline setup and implementation to systematically translate all game chapters.
+                                    Localization pipeline setup and implementation to translate all game chapters.
                                 </p>
                             </div>
                         </div>
@@ -539,7 +539,7 @@
                             <div>
                                 <p class="game-text">
                                     One of my main responsibilities on Equinox: Homecoming was working with the game's quest system.
-                                    I worked with the company's in-house quest tools to set up and implement quests throughout the game. 
+                                    I worked with the company's in-house quest tool to set up and implement quests within Unreal. 
                                     </br>
                                     </br>
                                     This involved taking the intended quest flow and translating it into a functional sequence of <span class="bold">objectives, interactions and progression states.</span>
@@ -568,6 +568,21 @@
                             </div>
                         </div>
 
+                        <h2 style="margin-top: 50px;" class="highlight">Item Placement</h2>
+                        <div class="game-information">
+                            <div>
+                                <p class="game-text">
+                                   I worked on setting up item and currency spawn points across the world, deciding what should spawn, where it should spawn, and how rare each reward should be.
+                                   </br></br> 
+                                    A big part of this was making sure the placement made sense within the world. 
+                                    Rewards needed to encourage players to explore without making them feel like they were everywhere.
+                                    </br></br>                               
+                                    This gave me the opportunity to experience the more systemic side of level design, where <span class="bold">reward distribution, 
+                                    world exploration, and player progression</span> need to work together.
+                                </p>
+                            </div>
+                        </div>
+
                         <h2 style="margin-top: 50px;" class="highlight">Level Streaming</h2>
                         <div class="game-information">
                             <div>
@@ -581,8 +596,13 @@
                                     I used this system to help manage what was loaded and visible in different parts of the game, contributing to <span class="bold">better performance 
                                     and loading times</span> while keeping the levels manageable for the team.
                                     </br></br> 
-                                    Working with Data Layers also gave me a deeper understanding of how Unreal Engine handles large environments 
-                                    and how technical design decisions can affect both the player's experience and the development workflow.
+                                    A good example of this was when we added interiors to the buildings in the town. Having all of the interiors loaded at the same time caused a noticeable performance drop,
+                                     especially when the player was moving around the city.
+                                    </br></br> 
+                                    To solve this, I set up a separate Data Layer for each building interior. Instead of keeping every interior loaded, 
+                                    the relevant Data Layer would only be activated when the player got close to that building's entrance. Once the player moved away, the interior could be unloaded again.
+                                     </br></br>
+                                     This significantly reduced the amount of content being loaded around the town and improved performance while exploring the area.                                                      
                                 </p>
                             </div>
                         </div>
