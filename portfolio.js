@@ -70,6 +70,30 @@
   previewToggle.addEventListener('click', () => { previewsPaused = !previewsPaused; syncPreviews(); });
   reducedMotion.addEventListener('change', () => { previewsPaused = reducedMotion.matches; syncPreviews(); });
   document.addEventListener('visibilitychange', syncPreviews);
+  const demos = [...document.querySelectorAll('.demo-loop')];
+  function syncDemos() {
+    demos.forEach(video => {
+      const bounds = video.getBoundingClientRect();
+      const visible = !video.closest('[hidden]') && bounds.bottom > 0 && bounds.top < innerHeight;
+      const paused = video.dataset.paused ? video.dataset.paused === 'true' : reducedMotion.matches;
+      video.setAttribute('aria-label', paused ? 'Play demonstration' : 'Pause demonstration');
+      if (visible && !document.hidden && !paused) {
+        video.muted = true;
+        video.play().catch(() => { video.controls = true; });
+      } else video.pause();
+    });
+  }
+  const demoObserver = new IntersectionObserver(syncDemos);
+  demos.forEach(video => {
+    video.tabIndex = 0;
+    video.setAttribute('role', 'button');
+    const toggle = () => { video.dataset.paused = String(!(video.dataset.paused ? video.dataset.paused === 'true' : reducedMotion.matches)); syncDemos(); };
+    video.addEventListener('click', toggle);
+    video.addEventListener('keydown', event => { if (event.key === ' ' || event.key === 'Enter') { event.preventDefault(); toggle(); } });
+    demoObserver.observe(video);
+  });
+  document.addEventListener('visibilitychange', syncDemos);
+  reducedMotion.addEventListener('change', () => { demos.forEach(video => delete video.dataset.paused); syncDemos(); });
   function renderPage(focus = false) {
     const requested = new URL(location.href).searchParams.get('page') || 'home';
     const active = sections.find(section => section.id === requested) || document.querySelector('#home');
@@ -87,6 +111,7 @@
     if (focus) document.querySelector('#main').focus({preventScroll:true});
     syncPreviews();
     syncHeadline();
+    syncDemos();
   }
   document.querySelectorAll('.case-page').forEach(section => {
     const toc = section.querySelector('.case-nav');
